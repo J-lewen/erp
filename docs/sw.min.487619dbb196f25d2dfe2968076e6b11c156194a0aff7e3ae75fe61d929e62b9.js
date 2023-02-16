@@ -1,1 +1,0 @@
-navigator.serviceWorker&&navigator.serviceWorker.register("/j-lewen.github.io/erp/sw.js",{scope:"/"})
