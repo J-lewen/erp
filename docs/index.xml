@@ -90,16 +90,6 @@ Have a go at applying the filters both via the UI and with the provided script o
     </item>
     
     <item>
-      <title>5. Run ICA</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
-      <description>Independent Component Analysis (ICA) (or &amp;lsquo;what do I do with all these blinks?&amp;rsquo;)#Intro
-Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don&amp;rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions.</description>
-    </item>
-    
-    <item>
       <title>Resources for researchers</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -140,21 +130,13 @@ Picton, T. W., Bentin, S., Berg, P., Donchin, E., Hillyard, S. A., Johnson Jr, R
     </item>
     
     <item>
-      <title>7. Low-pass filter (optional)</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</link>
+      <title>6. Run ICA</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
-      <description>Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-Video
-Code
-N/AScript
-N/ADataset
-Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
-FAQ
-Q1↕A1.Q2↕A2.</description>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
+      <description>Independent Component Analysis (ICA) (or &amp;lsquo;what do I do with all these blinks?&amp;rsquo;)#Intro
+Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don&amp;rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions.</description>
     </item>
     
     <item>
@@ -175,7 +157,25 @@ How do I choose my offline reference site(s)?</description>
     </item>
     
     <item>
-      <title>8. Epoch your data</title>
+      <title>8. Low-pass filter (optional)</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
+      <description>Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+Video
+Code
+N/AScript
+N/ADataset
+Activity
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
+FAQ
+Q1↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>9. Epoch your data</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -192,7 +192,19 @@ How do I choose my epoch length?↕A1.</description>
     </item>
     
     <item>
-      <title>9. Artifact rejection</title>
+      <title>Contact</title>
+      <link>https://j-lewen.github.io/erp/docs/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/contact/</guid>
+      <description>Contact &amp;amp; info#Email: jennifer.lewendon@polyu.edu.hk
+For any queries about resource content, webpages or any other questions. Personal Website: https://j-lewen.github.io/
+Personal website with CV, publications &amp;amp; research interests. Google Scholar: https://scholar.google.com/citations?user=oMuNHZoAAAAJ&amp;hl=en&amp;oi=ao
+Journal and conference publications. </description>
+    </item>
+    
+    <item>
+      <title>10. Artifact rejection</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -208,19 +220,7 @@ Q1↕A1.Q2↕A2.</description>
     </item>
     
     <item>
-      <title>Contact</title>
-      <link>https://j-lewen.github.io/erp/docs/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/contact/</guid>
-      <description>Contact &amp;amp; info#Email: jennifer.lewendon@polyu.edu.hk
-For any queries about resource content, webpages or any other questions. Personal Website: https://j-lewen.github.io/
-Personal website with CV, publications &amp;amp; research interests. Google Scholar: https://scholar.google.com/citations?user=oMuNHZoAAAAJ&amp;hl=en&amp;oi=ao
-Journal and conference publications. </description>
-    </item>
-    
-    <item>
-      <title>10. Averaging</title>
+      <title>11. Averaging</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -236,7 +236,7 @@ What is the difference between averaging and grand averaging?↕A1.Q2↕A2.
     </item>
     
     <item>
-      <title>11. Create difference waves (optional)</title>
+      <title>12. Create difference waves (optional)</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       

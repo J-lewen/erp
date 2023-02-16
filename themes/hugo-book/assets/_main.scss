@@ -164,11 +164,14 @@ body[dir="rtl"] .book-menu {
 .book-page {
   min-width: $body-min-width;
   flex-grow: 1;
-  padding: $padding-16;
+  padding: $padding-16 * 3;
+ margin-right: $padding-16 * 4;
+ margin-left: $padding-16 * 4;
 }
 
 .book-post {
   margin-bottom: $padding-16 * 3;
+  
 }
 
 .book-header {
