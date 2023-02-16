@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Resources on ERP Resources</title>
+    <link>https://j-lewen.github.io/erp/</link>
+    <description>Recent content in Resources on ERP Resources</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://j-lewen.github.io/erp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1. Getting started with ERPLAB</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_1/</guid>
+      <description>Getting started (or &amp;lsquo;help, how do I make ERPLAB work?&amp;rsquo;)#IntroTo conduct any of the analyses featured in this tutorial, you require three downloads.
+Firstly, MATLAB. MATLAB is a very powerful (see also &amp;lsquo;very expensive&amp;rsquo;) software programme. However, in order to use EEGLAB MATLAB is a pre-requisite. Luckily however they offer some pretty great discounts for students, so it&amp;rsquo;s well worth buying a student copy if that&amp;rsquo;s a possibility.</description>
+    </item>
+    
+    <item>
+      <title>Designing your study</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/external/design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/design/</guid>
+      <description>Thinking about your design#Designing you study is a key element of ERP research design. Multiple considerations can guide your design to ensure that valuable time spent aquiring, pre-processing and analysing data produces valuable (and hopefully publishable) results.Whilst I list a number of resources here, one main considerations that most ERP research overlooks one important principle. Termed the Hillyard Principle (see Luck, 2014), by Steve Luck, the basic premise that ERP responses should be elicited by stimuli that are - in principle - physically identical.</description>
+    </item>
+    
+    <item>
+      <title>2. Import data</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/</guid>
+      <description>Importing data (or &amp;lsquo;help, how do I get my data into ERPLAB?&amp;rsquo;)#IntroNow you&amp;rsquo;ve got ERPLAB up and running, it&amp;rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place?
+VideoCode [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download).</description>
+    </item>
+    
+    <item>
+      <title>Acquiring your data</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/external/acquisition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/acquisition/</guid>
+      <description> Acquiring your data#</description>
+    </item>
+    
+    <item>
+      <title>Scripts: essential information</title>
+      <link>https://j-lewen.github.io/erp/docs/scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/scripts/</guid>
+      <description>How to use the scripts provided within these pages#Every script looks a little different to the &amp;lsquo;code&amp;rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.</description>
+    </item>
+    
+    <item>
+      <title>3. Downsampling &amp; filtering</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</guid>
+      <description>
+Downsampling &amp;amp; filtering#filtering - high pass vs low pass
+Intro
+Video
+Code
+Script
+Dataset
+Activity
+FAQ
+Q1↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>Pre-processing &amp; analysis</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/external/preprocess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/preprocess/</guid>
+      <description>Pre-processing &amp;amp; analysis#The problem of multiple implicit comparisons#A second major issue in the design of For an excellent paper on See this article by Luck and Gaspelin (2017)
+Preprocessing &amp;amp; analysis
+Keil, A., Debener, S., Gratton, G., Junghöfer, M., Kappenman, E. S., Luck, S. J., &amp;hellip; &amp;amp; Yee, C. M. (2014). Committee report: publication guidelines and recommendations for studies using electroencephalography and magnetoencephalography. Psychophysiology, 51(1), 1-21</description>
+    </item>
+    
+    <item>
+      <title>4. Cleaning your data</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</guid>
+      <description>Data cleaning (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#Intro
+Preamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
+    </item>
+    
+    <item>
+      <title>5. Run ICA</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</guid>
+      <description>Independent Component Analysis (ICA) (or &amp;lsquo;what do I do with all these blinks?&amp;rsquo;)#Intro
+Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don&amp;rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions.</description>
+    </item>
+    
+    <item>
+      <title>Resources for researchers</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/</guid>
+      <description>under construction</description>
+    </item>
+    
+    <item>
+      <title>Teaching Material</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/teaching/</guid>
+      <description>under construction</description>
+    </item>
+    
+    <item>
+      <title>Writing your paper</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/external/writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/writing/</guid>
+      <description>Writing your paper#Reporting
+Keil, A., Debener, S., Gratton, G., Junghöfer, M., Kappenman, E. S., Luck, S. J., &amp;hellip; &amp;amp; Yee, C. M. (2014). Committee report: publication guidelines and recommendations for studies using electroencephalography and magnetoencephalography. Psychophysiology, 51(1), 1-21
+Picton, T. W., Bentin, S., Berg, P., Donchin, E., Hillyard, S. A., Johnson Jr, R., &amp;hellip; &amp;amp; Taylor, M. J. (2000). Guidelines for using human event‐related potentials to study cognition: Recording standards and publication criteria</description>
+    </item>
+    
+    <item>
+      <title>6. Re-referencing</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
+      <description>Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+Video Code
+N/AScript
+N/ADataset
+Activity
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the basline period, or epoch of interest.
+FAQ
+How do I choose my offline reference site(s)?</description>
+    </item>
+    
+    <item>
+      <title>7. Low-pass filter (optional)</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</guid>
+      <description>Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+Video
+Code
+N/AScript
+N/ADataset
+Activity
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the basline period, or epoch of interest.
+FAQ
+Q1↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>8. Epoch your data</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
+      <description>Epoch (or segment, or &amp;lsquo;cut up&amp;rsquo; your data#Intro
+Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we&amp;rsquo;ve worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long &amp;lsquo;continous&amp;rsquo; file&amp;hellip;
+See?
+Video Code
+N/AScript
+N/ADataset
+Activity
+FAQ
+How do I choose my epoch length?↕A1.</description>
+    </item>
+    
+    <item>
+      <title>9. Artifact rejection</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</guid>
+      <description>
+TITLE#Intro
+Video Code
+N/AScript
+N/ADataset
+Activity
+FAQ
+Q1↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://j-lewen.github.io/erp/docs/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/contact/</guid>
+      <description>Contact &amp;amp; info#Email: jennifer.lewendon@polyu.edu.hk
+For any queries about resource content, webpages or any other questions. Personal Website: https://j-lewen.github.io/
+Personal website with CV, publications &amp;amp; research interests. Google Scholar: https://scholar.google.com/citations?user=oMuNHZoAAAAJ&amp;hl=en&amp;oi=ao
+Journal and conference publications. </description>
+    </item>
+    
+    <item>
+      <title>10. Averaging</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</guid>
+      <description>
+TITLE#Intro
+Video Code
+N/AScript
+N/ADataset
+Activity
+FAQ
+What is the difference between averaging and grand averaging?↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>11. Create difference waves (optional)</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</guid>
+      <description>
+TITLE#Intro
+Video Code
+N/AScript
+N/ADataset
+Activity
+FAQ
+Q1↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>12. Grand average</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</guid>
+      <description>
+TITLE#Intro
+Video Code
+N/AScript
+N/ADataset
+Activity
+FAQ
+Q1↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>What next?</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</guid>
+      <description>
+TITLE#Intro
+Video Code
+N/AScript
+N/ADataset
+Activity
+FAQ
+Q1↕A1.Q2↕A2.</description>
+    </item>
+    
+  </channel>
+</rss>

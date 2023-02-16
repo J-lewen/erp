@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Docs on ERP Resources</title>
+    <link>https://j-lewen.github.io/erp/docs/</link>
+    <description>Recent content in Docs on ERP Resources</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://j-lewen.github.io/erp/docs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Scripts: essential information</title>
+      <link>https://j-lewen.github.io/erp/docs/scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/scripts/</guid>
+      <description>How to use the scripts provided within these pages#Every script looks a little different to the &amp;lsquo;code&amp;rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://j-lewen.github.io/erp/docs/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/contact/</guid>
+      <description>Contact &amp;amp; info#Email: jennifer.lewendon@polyu.edu.hk
+For any queries about resource content, webpages or any other questions. Personal Website: https://j-lewen.github.io/
+Personal website with CV, publications &amp;amp; research interests. Google Scholar: https://scholar.google.com/citations?user=oMuNHZoAAAAJ&amp;hl=en&amp;oi=ao
+Journal and conference publications. </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>External Resources &amp; Publications on ERP Resources</title>
+    <link>https://j-lewen.github.io/erp/docs/table-of-contents/external/</link>
+    <description>Recent content in External Resources &amp; Publications on ERP Resources</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://j-lewen.github.io/erp/docs/table-of-contents/external/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Designing your study</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/external/design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/design/</guid>
+      <description>Thinking about your design#Designing you study is a key element of ERP research design. Multiple considerations can guide your design to ensure that valuable time spent aquiring, pre-processing and analysing data produces valuable (and hopefully publishable) results.Whilst I list a number of resources here, one main considerations that most ERP research overlooks one important principle. Termed the Hillyard Principle (see Luck, 2014), by Steve Luck, the basic premise that ERP responses should be elicited by stimuli that are - in principle - physically identical.</description>
+    </item>
+    
+    <item>
+      <title>Acquiring your data</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/external/acquisition/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/acquisition/</guid>
+      <description> Acquiring your data#</description>
+    </item>
+    
+    <item>
+      <title>Pre-processing &amp; analysis</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/external/preprocess/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/preprocess/</guid>
+      <description>Pre-processing &amp;amp; analysis#The problem of multiple implicit comparisons#A second major issue in the design of For an excellent paper on See this article by Luck and Gaspelin (2017)
+Preprocessing &amp;amp; analysis
+Keil, A., Debener, S., Gratton, G., Junghöfer, M., Kappenman, E. S., Luck, S. J., &amp;hellip; &amp;amp; Yee, C. M. (2014). Committee report: publication guidelines and recommendations for studies using electroencephalography and magnetoencephalography. Psychophysiology, 51(1), 1-21</description>
+    </item>
+    
+    <item>
+      <title>Writing your paper</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/external/writing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/writing/</guid>
+      <description>Writing your paper#Reporting
+Keil, A., Debener, S., Gratton, G., Junghöfer, M., Kappenman, E. S., Luck, S. J., &amp;hellip; &amp;amp; Yee, C. M. (2014). Committee report: publication guidelines and recommendations for studies using electroencephalography and magnetoencephalography. Psychophysiology, 51(1), 1-21
+Picton, T. W., Bentin, S., Berg, P., Donchin, E., Hillyard, S. A., Johnson Jr, R., &amp;hellip; &amp;amp; Taylor, M. J. (2000). Guidelines for using human event‐related potentials to study cognition: Recording standards and publication criteria</description>
+    </item>
+    
+  </channel>
+</rss>

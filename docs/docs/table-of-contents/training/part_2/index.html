@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Importing data (or &lsquo;help, how do I get my data into ERPLAB?&rsquo;)#IntroNow you&rsquo;ve got ERPLAB up and running, it&rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place?
+VideoCode [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download).">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="2. Import data" />
+<meta property="og:description" content="Importing data (or &lsquo;help, how do I get my data into ERPLAB?&rsquo;)#IntroNow you&rsquo;ve got ERPLAB up and running, it&rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place?
+VideoCode [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-02-16T00:18:17+08:00" />
+<title>2. Import data | ERP Resources</title>
+<link rel="manifest" href="/erp/manifest.json">
+<link rel="icon" href="/erp/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/erp/book.min.1dba630dc2552267120ee2e74610f2910028f0e2d9bf974dbeb26a165a61b464.css" integrity="sha256-HbpjDcJVImcSDuLnRhDykQAo8OLZv5dNvrJqFlphtGQ=" crossorigin="anonymous">
+  <script defer src="/erp/flexsearch.min.js"></script>
+  <script defer src="/erp/en.search.min.b781c1757166295ccd69c12ee0dfb9f52519cf42125ebf60bb7d60dbed09dd9d.js" integrity="sha256-t4HBdXFmKVzNacEu4N&#43;59SUZz0ISXr9gu31g2&#43;0J3Z0=" crossorigin="anonymous"></script>
+
+  <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/erp/"><span>ERP Resources</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/erp/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://j-lewen.github.io/erp/zh/">
+          Chinese
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/" class="">About</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-aa6010235181e8c9d397ab55bc99d4ed" class="toggle" checked />
+    <label for="section-aa6010235181e8c9d397ab55bc99d4ed" class="flex justify-between">
+      <a href="/erp/docs/table-of-contents/training/" class="">ERP Training Resources</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_1/" class="">1. Getting started with ERPLAB</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_2/" class="active">2. Import data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_3/" class="">3. Downsampling &amp; filtering</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_4/" class="">4. Cleaning your data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_5/" class="">5. Run ICA</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_6/" class="">6. Re-referencing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_7/" class="">7. Low-pass filter (optional)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_8/" class="">8. Epoch your data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_9/" class="">9. Artifact rejection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_10/" class="">10. Averaging</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_11/" class="">11. Create difference waves (optional)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_12/" class="">12. Grand average</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_13/" class="">What next?</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-02b6be880877da3da61cf051c9bcb238" class="toggle"  />
+    <label for="section-02b6be880877da3da61cf051c9bcb238" class="flex justify-between">
+      <a href="/erp/docs/table-of-contents/external/" class="">External Resources &amp; Publications</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/external/design/" class="">Designing your study</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/external/acquisition/" class="">Acquiring your data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/external/preprocess/" class="">Pre-processing &amp; analysis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/external/writing/" class="">Writing your paper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/researcher_resource/" class="">Resources for researchers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/teaching/" class="">Teaching Material</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/scripts/" class="">Scripts: essential information</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/contact/" class="">Contact</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>2. Import data</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><br>
+<h4 id="importing-data-or-help-how-do-i-get-my-data-into-erplab">
+  Importing data (or <em>&lsquo;help, how do I get my data into ERPLAB?&rsquo;</em>)
+  <a class="anchor" href="#importing-data-or-help-how-do-i-get-my-data-into-erplab">#</a>
+</h4>
+<br>
+<u>  Intro</u>
+<p>Now you&rsquo;ve got ERPLAB up and running, it&rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place?</p>
+<br>
+<u> Video</u>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/nsI2O7Y-fUo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<p><u> Code </u></p>
+<pre><code>  [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;
+    EEG = pop_loadcnt('C:\[DATASET ADDRESS]\[DATASET NAME].cnt' , 'dataformat', 'auto', 'memmapfile', '');      
+    [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,'setname','[DATASET NAME FOR ERPLAB]','gui','off'); 
+</code></pre>
+<br>
+<u> Script</u>
+<p>
+  <a href="/erp/files/script_1.zip">Script #1</a> (download).</p>
+<p>
+  <a href="/erp/files/script_1.m">Script #1</a> (view).</p>
+<br>
+<u> Dataset</u> 
+<p>The example data set used in the above video (Dataset #1) can be downloaded 
+  <a href="https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link">here</a>.</p>
+<br>
+<u>Activity</u>
+<p>Have a go at importing Dataset #1 into EEGLAB using both the user interface and script methods. For the script method, try saving Dataset_1 (e.g., Dataset_1, Data_set2) with a different name, and see if you can import multiple datasets using the Script 1. Finally, save your version of the script (with all the amended folder paths) to your computer so as to ensure you have a working script for subsequent tutorial sections (and your own data analysis!).</p>
+<br>
+<u>FAQs</u>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Why won&#39;t my dataset load?</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      Ensure that you are attempting to import the correct file type. Remember that the instructions here are for .CNT file types, but the steps themselves transferable across a range of file types.
+    </div>
+  </label>
+</div>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>My dataset isn&#39;t in any of the listed formats. What should I do?</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      Most data acquisition software offers the ability to convert your file type. For example, I use software that produces a range of files that are incompatible with EEGLAB. However, I am able to save these files in a compatible format within the acquisition software. If you&rsquo;re unsure of how to do this, speak to you EEG technicial, researchers around you, or (always a decent resort), Google.
+    </div>
+  </label>
+</div>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>I tried to run the script but it didn&#39;t work. Help!</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      Ensure you&rsquo;ve read the &lsquo;Scripts: Essential Information&rsquo; page, which provides further information on the file and folder structures necessary to run scripts available on this site. Always check that your path to the experiment folder and EEGLAB are correct
+    </div>
+  </label>
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

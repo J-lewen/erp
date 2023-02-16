@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+Video
+Code
+N/AScript
+N/ADataset
+Activity
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&rsquo;t unnecessarily remove trials by removing data that falls into the basline period, or epoch of interest.
+FAQ
+Q1↕A1.Q2↕A2.">
+<meta name="theme-color" content="#FFFFFF">
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="7. Low-pass filter (optional)" />
+<meta property="og:description" content="Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+Video
+Code
+N/AScript
+N/ADataset
+Activity
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&rsquo;t unnecessarily remove trials by removing data that falls into the basline period, or epoch of interest.
+FAQ
+Q1↕A1.Q2↕A2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/" /><meta property="article:section" content="docs" />
+
+<meta property="article:modified_time" content="2023-02-16T00:18:01+08:00" />
+<title>7. Low-pass filter (optional) | ERP Resources</title>
+<link rel="manifest" href="/erp/manifest.json">
+<link rel="icon" href="/erp/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/erp/book.min.1dba630dc2552267120ee2e74610f2910028f0e2d9bf974dbeb26a165a61b464.css" integrity="sha256-HbpjDcJVImcSDuLnRhDykQAo8OLZv5dNvrJqFlphtGQ=" crossorigin="anonymous">
+  <script defer src="/erp/flexsearch.min.js"></script>
+  <script defer src="/erp/en.search.min.b781c1757166295ccd69c12ee0dfb9f52519cf42125ebf60bb7d60dbed09dd9d.js" integrity="sha256-t4HBdXFmKVzNacEu4N&#43;59SUZz0ISXr9gu31g2&#43;0J3Z0=" crossorigin="anonymous"></script>
+
+  <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+  
+</head>
+<body dir="ltr">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      <div class="book-menu-content">
+        
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/erp/"><span>ERP Resources</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+  
+
+
+
+  
+    
+  
+
+
+
+<ul class="book-languages">
+  <li>
+    <input type="checkbox" id="languages" class="toggle" />
+    <label for="languages" class="flex justify-between">
+      <a role="button" class="flex align-center">
+        <img src="/erp/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </label>
+
+    <ul>
+      
+      <li>
+        <a href="https://j-lewen.github.io/erp/zh/">
+          Chinese
+        </a>
+      </li>
+      
+    </ul>
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/" class="">About</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-aa6010235181e8c9d397ab55bc99d4ed" class="toggle" checked />
+    <label for="section-aa6010235181e8c9d397ab55bc99d4ed" class="flex justify-between">
+      <a href="/erp/docs/table-of-contents/training/" class="">ERP Training Resources</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_1/" class="">1. Getting started with ERPLAB</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_2/" class="">2. Import data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_3/" class="">3. Downsampling &amp; filtering</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_4/" class="">4. Cleaning your data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_5/" class="">5. Run ICA</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_6/" class="">6. Re-referencing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_7/" class="active">7. Low-pass filter (optional)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_8/" class="">8. Epoch your data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_9/" class="">9. Artifact rejection</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_10/" class="">10. Averaging</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_11/" class="">11. Create difference waves (optional)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_12/" class="">12. Grand average</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_13/" class="">What next?</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-02b6be880877da3da61cf051c9bcb238" class="toggle"  />
+    <label for="section-02b6be880877da3da61cf051c9bcb238" class="flex justify-between">
+      <a href="/erp/docs/table-of-contents/external/" class="">External Resources &amp; Publications</a>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/external/design/" class="">Designing your study</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/external/acquisition/" class="">Acquiring your data</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/external/preprocess/" class="">Pre-processing &amp; analysis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/external/writing/" class="">Writing your paper</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/researcher_resource/" class="">Resources for researchers</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/teaching/" class="">Teaching Material</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/scripts/" class="">Scripts: essential information</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/contact/" class="">Contact</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+ 
+      </div>
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>7. Low-pass filter (optional)</strong>
+
+  <label for="toc-control">
+    
+  </label>
+</div>
+
+
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><br>
+<h4 id="re-referencing">
+  Re-referencing
+  <a class="anchor" href="#re-referencing">#</a>
+</h4>
+<br>
+<p><u> Intro</u></p>
+<p>Important distinction between online reference and offline reference. #You should report both in your paper#.</p>
+<p><u> Video</u></p>
+<p><u> Code</u></p>
+<pre><code>    N/A
+</code></pre>
+<p><u> Script</u></p>
+<pre><code>    N/A
+</code></pre>
+<p><u> Dataset</u></p>
+<p><u> Activity</u></p>
+<p>Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&rsquo;t unnecessarily remove trials by removing data that falls into the basline period, or epoch of interest.</p>
+<p><u>FAQ</u></p>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Q1</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      A1.
+    </div>
+  </label>
+</div>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Q2</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      A2.
+    </div>
+  </label>
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+
+
+  <script>(function(){function e(e){const t=window.getSelection(),n=document.createRange();n.selectNodeContents(e),t.removeAllRanges(),t.addRange(n)}document.querySelectorAll("pre code").forEach(t=>{t.addEventListener("click",function(){if(window.getSelection().toString())return;e(t.parentElement),navigator.clipboard&&navigator.clipboard.writeText(t.parentElement.textContent)})})})()</script>
+
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
