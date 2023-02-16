@@ -1,5 +1,5 @@
 ---
-title: 10. Averaging
+title: 10. Artifact rejection
 weight: 10
 bookToc: false
 ---
@@ -29,7 +29,7 @@ bookToc: false
 
 <u>FAQ</u>
 
-{{% expand "What is the difference between averaging and grand averaging?" %}}
+{{% expand "Q1" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}

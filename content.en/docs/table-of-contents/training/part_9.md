@@ -1,14 +1,23 @@
 ---
-title: 9. Artifact rejection
+title: 9. Epoch your data
 weight: 9
 bookToc: false
 ---
 <br>
 
-#### TITLE
+#### Epoch (or segment, or 'cut up' your data 
 <br>
 
 <u> Intro</u>
+
+Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we've worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long 'continuous' file...
+
+
+
+ ![Waves](/erp/images/epoch.png)
+
+
+See?
 
 
 
@@ -29,7 +38,7 @@ bookToc: false
 
 <u>FAQ</u>
 
-{{% expand "Q1" %}}
+{{% expand "How do I choose my epoch length?" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}

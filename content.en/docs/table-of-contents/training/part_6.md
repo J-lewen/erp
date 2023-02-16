@@ -1,16 +1,18 @@
 ---
-title: 6. Re-referencing
+title: 6. Run ICA
 weight: 6
 bookToc: false
 ---
 <br>
 
-#### Re-referencing
+#### Independent Component Analysis (ICA) (or 'what do I do with all these blinks?')
 <br>
 
 <u> Intro</u>
 
-Important distinction between online reference and offline reference. #You should report both in your paper#.
+Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a  possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don't be fooled into thinking that ICA is a magic cure with no repercussions.
+
+What does ICA do? In short, ICA creates a model of...
 
 <u> Video</u>
 <u> Code</u>
@@ -30,7 +32,7 @@ Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to whe
 
 <u>FAQ</u>
 
-{{% expand "How do I choose my offline reference site(s)?" %}}
+{{% expand "Q1" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}

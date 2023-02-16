@@ -1,5 +1,5 @@
 ---
-title:  12. Grand average
+title: 12. Create difference waves (optional)
 weight: 12
 bookToc: false
 ---

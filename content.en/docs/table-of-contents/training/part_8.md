@@ -1,27 +1,20 @@
 ---
-title: 8. Epoch your data
+title: 8. Low-pass filter (optional)
 weight: 8
 bookToc: false
 ---
 <br>
 
-#### Epoch (or segment, or 'cut up' your data 
+#### Re-referencing
 <br>
 
 <u> Intro</u>
 
-Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we've worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long 'continuous' file...
-
-
-
- ![Waves](/erp/images/epoch.png)
-
-
-See?
-
-
+Important distinction between online reference and offline reference. #You should report both in your paper#.
 
 <u> Video</u>
+
+
 <u> Code</u>
 
         N/A
@@ -35,10 +28,11 @@ See?
 
 <u> Activity</u>
 
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don't unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
 
 <u>FAQ</u>
 
-{{% expand "How do I choose my epoch length?" %}}
+{{% expand "Q1" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}

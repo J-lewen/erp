@@ -33,7 +33,7 @@ Then you must create *individual* folders for each participant, with the name of
 
   [Example script](/erp/files/getting_started.m) (view).
 
-  Ensure that for every script you run from this site, you enter the correct information as outline in the example scripts above.
+  Ensure that for every script you run from this site, you enter the correct information as outlined in the example scripts above. 
 
   <br>
 

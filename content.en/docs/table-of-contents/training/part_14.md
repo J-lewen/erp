@@ -1,6 +1,6 @@
 ---
-title: 11. Averaging
-weight: 11
+title:  What next?
+weight: 14
 bookToc: false
 ---
 <br>
@@ -29,7 +29,7 @@ bookToc: false
 
 <u>FAQ</u>
 
-{{% expand "What is the difference between averaging and grand averaging?" %}}
+{{% expand "Q1" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}
