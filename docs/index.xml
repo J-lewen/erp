@@ -21,7 +21,7 @@ Firstly, MATLAB. MATLAB is a very powerful (see also &amp;lsquo;very expensive&a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/design/</guid>
-      <description>Thinking about your design#Designing you study is a key element of ERP research design. Multiple considerations can guide your design to ensure that valuable time spent aquiring, pre-processing and analysing data produces valuable (and hopefully publishable) results.Whilst I list a number of resources here, one main considerations that most ERP research overlooks one important principle. Termed the Hillyard Principle (see Luck, 2014), by Steve Luck, the basic premise that ERP responses should be elicited by stimuli that are - in principle - physically identical.</description>
+      <description>Thinking about your design#Designing you study is a key element of ERP research design. Multiple considerations can guide your design to ensure that valuable time spent acquiring, pre-processing and analysing data produces valuable (and hopefully publishable) results.Whilst I list a number of resources here, one main considerations that most ERP research overlooks one important principle. Termed the Hillyard Principle (see Luck, 2014), by Steve Luck, the basic premise that ERP responses should be elicited by stimuli that are - in principle - physically identical.</description>
     </item>
     
     <item>
@@ -53,21 +53,19 @@ VideoCode [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;EEG = pop_loadcnt(&#39;C:\[D
     </item>
     
     <item>
-      <title>3. Downsampling &amp; filtering</title>
+      <title>3. Resampling and filtering</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</guid>
-      <description>
-Downsampling &amp;amp; filtering#filtering - high pass vs low pass
+      <description>Resampling &amp;amp; filtering#Two main concepts are introduced in this sections. Firstly, the idea of resampling. Secondly, offline filtering. - high pass vs low pass
 Intro
 Video
 Code
 Script
 Dataset
 Activity
-FAQ
-Q1↕A1.Q2↕A2.</description>
+Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you&amp;rsquo;ve done this, be sure to read through the Template for ERP Pre-processing Reporting [here) (download)., and have a go at filling in the gaps to report the necessary information about the high-pass filter you&amp;rsquo;ve applied to your data.</description>
     </item>
     
     <item>
@@ -107,7 +105,8 @@ Preamble: This is not the only option for dealing with blinks. Artifact rejectio
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/</guid>
-      <description>under construction</description>
+      <description>under construction
+A generic template for reporting ERP pre-processing steps. Note that this template will not suit everyone, and adaptation/amendments/deletions may be required Template for reporting</description>
     </item>
     
     <item>
@@ -142,7 +141,7 @@ Video Code
 N/AScript
 N/ADataset
 Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the basline period, or epoch of interest.
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
 FAQ
 How do I choose my offline reference site(s)?</description>
     </item>
@@ -160,7 +159,7 @@ Code
 N/AScript
 N/ADataset
 Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the basline period, or epoch of interest.
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
 FAQ
 Q1↕A1.Q2↕A2.</description>
     </item>
@@ -172,7 +171,7 @@ Q1↕A1.Q2↕A2.</description>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
       <description>Epoch (or segment, or &amp;lsquo;cut up&amp;rsquo; your data#Intro
-Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we&amp;rsquo;ve worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long &amp;lsquo;continous&amp;rsquo; file&amp;hellip;
+Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we&amp;rsquo;ve worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long &amp;lsquo;continuous&amp;rsquo; file&amp;hellip;
 See?
 Video Code
 N/AScript
