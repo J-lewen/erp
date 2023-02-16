@@ -1,40 +1,33 @@
 ---
-title: 4. Cleaning your data
+title: 4. High-pass filtering
 weight: 4
 bookToc: false
 ---
 <br>
 
-#### Data cleaning (or 'help, my data looks a mess')
-<br>
+#### High-pass filtering
+
 
 <u> Intro</u>
 
-Preamble: The most important thing to mention here is that there is no substitute for good quality data. You *must* ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise. Why? because participants are only human. Give them a break in a testing session and they will almost inevitably move more than you thought humanly possible in the space of 30 seconds.
-
-So, what should we do, and why do we need to clean our data?
+Filtering is a complex process, and requires some thought and consideration. It's important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
 
 <u> Video</u>
 
 <u> Code</u>
 
-        N/A
-
 <u> Script</u>
-
-        N/A
 
 <u> Dataset</u>
 
-
 <u> Activity</u>
 
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don't unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
+Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you've done this, be sure to read through the Template for ERP Pre-processing Reporting [here](https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/) (download)., and have a go at filling in the gaps to report the necessary information about the high-pass filter you've applied to your data.
 
 <u>FAQ</u>
 
-{{% expand "Q1" %}}
-A1.{{% /expand %}}
+{{% expand "I've heard the terms 'online filter' and 'offline filter'. What do these mean?" %}}
+Offline filters refer to pre-processing steps taken subsequent to data acquisition. Online filters are those applied during EEG recording (i.e., by your EEG data acquisition software.).{{% /expand %}}
 
-{{% expand "Q2" %}}
-A2.{{% /expand %}}
+{{% expand "How do I choose my filter?" %}}
+Filtering is a seemingly simple, but actually incredibly complex element of the pre-processing pipeline. It is important that you have a good understanding of what you're doing to your data, and how you can distort it by using the wrong setting. If you are new to filtering, I *strongly* recommend that you read Steve Luck's chapter *Filtering and Fourier Analysis* in his 2014 book [An Introduction to the Event-Related Potential Technique](https://mitpress.mit.edu/9780262525855/an-introduction-to-the-event-related-potential-technique/).{{% /expand %}}

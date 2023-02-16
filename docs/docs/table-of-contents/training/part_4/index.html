@@ -3,22 +3,34 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Data cleaning (or &lsquo;help, my data looks a mess&rsquo;)#Intro
-Preamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.">
+<meta name="description" content="High-pass filtering#Intro
+Filtering is a complex process, and requires some thought and consideration. It&rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
+Video
+Code
+Script
+Dataset
+Activity
+Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you&rsquo;ve done this, be sure to read through the Template for ERP Pre-processing Reporting here (download).">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="4. Cleaning your data" />
-<meta property="og:description" content="Data cleaning (or &lsquo;help, my data looks a mess&rsquo;)#Intro
-Preamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="4. High-pass filtering" />
+<meta property="og:description" content="High-pass filtering#Intro
+Filtering is a complex process, and requires some thought and consideration. It&rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
+Video
+Code
+Script
+Dataset
+Activity
+Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you&rsquo;ve done this, be sure to read through the Template for ERP Pre-processing Reporting here (download)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-02-16T15:12:16+08:00" />
-<title>4. Cleaning your data | ERP Resources</title>
+<title>4. High-pass filtering | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.1dba630dc2552267120ee2e74610f2910028f0e2d9bf974dbeb26a165a61b464.css" integrity="sha256-HbpjDcJVImcSDuLnRhDykQAo8OLZv5dNvrJqFlphtGQ=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.25f93317c8f6beeded8d38032917623bfb3f1f77a967e4a3c8551bfb8a7aa52e.js" integrity="sha256-JfkzF8j2vu3tjTgDKRdiO/s/H3epZ&#43;SjyFUb&#43;4p6pS4=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.5c01374cc6988fa143555b386edfff31434be76cac216ecd52d3615ccbca8b84.js" integrity="sha256-XAE3TMaYj6FDVVs4bt//MUNL52ysIW7NUtNhXMvKi4Q=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -160,7 +172,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_3/" class="">3. Resampling and filtering</a>
+    <a href="/erp/docs/table-of-contents/training/part_3/" class="">3. Resampling</a>
   
 
         </li>
@@ -173,7 +185,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_4/" class="active">4. Cleaning your data</a>
+    <a href="/erp/docs/table-of-contents/training/part_4/" class="active">4. High-pass filtering</a>
   
 
         </li>
@@ -186,7 +198,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_5/" class="">5. Run ICA</a>
+    <a href="/erp/docs/table-of-contents/training/part_6/" class="">5. Run ICA</a>
   
 
         </li>
@@ -199,7 +211,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_6/" class="">6. Re-referencing</a>
+    <a href="/erp/docs/table-of-contents/training/part_5/" class="">5. Cleaning your data</a>
   
 
         </li>
@@ -212,7 +224,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_7/" class="">7. Low-pass filter (optional)</a>
+    <a href="/erp/docs/table-of-contents/training/part_8/" class="">7. Low-pass filter (optional)</a>
   
 
         </li>
@@ -225,7 +237,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_8/" class="">8. Epoch your data</a>
+    <a href="/erp/docs/table-of-contents/training/part_7/" class="">7. Re-referencing</a>
   
 
         </li>
@@ -238,7 +250,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_9/" class="">9. Artifact rejection</a>
+    <a href="/erp/docs/table-of-contents/training/part_9/" class="">8. Epoch your data</a>
   
 
         </li>
@@ -251,7 +263,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_10/" class="">10. Averaging</a>
+    <a href="/erp/docs/table-of-contents/training/part_10/" class="">9. Artifact rejection</a>
   
 
         </li>
@@ -264,7 +276,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_11/" class="">11. Create difference waves (optional)</a>
+    <a href="/erp/docs/table-of-contents/training/part_11/" class="">10. Averaging</a>
   
 
         </li>
@@ -277,7 +289,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_12/" class="">12. Grand average</a>
+    <a href="/erp/docs/table-of-contents/training/part_12/" class="">11. Create difference waves (optional)</a>
   
 
         </li>
@@ -290,7 +302,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_13/" class="">What next?</a>
+    <a href="/erp/docs/table-of-contents/training/part_13/" class="">13. Grand average</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_14/" class="">What next?</a>
   
 
         </li>
@@ -381,7 +406,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/researcher_resource/" class="">Resources for researchers</a>
+    <a href="/erp/docs/table-of-contents/researcher_resources/" class="">Resources for researchers</a>
   
 
         </li>
@@ -467,7 +492,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>4. Cleaning your data</strong>
+  <strong>4. High-pass filtering</strong>
 
   <label for="toc-control">
     
@@ -482,46 +507,42 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><br>
-<h4 id="data-cleaning-or-help-my-data-looks-a-mess">
-  Data cleaning (or &lsquo;help, my data looks a mess&rsquo;)
-  <a class="anchor" href="#data-cleaning-or-help-my-data-looks-a-mess">#</a>
+<h4 id="high-pass-filtering">
+  High-pass filtering
+  <a class="anchor" href="#high-pass-filtering">#</a>
 </h4>
-<br>
 <p><u> Intro</u></p>
-<p>Preamble: The most important thing to mention here is that there is no substitute for good quality data. You <em>must</em> ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise. Why? because participants are only human. Give them a break in a testing session and they will almost inevitably move more than you thought humanly possible in the space of 30 seconds.</p>
-<p>So, what should we do, and why do we need to clean our data?</p>
+<p>Filtering is a complex process, and requires some thought and consideration. It&rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.</p>
 <p><u> Video</u></p>
 <p><u> Code</u></p>
-<pre><code>    N/A
-</code></pre>
 <p><u> Script</u></p>
-<pre><code>    N/A
-</code></pre>
 <p><u> Dataset</u></p>
 <p><u> Activity</u></p>
-<p>Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.</p>
+<p>Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you&rsquo;ve done this, be sure to read through the Template for ERP Pre-processing Reporting 
+  <a href="https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/">here</a> (download)., and have a go at filling in the gaps to report the necessary information about the high-pass filter you&rsquo;ve applied to your data.</p>
 <p><u>FAQ</u></p>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Q1</span>
+      <span>I&#39;ve heard the terms &#39;online filter&#39; and &#39;offline filter&#39;. What do these mean?</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      A1.
+      Offline filters refer to pre-processing steps taken subsequent to data acquisition. Online filters are those applied during EEG recording (i.e., by your EEG data acquisition software.).
     </div>
   </label>
 </div>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Q2</span>
+      <span>How do I choose my filter?</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      A2.
+      Filtering is a seemingly simple, but actually incredibly complex element of the pre-processing pipeline. It is important that you have a good understanding of what you&rsquo;re doing to your data, and how you can distort it by using the wrong setting. If you are new to filtering, I <em>strongly</em> recommend that you read Steve Luck&rsquo;s chapter <em>Filtering and Fourier Analysis</em> in his 2014 book 
+  <a href="https://mitpress.mit.edu/9780262525855/an-introduction-to-the-event-related-potential-technique/">An Introduction to the Event-Related Potential Technique</a>.
     </div>
   </label>
 </div>

@@ -7,11 +7,12 @@
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://j-lewen.github.io/erp/docs/table-of-contents/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Resources for researchers</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/</link>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/</guid>
       <description>under construction
+Pre-processing reporting template
 A generic template for reporting ERP pre-processing steps. Note that this template will not suit everyone, and adaptation/amendments/deletions may be required Template for reporting</description>
     </item>
     

@@ -1,20 +1,21 @@
 ---
-title: 5. Run ICA
-weight: 4
+title: 5. Cleaning your data
+weight: 5
 bookToc: false
 ---
 <br>
 
-#### Independent Component Analysis (ICA) (or 'what do I do with all these blinks?')
-<br>
+#### Data cleaning (or 'help, my data looks a mess')
 
+<br>
 <u> Intro</u>
 
-Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a  possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don't be fooled into thinking that ICA is a magic cure with no repercussions.
+Preamble: The most important thing to mention here is that there is no substitute for good quality data. You *must* ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise. Why? because participants are only human. Give them a break in a testing session and they will almost inevitably move more than you thought humanly possible in the space of 30 seconds.
 
-What does ICA do? In short, ICA creates a model of...
+So, what should we do, and why do we need to clean our data?
 
 <u> Video</u>
+
 <u> Code</u>
 
         N/A

@@ -53,19 +53,13 @@ VideoCode [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;EEG = pop_loadcnt(&#39;C:\[D
     </item>
     
     <item>
-      <title>3. Resampling and filtering</title>
+      <title>3. Resampling</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</guid>
-      <description>Resampling &amp;amp; filtering#Two main concepts are introduced in this sections. Firstly, the idea of resampling. Secondly, offline filtering. - high pass vs low pass
-Intro
-Video
-Code
-Script
-Dataset
-Activity
-Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you&amp;rsquo;ve done this, be sure to read through the Template for ERP Pre-processing Reporting [here) (download)., and have a go at filling in the gaps to report the necessary information about the high-pass filter you&amp;rsquo;ve applied to your data.</description>
+      <description>Resampling#IntroResampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:
+How important is it for you to measure the precise onset of your effects? Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount.</description>
     </item>
     
     <item>
@@ -80,32 +74,39 @@ Keil, A., Debener, S., Gratton, G., Junghöfer, M., Kappenman, E. S., Luck, S. J
     </item>
     
     <item>
-      <title>4. Cleaning your data</title>
+      <title>4. High-pass filtering</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</guid>
-      <description>Data cleaning (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#Intro
-Preamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
+      <description>High-pass filtering#Intro
+Filtering is a complex process, and requires some thought and consideration. It&amp;rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
+Video
+Code
+Script
+Dataset
+Activity
+Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you&amp;rsquo;ve done this, be sure to read through the Template for ERP Pre-processing Reporting here (download).</description>
     </item>
     
     <item>
       <title>5. Run ICA</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</link>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
       <description>Independent Component Analysis (ICA) (or &amp;lsquo;what do I do with all these blinks?&amp;rsquo;)#Intro
 Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don&amp;rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions.</description>
     </item>
     
     <item>
       <title>Resources for researchers</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/</link>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/</guid>
       <description>under construction
+Pre-processing reporting template
 A generic template for reporting ERP pre-processing steps. Note that this template will not suit everyone, and adaptation/amendments/deletions may be required Template for reporting</description>
     </item>
     
@@ -130,28 +131,20 @@ Picton, T. W., Bentin, S., Berg, P., Donchin, E., Hillyard, S. A., Johnson Jr, R
     </item>
     
     <item>
-      <title>6. Re-referencing</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
+      <title>5. Cleaning your data</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
-      <description>Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-Video Code
-N/AScript
-N/ADataset
-Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
-FAQ
-How do I choose my offline reference site(s)?</description>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</guid>
+      <description>Data cleaning (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
     </item>
     
     <item>
       <title>7. Low-pass filter (optional)</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</link>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
       <description>Re-referencing#Intro
 Important distinction between online reference and offline reference. #You should report both in your paper#.
 Video
@@ -165,11 +158,28 @@ Q1↕A1.Q2↕A2.</description>
     </item>
     
     <item>
-      <title>8. Epoch your data</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</link>
+      <title>7. Re-referencing</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</guid>
+      <description>Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+Video Code
+N/AScript
+N/ADataset
+Activity
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
+FAQ
+How do I choose my offline reference site(s)?</description>
+    </item>
+    
+    <item>
+      <title>8. Epoch your data</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</guid>
       <description>Epoch (or segment, or &amp;lsquo;cut up&amp;rsquo; your data#Intro
 Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we&amp;rsquo;ve worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long &amp;lsquo;continuous&amp;rsquo; file&amp;hellip;
 See?
@@ -183,10 +193,10 @@ How do I choose my epoch length?↕A1.</description>
     
     <item>
       <title>9. Artifact rejection</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</link>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</guid>
       <description>
 TITLE#Intro
 Video Code
@@ -211,10 +221,10 @@ Journal and conference publications. </description>
     
     <item>
       <title>10. Averaging</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</link>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</guid>
       <description>
 TITLE#Intro
 Video Code
@@ -227,22 +237,6 @@ What is the difference between averaging and grand averaging?↕A1.Q2↕A2.
     
     <item>
       <title>11. Create difference waves (optional)</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</guid>
-      <description>
-TITLE#Intro
-Video Code
-N/AScript
-N/ADataset
-Activity
-FAQ
-Q1↕A1.Q2↕A2.</description>
-    </item>
-    
-    <item>
-      <title>12. Grand average</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -258,11 +252,27 @@ Q1↕A1.Q2↕A2.</description>
     </item>
     
     <item>
-      <title>What next?</title>
+      <title>13. Grand average</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</guid>
+      <description>
+TITLE#Intro
+Video Code
+N/AScript
+N/ADataset
+Activity
+FAQ
+Q1↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>What next?</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_14/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_14/</guid>
       <description>
 TITLE#Intro
 Video Code

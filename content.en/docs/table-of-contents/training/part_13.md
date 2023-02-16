@@ -1,5 +1,5 @@
 ---
-title:  What next?
+title:  13. Grand average
 weight: 13
 bookToc: false
 ---

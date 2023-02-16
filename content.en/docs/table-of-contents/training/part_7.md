@@ -1,6 +1,6 @@
 ---
-title: 7. Low-pass filter (optional)
-weight: 6
+title: 7. Re-referencing
+weight: 7
 bookToc: false
 ---
 <br>
@@ -13,8 +13,6 @@ bookToc: false
 Important distinction between online reference and offline reference. #You should report both in your paper#.
 
 <u> Video</u>
-
-
 <u> Code</u>
 
         N/A
@@ -32,7 +30,7 @@ Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to whe
 
 <u>FAQ</u>
 
-{{% expand "Q1" %}}
+{{% expand "How do I choose my offline reference site(s)?" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}
