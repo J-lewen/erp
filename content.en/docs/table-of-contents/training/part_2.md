@@ -47,7 +47,7 @@ Have a go at importing Dataset #1 into EEGLAB using both the user interface and 
 Ensure that you are attempting to import the correct file type. Remember that the instructions here are for .CNT file types, but the steps themselves transferable across a range of file types.{{% /expand %}}
 
 {{% expand "My dataset isn't in any of the listed formats. What should I do?" %}}
-Most data acquisition software offers the ability to convert your file type. For example, I use software that produces a range of files that are incompatible with EEGLAB. However, I am able to save these files in a compatible format within the acquisition software. If you're unsure of how to do this, speak to you EEG technicial, researchers around you, or (always a decent resort), Google.{{% /expand %}}
+Most data acquisition software offers the ability to convert your file type. For example, I use software that produces a range of files that are incompatible with EEGLAB. However, I am able to save these files in a compatible format within the acquisition software. If you're unsure of how to do this, speak to your EEG technician, researchers around you, or (always a decent resort), Google.{{% /expand %}}
 
 {{% expand "I tried to run the script but it didn't work. Help!" %}}
 Ensure you've read the 'Scripts: Essential Information' page, which provides further information on the file and folder structures necessary to run scripts available on this site. Always check that your path to the experiment folder and EEGLAB are correct{{% /expand %}}

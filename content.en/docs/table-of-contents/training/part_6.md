@@ -26,7 +26,7 @@ Important distinction between online reference and offline reference. #You shoul
 
 <u> Activity</u>
 
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don't unnecessarily remove trials by removing data that falls into the basline period, or epoch of interest.
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don't unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
 
 <u>FAQ</u>
 

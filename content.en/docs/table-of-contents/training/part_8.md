@@ -10,7 +10,7 @@ bookToc: false
 
 <u> Intro</u>
 
-Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we've worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long 'continous' file...
+Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we've worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long 'continuous' file...
 
 
 

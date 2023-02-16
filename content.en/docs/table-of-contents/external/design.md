@@ -9,7 +9,7 @@ bookToc: false
   
 ### **Thinking about your design**
 <br>
-Designing you study is a key element of ERP research design. Multiple considerations can guide your design to ensure that valuable time spent aquiring, pre-processing and analysing data produces valuable (and hopefully publishable) results.
+Designing you study is a key element of ERP research design. Multiple considerations can guide your design to ensure that valuable time spent acquiring, pre-processing and analysing data produces valuable (and hopefully publishable) results.
 
 Whilst I list a number of resources here, one main considerations that most ERP research overlooks one important principle. Termed the **Hillyard Principle** (see [Luck, 2014](https://mitpress.mit.edu/9780262525855/an-introduction-to-the-event-related-potential-technique/)), by Steve Luck, the basic premise that ERP responses should be elicited by stimuli that are - in principle - physically identical. Many ERP studies violate this principle, mostly because it is usually far easier to create stimuli that do not adhere to it. 
 
@@ -21,7 +21,7 @@ Whilst I list a number of resources here, one main considerations that most ERP 
 >
 >**Unrelated**: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*apple*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*garage*
 
-Here, my targets (which I'll measure my ERP response to) are psysically different. This introduces a potential secondary factor that might influence any results I find. Instead of being able to attribute any differences in my ERPs to related vs unrelated words, it's very possible that a host of features (including the word length, orthography, frequency... etc. etc.) might actually be the driving force behind any differences I find. Instead I could improve my design as follows:
+Here, my targets (which I'll measure my ERP response to) are physically different. This introduces a potential secondary factor that might influence any results I find. Instead of being able to attribute any differences in my ERPs to related vs unrelated words, it's very possible that a host of features (including the word length, orthography, frequency... etc. etc.) might actually be the driving force behind any differences I find. Instead I could improve my design as follows:
 
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prime&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Target
 >
