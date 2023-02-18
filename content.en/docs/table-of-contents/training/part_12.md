@@ -1,6 +1,6 @@
 ---
-title: 12. Create difference waves (optional)
-weight: 12
+title: 11. Averaging
+weight: 11
 bookToc: false
 ---
 <br>
@@ -19,7 +19,9 @@ bookToc: false
 
 <u> Script</u>
 
-        N/A
+ [Script #9](/erp/files/script_9.zip) (download).
+
+ [Script #9](/erp/files/script_9.m) (view).
 
 <u> Dataset</u>
 
@@ -27,10 +29,11 @@ To run this operation via the user interface, the example data set (used in the 
 
 <u> Activity</u>
 
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 
 <u>FAQ</u>
 
-{{% expand "Q1" %}}
+{{% expand "What is the difference between averaging and grand averaging?" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}

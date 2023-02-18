@@ -1,22 +1,31 @@
 ---
-title: 4. High-pass filtering
+title: 4. Resampling
 weight: 4
 bookToc: false
 ---
 <br>
 
-#### High-pass filtering
+#### Resampling
 
-
+<br>
 <u> Intro</u>
 
-Filtering is a complex process, and requires some thought and consideration. It's important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
+Resampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:
 
+1. How important is it for you to measure the precise onset of your effects? 
+
+Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount. For example, by resampling my data down to 250 Hz I introduce an error of ±2 ms. This is fine for the research I do, but if you're interested in super precise comparisons of the onset of an effect for which 2 ms error would be problematic, you'll want to keep your sampling rate higher. However, this brings us to the next consideration...
+
+2. How much space do you have on your computer?
+
+EEG datasets are typically quite big. Usually you need a reasonable number of them. If you want to run two studies that are both about an hour long, with 40 participants for each and to keep you data at a sampling rate of 1000 Hz, you're going to quickly use up a lot of space on your computer. Beyond this, your pre-processing is going to take longer. For simple things such as re-referencing your sampling rate won't make much difference, but for more complex processes such as artifact correction, the increase in time can be quite significant. If you can afford to lose a little bit of temporal resolution, it's usually worthwhile resampling to a lower rate.
+
+<br>
 <u> Video</u>
 
 <u> Code</u>
 
-        EEG  = pop_basicfilter( EEG,  [1:NUMBER OF ELECTRODES] , 'Boundary', 'boundary', 'Cutoff',  0.1, 'Design', 'butter', 'Filter', 'highpass', 'Order',  2 ); 
+        EEG = pop_resample( EEG, 250);
 
 <u> Script</u>
 
@@ -24,25 +33,17 @@ Filtering is a complex process, and requires some thought and consideration. It'
 
  [Script #3](/erp/files/script_3.m) (view).
 
-Note that to run this script you should use [Dataset #1](https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link) in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)
-
-https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1
+ Note that to run this script you should use [Dataset #1](https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link) in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)
 
 <u> Dataset</u>
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/1d8RjgSe1gE97YVfmTB5wQbbsxlYkYgW1)
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/12fPqAJYsl4XoN1c-n1Sb5V52S29NwHWE).
 
 <u> Activity</u>
 
-Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you've done this, be sure to read through the Template for ERP Pre-processing Reporting [here](https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/) (download)., and have a go at filling in the gaps to report the necessary information about the high-pass filter you've applied to your data.
+Have a go at resampling the dataset provided, both via the user interface and using the available script. Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 
 <u>FAQ</u>
 
-{{% expand "I've heard the terms 'online filter' and 'offline filter'. What do these mean?" %}}
-Offline filters refer to pre-processing steps taken subsequent to data acquisition. Online filters are those applied during EEG recording (i.e., by your EEG data acquisition software.).{{% /expand %}}
-
-{{% expand "Can I use a different half-amplitude cut-off?" %}}
-Yes, but be careful with what you're doing, and be sure to read the recommended resources in "What should I know about filtering" below. For a High-pass filter, you can use anything from 0.01 to 0.1 Hz (half-amplitude). A higher cut-off is better for datasets with more muscle artifacts, whilst if your data is pretty clean you might want to sway closer to 0.05 or 0.01 Hz.{{% /expand %}}
-
-{{% expand "What should I know about filtering?" %}}
-Filtering is a seemingly simple, but actually incredibly complex element of the pre-processing pipeline. It is important that you have a good understanding of what you're doing to your data, and how you can distort it by using the wrong setting. If you are new to filtering, I *strongly* recommend that you read Steve Luck's chapter *Filtering and Fourier Analysis* in his 2014 book [An Introduction to the Event-Related Potential Technique](https://mitpress.mit.edu/9780262525855/an-introduction-to-the-event-related-potential-technique/).{{% /expand %}}
+{{% expand "Can I resample to a different sampling rate than 250 Hz?" %}}
+For most experiments, a sampling rate of somewhere between 200 - 1000 Hz is ok. Lower sampling rates will mean that your data files are smaller, and processes steps such as ICA run faster. Higher sampling rates make your datasets larger, but give you more fine-grain detail, which can be particularly useful if you want to explore the latency of a response.{{% /expand %}}

@@ -1,6 +1,6 @@
 ---
-title:  What next?
-weight: 14
+title:  13. Grand average
+weight: 13
 bookToc: false
 ---
 <br>
@@ -19,12 +19,17 @@ bookToc: false
 
 <u> Script</u>
 
-        N/A
+  [Script #11](/erp/files/script_11.zip) (download).
+
+ [Script #11](/erp/files/script_11.m) (view).
 
 <u> Dataset</u>
 
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here]()
 
 <u> Activity</u>
+
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 
 
 <u>FAQ</u>

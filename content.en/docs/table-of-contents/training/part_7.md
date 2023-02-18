@@ -1,16 +1,18 @@
 ---
-title: 7. Re-referencing
-weight: 7
+title: 6. Run ICA
+weight: 6
 bookToc: false
 ---
 <br>
 
-#### Re-referencing
+#### Independent Component Analysis (ICA) (or 'what do I do with all these blinks?')
 <br>
 
 <u> Intro</u>
 
-Important distinction between online reference and offline reference. #You should report both in your paper#.
+Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a  possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don't be fooled into thinking that ICA is a magic cure with no repercussions.
+
+What does ICA do? In short, ICA creates a model of...
 
 <u> Video</u>
 <u> Code</u>
@@ -19,7 +21,9 @@ Important distinction between online reference and offline reference. #You shoul
 
 <u> Script</u>
 
-        N/A
+ [Script #4](/erp/files/script_4.zip) (download).
+
+ [Script #4](/erp/files/script_4.m) (view).
 
 <u> Dataset</u>
 
@@ -27,11 +31,11 @@ To run this operation via the user interface, the example data set (used in the 
 
 <u> Activity</u>
 
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don't unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 
 <u>FAQ</u>
 
-{{% expand "How do I choose my offline reference site(s)?" %}}
+{{% expand "Q1" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}

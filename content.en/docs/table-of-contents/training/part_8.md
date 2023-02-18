@@ -1,6 +1,6 @@
 ---
-title: 8. Low-pass filter (optional)
-weight: 8
+title: 7. Re-referencing
+weight: 7
 bookToc: false
 ---
 <br>
@@ -13,15 +13,15 @@ bookToc: false
 Important distinction between online reference and offline reference. #You should report both in your paper#.
 
 <u> Video</u>
-
-
 <u> Code</u>
 
         N/A
 
 <u> Script</u>
 
-        N/A
+ [Script #5](/erp/files/script_5.zip) (download).
+
+ [Script #5](/erp/files/script_5.m) (view).
 
 <u> Dataset</u>
 
@@ -29,11 +29,11 @@ To run this operation via the user interface, the example data set (used in the 
 
 <u> Activity</u>
 
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don't unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 
 <u>FAQ</u>
 
-{{% expand "Q1" %}}
+{{% expand "How do I choose my offline reference site(s)?" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}

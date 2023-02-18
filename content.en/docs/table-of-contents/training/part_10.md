@@ -1,14 +1,23 @@
 ---
-title: 10. Artifact rejection
-weight: 10
+title: 9. Epoch your data
+weight: 9
 bookToc: false
 ---
 <br>
 
-#### TITLE
+#### Epoch (or segment, or 'cut up' your data 
 <br>
 
 <u> Intro</u>
+
+Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we've worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long 'continuous' file...
+
+
+
+ ![Waves](/erp/images/epoch.png)
+
+
+See?
 
 
 
@@ -19,7 +28,9 @@ bookToc: false
 
 <u> Script</u>
 
-        N/A
+ [Script #7](/erp/files/script_7.zip) (download).
+
+ [Script #7](/erp/files/script_7.m) (view).
 
 <u> Dataset</u>
 
@@ -27,10 +38,12 @@ To run this operation via the user interface, the example data set (used in the 
 
 <u> Activity</u>
 
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
+
 
 <u>FAQ</u>
 
-{{% expand "Q1" %}}
+{{% expand "How do I choose my epoch length?" %}}
 A1.{{% /expand %}}
 
 {{% expand "Q2" %}}

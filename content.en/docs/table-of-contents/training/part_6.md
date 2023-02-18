@@ -1,35 +1,63 @@
 ---
-title: 6. Run ICA
-weight: 6
+title: 5. Cleaning your data & interpolation
+weight: 5
 bookToc: false
 ---
 <br>
 
-#### Independent Component Analysis (ICA) (or 'what do I do with all these blinks?')
-<br>
+#### Data cleaning (or 'help, my data looks a mess')
 
+<br>
 <u> Intro</u>
 
-Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a  possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don't be fooled into thinking that ICA is a magic cure with no repercussions.
+Preamble: The most important thing to mention here is that there is no substitute for good quality data. You *must* ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise. Why? because participants are only human. Give them a break in a testing session and they will almost inevitably move more than you thought humanly possible in the space of 30 seconds.
 
-What does ICA do? In short, ICA creates a model of...
+So, what should we do, why do we need to clean our data, and what is interpolation? Let's start first with a general walk-through of the data cleaning process.
 
 <u> Video</u>
-<u> Code</u>
 
-        N/A
+XXX
 
-<u> Script</u>
+Now you have a more general idea of what cleaning is and how it works, **But** there are some important implications of how you choose to clean your data that you may wish to take into consideration at this stage. Select the scenario that best describes your experiment in order to proceed:
 
-        N/A
+{{% expand "My study does not include a participant response, or I do not care about filtering my data based on response accuracy" %}}
+
+This is possibly the easiest scenario. You can go ahead and clean your dataset as you wish. Try not to remove too many trials unnecessarily (i.e., take into consideration the epoch length so that you don't accidentally cut data too close to the baseline period or end of an epoch and accidentally reject trials).
 
 <u> Dataset</u>
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here]()
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
+{{% /expand %}}
+
+{{% expand "My study does include a participant response and care about accuracy. The response type is indicated by a trigger in the data" %}}
+
+This is also a good scenario. But now you need to be careful. If you remove a period of interest that contains a response trigger, you will no longer have a response for a given trial. If you decide to remove messy data that falls around a condition trigger or response trigger, be sure to remove both triggers to be on the safe side.
+
+<u> Dataset</u>
+
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
+
+{{% /expand %}}
+
+{{% expand "My study does include a participant response and care about accuracy. The response type is indicated in the corresponding log file" %}}
+
+This is possibly the most complicated scenario. ow you need to be careful. If you remove a period of interest that contains a response trigger, you will no longer have a response for a given trial. If you decide to remove messy data that falls around a condition trigger or response trigger, be sure to remove both triggers to be on the safe side.
+
+<u> Dataset</u>
+
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
+
+{{% /expand %}}
+
+<br>
+
+Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them.
+
+Interpolation - put simply - involves recreating one electrode from its surrounding electrodes.
 
 <u> Activity</u>
 
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don't unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don't unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest. Make sure you save your file at the end of cleaning so as not to lose your changes.
 
 <u>FAQ</u>
 
