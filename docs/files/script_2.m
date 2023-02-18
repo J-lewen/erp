@@ -16,7 +16,7 @@ addpath(pathtoeeglab);
 
 %%% List your participants. Each participant should have a new line, with
 %%% the structure badchans.[dataset name] = { };
-%%% e.g., badchans.[Dataset_1] = { };
+%%% e.g., badchans.[Dataset_reampling] = { };
 badchans.[ENTER YOUR DATASET NAME HERE];
 
 %%% tells MATLAB what the subject (dataset) names are
@@ -47,15 +47,21 @@ for n = 1:length(subjects)
         [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,'setname',subject,'gui','off'); 
         EEG = eeg_checkset( EEG );
         
-        EEG = eeg_checkset( EEG );
+        %Resample
+        %%% here '250' refers to our new sampling rate. If you want to use
+        %%% a different sampling rate, change this number.
         EEG = pop_resample( EEG, 250);
-[ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 1,'setname','Dataset_1_250','gui','off'); 
-EEG  = pop_basicfilter( EEG,  1:68 , 'Boundary', 'boundary', 'Cutoff',  0.1, 'Design', 'butter', 'Filter', 'highpass', 'Order',  2 ); % GUI: 18-Feb-2023 09:58:12
-[ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 2,'gui','off'); 
-        
     
+        %High-pass filter
+        EEG  = pop_basicfilter( EEG,  1:68 , 'Boundary', 'boundary', 'Cutoff',  0.1, 'Design', 'butter', 'Filter', 'highpass', 'Order',  2 ); % GUI: 18-Feb-2023 09:58:12
+        
+        
 end;
 
-%%% IMPORTANT: it will seem like nothing exciting has happened here. 
-%%% But if in your workspace you now see the structures such as 'subjects' 
-%%% and 'badchans', then this has worked.
+%%% IMPORTANT: Again, it will seem like nothing exciting has happened here. 
+%%% But if you want to check it has worked, you can save the dataset by
+%%% using the following code, and check its sampling rate:
+%%% EEG = eeg_checkset( EEG );
+%%% EEG = pop_saveset( EEG, 'filename','(FILENAME HERE).set','filepath','[ADDRESS ON YOUR COMPUTER HERE]');
+%%% [ALLEEG EEG] = eeg_store(ALLEEG, EEG, CURRENTSET);
+

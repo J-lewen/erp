@@ -20,14 +20,24 @@ Typically, I want to know roughly when my effects begin and end. By reducing the
 
 EEG datasets are typically quite big. Usually you need a reasonable number of them. If you want to run two studies that are both about an hour long, with 40 participants for each and to keep you data at a sampling rate of 1000 Hz, you're going to quickly use up a lot of space on your computer. Beyond this, your pre-processing is going to take longer. For simple things such as re-referencing your sampling rate won't make much difference, but for more complex processes such as artifact correction, the increase in time can be quite significant. If you can afford to lose a little bit of temporal resolution, it's usually worthwhile resampling to a lower rate.
 
-
+<br>
 <u> Video</u>
 
 <u> Code</u>
 
+        EEG = pop_resample( EEG, 250);
+
 <u> Script</u>
 
+ [Script #2](/erp/files/script_2.zip) (download).
+
+ [Script #2](/erp/files/script_2.m) (view).
+
+ Note that to run this script you should use [Dataset #1](https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link) in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)
+
 <u> Dataset</u>
+
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/12fPqAJYsl4XoN1c-n1Sb5V52S29NwHWE).
 
 <u> Activity</u>
 

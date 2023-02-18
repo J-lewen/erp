@@ -26,6 +26,7 @@ So, what should we do, and why do we need to clean our data?
 
 <u> Dataset</u>
 
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
 
 <u> Activity</u>
 

@@ -18,7 +18,7 @@ How important is it for you to measure the precise onset of your effects? Typica
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.3278d6b577a62bca87586cefc749444c8e74a7cc79076b48466b8c24bc5237a6.js" integrity="sha256-MnjWtXemK8qHWGzvx0lETI50p8x5B2tIRmuMJLxSN6Y=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.4a1a8655683471b335d4376f212447ee9591defdc642915b4f6151d9061f781b.js" integrity="sha256-ShqGVWg0cbM11DdvISRH7pWR3v3GQpFbT2FR2QYfeBs=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -510,10 +510,21 @@ https://github.com/alex-shpak/hugo-book
 <li>How much space do you have on your computer?</li>
 </ol>
 <p>EEG datasets are typically quite big. Usually you need a reasonable number of them. If you want to run two studies that are both about an hour long, with 40 participants for each and to keep you data at a sampling rate of 1000 Hz, you&rsquo;re going to quickly use up a lot of space on your computer. Beyond this, your pre-processing is going to take longer. For simple things such as re-referencing your sampling rate won&rsquo;t make much difference, but for more complex processes such as artifact correction, the increase in time can be quite significant. If you can afford to lose a little bit of temporal resolution, it&rsquo;s usually worthwhile resampling to a lower rate.</p>
-<p><u> Video</u></p>
+<br>
+<u> Video</u>
 <p><u> Code</u></p>
+<pre><code>    EEG = pop_resample( EEG, 250);
+</code></pre>
 <p><u> Script</u></p>
+<p>
+  <a href="/erp/files/script_2.zip">Script #2</a> (download).</p>
+<p>
+  <a href="/erp/files/script_2.m">Script #2</a> (view).</p>
+<p>Note that to run this script you should use 
+  <a href="https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link">Dataset #1</a> in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)</p>
 <p><u> Dataset</u></p>
+<p>To run this operation via the user interface, the example data set (used in the above video) can be downloaded 
+  <a href="https://drive.google.com/drive/folders/12fPqAJYsl4XoN1c-n1Sb5V52S29NwHWE">here</a>.</p>
 <p><u> Activity</u></p>
 <p><u>FAQ</u></p>
 <div class="book-expand">

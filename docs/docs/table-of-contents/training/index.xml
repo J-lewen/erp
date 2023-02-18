@@ -45,10 +45,10 @@ How important is it for you to measure the precise onset of your effects? Typica
 Filtering is a complex process, and requires some thought and consideration. It&amp;rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
 Video
 Code
-Script
-Dataset
-Activity
-Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you&amp;rsquo;ve done this, be sure to read through the Template for ERP Pre-processing Reporting here (download).</description>
+EEG = pop_basicfilter( EEG, [1:NUMBER OF ELECTRODES] , &#39;Boundary&#39;, &#39;boundary&#39;, &#39;Cutoff&#39;, 0.1, &#39;Design&#39;, &#39;butter&#39;, &#39;Filter&#39;, &#39;highpass&#39;, &#39;Order&#39;, 2 ); Script
+Script #3 (download).
+Script #3 (view).
+Note that to run this script you should use [Dataset #1] in its original .</description>
     </item>
     
     <item>

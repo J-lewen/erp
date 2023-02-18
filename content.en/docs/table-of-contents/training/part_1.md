@@ -18,7 +18,7 @@ Next, you'll need to download [EEGLAB](https://sccn.ucsd.edu/eeglab/download.php
 
 > **Steps**: Download EEGLAB from the above link. Extract the folder, then open MATLAB. Navigate to 'set path', which you can find in the Home tab in the Environment section. Select 'Add Folder' and navigate to the EEGLAB folder. You may then wish to select EEGLAB in the 'MATLAB search path' list and move it to the top, with the help of the 'Move to top' button on the left-hand side. For more details, click [here](https://sccn.ucsd.edu/eeglab/downloadtoolbox.php/download.php)
 
-Finally, you will need to download [ERPLAB](https://github.com/lucklab/erplab/releases), some more great open-access software that will enable you to conduct pretty much any pre-processing operation you could want.
+Finally, you will need to download the [ERPLAB](https://github.com/lucklab/erplab/releases) toolbox, some more great open-access software that will enable you to conduct pretty much any pre-processing operation you could want. To learn more about ERPLAB, have a read through [this article](https://www.frontiersin.org/articles/10.3389/fnhum.2014.00213/full) by Lopex-Calderon & Luck.
 
 > **Steps**: Download ERPLAB from the above link. Extract the folder, Then place the extracted ERPLAB folder into your EEGLAB plugins folder.         
 >

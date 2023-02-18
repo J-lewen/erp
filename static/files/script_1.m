@@ -47,6 +47,12 @@ for n = 1:length(subjects)
         [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,'setname',subject,'gui','off'); 
         EEG = eeg_checkset( EEG );
         
+        EEG = eeg_checkset( EEG );
+        EEG = pop_resample( EEG, 250);
+[ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 1,'setname','Dataset_1_250','gui','off'); 
+EEG  = pop_basicfilter( EEG,  1:68 , 'Boundary', 'boundary', 'Cutoff',  0.1, 'Design', 'butter', 'Filter', 'highpass', 'Order',  2 ); % GUI: 18-Feb-2023 09:58:12
+[ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 2,'gui','off'); 
+        
     
 end;
 
