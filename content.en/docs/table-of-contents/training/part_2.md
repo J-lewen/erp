@@ -19,7 +19,6 @@ Now you've got ERPLAB up and running, it's time to have a look at some data! But
 
 <u> Code </u>
 
-      [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;
         EEG = pop_loadcnt('C:\[DATASET ADDRESS]\[DATASET NAME].cnt' , 'dataformat', 'auto', 'memmapfile', '');      
         [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,'setname','[DATASET NAME FOR ERPLAB]','gui','off'); 
         
@@ -28,12 +27,12 @@ Now you've got ERPLAB up and running, it's time to have a look at some data! But
 
  [Script #1](/erp/files/script_1.zip) (download).
 
-  [Script #1](/erp/files/script_1.m) (view).
+ [Script #1](/erp/files/script_1.m) (view).
 
 <br>
 <u> Dataset</u> 
 
-The example data set used in the above video (Dataset #1) can be downloaded [here](https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link).
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link).
 
 <br>
 <u>Activity</u>
