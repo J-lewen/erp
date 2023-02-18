@@ -4,21 +4,21 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Importing data (or &lsquo;help, how do I get my data into ERPLAB?&rsquo;)#IntroNow you&rsquo;ve got ERPLAB up and running, it&rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place?
-VideoCode [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download).">
+VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download).">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="2. Import data" />
 <meta property="og:description" content="Importing data (or &lsquo;help, how do I get my data into ERPLAB?&rsquo;)#IntroNow you&rsquo;ve got ERPLAB up and running, it&rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place?
-VideoCode [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download)." />
+VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-02-16T15:12:16+08:00" />
+<meta property="article:modified_time" content="2023-02-18T12:30:11+08:00" />
 <title>2. Import data | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.4a1a8655683471b335d4376f212447ee9591defdc642915b4f6151d9061f781b.js" integrity="sha256-ShqGVWg0cbM11DdvISRH7pWR3v3GQpFbT2FR2QYfeBs=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.16c943a329577624a1bff707f495f758c3f066f28b743757fb8fa062db6e4b9b.js" integrity="sha256-FslDoylXdiShv/cH9JX3WMPwZvKLdDdX&#43;4&#43;gYttuS5s=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -510,8 +510,7 @@ https://github.com/alex-shpak/hugo-book
 </div>
 
 <p><u> Code </u></p>
-<pre><code>  [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;
-    EEG = pop_loadcnt('C:\[DATASET ADDRESS]\[DATASET NAME].cnt' , 'dataformat', 'auto', 'memmapfile', '');      
+<pre><code>    EEG = pop_loadcnt('C:\[DATASET ADDRESS]\[DATASET NAME].cnt' , 'dataformat', 'auto', 'memmapfile', '');      
     [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,'setname','[DATASET NAME FOR ERPLAB]','gui','off'); 
 </code></pre>
 <br>
@@ -522,7 +521,7 @@ https://github.com/alex-shpak/hugo-book
   <a href="/erp/files/script_1.m">Script #1</a> (view).</p>
 <br>
 <u> Dataset</u> 
-<p>The example data set used in the above video (Dataset #1) can be downloaded 
+<p>To run this operation via the user interface, the example data set (used in the above video) can be downloaded 
   <a href="https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link">here</a>.</p>
 <br>
 <u>Activity</u>

@@ -31,7 +31,7 @@ Firstly, MATLAB. MATLAB is a very powerful (see also &amp;lsquo;very expensive&a
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/</guid>
       <description>Importing data (or &amp;lsquo;help, how do I get my data into ERPLAB?&amp;rsquo;)#IntroNow you&amp;rsquo;ve got ERPLAB up and running, it&amp;rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place?
-VideoCode [ALLEEG EEG CURRENTSET ALLCOM] = eeglab;EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download).</description>
+VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download).</description>
     </item>
     
     <item>
@@ -86,7 +86,7 @@ Code
 EEG = pop_basicfilter( EEG, [1:NUMBER OF ELECTRODES] , &#39;Boundary&#39;, &#39;boundary&#39;, &#39;Cutoff&#39;, 0.1, &#39;Design&#39;, &#39;butter&#39;, &#39;Filter&#39;, &#39;highpass&#39;, &#39;Order&#39;, 2 ); Script
 Script #3 (download).
 Script #3 (view).
-Note that to run this script you should use [Dataset #1] in its original .</description>
+Note that to run this script you should use Dataset #1 in its original .</description>
     </item>
     
     <item>
@@ -150,10 +150,9 @@ Important distinction between online reference and offline reference. #You shoul
 Video Code
 N/AScript
 N/ADataset
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
-FAQ
-How do I choose my offline reference site(s)?</description>
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.</description>
     </item>
     
     <item>
@@ -168,10 +167,9 @@ Video
 Code
 N/AScript
 N/ADataset
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
-FAQ
-Q1↕A1.Q2↕A2.</description>
+Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.</description>
     </item>
     
     <item>
@@ -186,9 +184,7 @@ See?
 Video Code
 N/AScript
 N/ADataset
-Activity
-FAQ
-How do I choose my epoch length?↕A1.</description>
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here</description>
     </item>
     
     <item>
@@ -214,6 +210,7 @@ TITLE#Intro
 Video Code
 N/AScript
 N/ADataset
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
 FAQ
 Q1↕A1.Q2↕A2.</description>
@@ -230,6 +227,7 @@ TITLE#Intro
 Video Code
 N/AScript
 N/ADataset
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
 FAQ
 What is the difference between averaging and grand averaging?↕A1.Q2↕A2.</description>
@@ -246,6 +244,7 @@ TITLE#Intro
 Video Code
 N/AScript
 N/ADataset
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
 FAQ
 Q1↕A1.Q2↕A2.</description>
@@ -262,6 +261,7 @@ TITLE#Intro
 Video Code
 N/AScript
 N/ADataset
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
 FAQ
 Q1↕A1.Q2↕A2.</description>
