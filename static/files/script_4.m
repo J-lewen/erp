@@ -57,17 +57,21 @@ for n = 1:length(subjects)
         %Resample
         %%% here '250' refers to our new sampling rate. If you want to use a different sampling rate, change this number.
         EEG = pop_resample( EEG, 250);
-
+    
+        %High-pass filter
+        %%% The filter works as follows: 
+        %%% EEG  = pop_basicfilter( EEG,  [HOW MANY ELECTODES - ie. 1:67, OR 1:34],
+        %%% 'Boundary', 'boundary', 'Cutoff',  [THE HALF-AMP CUT-OFF YOU WANT, i.e. 0.01, OR 0.1], 
+        %%% 'Design', '[WHICH TYPE OF FILTER]', 'Filter', '[HIGHPASS OR LOWPASS]', 'Order',  [FILTER ORDER] ); 
+        EEG  = pop_basicfilter( EEG,  1:67 , 'Boundary', 'boundary', 'Cutoff',  0.1, 'Design', 'butter', 'Filter', 'highpass', 'Order',  2 ); 
+       
         
-%%% IMPORTANT: Again, it will seem like nothing exciting has happened here. 
-%%% But if you want to check it has worked, you can save the dataset by
-%%% using the following code, and open it in the user interface to check 
-%%% that sampling rate has changed:
-
-%%% EEG = eeg_checkset( EEG );
-%%% EEG = pop_saveset( EEG, 'filename','(FILENAME HERE).set','filepath','[ADDRESS ON YOUR COMPUTER HERE]');
-%%% [ALLEEG EEG] = eeg_store(ALLEEG, EEG, CURRENTSET);    
-
 end;
 
- 
+%%% IMPORTANT: Again, it will seem like nothing exciting has happened here. 
+%%% But if you want to check it has worked, you can save the dataset by
+%%% using the following code, and check its sampling rate:
+%%% EEG = eeg_checkset( EEG );
+%%% EEG = pop_saveset( EEG, 'filename','(FILENAME HERE).set','filepath','[ADDRESS ON YOUR COMPUTER HERE]');
+%%% [ALLEEG EEG] = eeg_store(ALLEEG, EEG, CURRENTSET);
+

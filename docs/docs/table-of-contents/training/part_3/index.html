@@ -3,22 +3,26 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Resampling#IntroResampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:
-How important is it for you to measure the precise onset of your effects? Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount.">
+<meta name="description" content="Channel locations#IntroSo you&rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers), and how many you have in total.
+VideoCode EEG=pop_chanedit(EEG, &#39;lookup&#39;,[pathtoeeglab &#39;\\plugins\\[CHANNEL ADDRESS]]&#39;]);ScriptScript #2 (download).
+Script #2 (view).
+Dataset To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded here.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="3. Resampling" />
-<meta property="og:description" content="Resampling#IntroResampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:
-How important is it for you to measure the precise onset of your effects? Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="3. Setting channel locations" />
+<meta property="og:description" content="Channel locations#IntroSo you&rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers), and how many you have in total.
+VideoCode EEG=pop_chanedit(EEG, &#39;lookup&#39;,[pathtoeeglab &#39;\\plugins\\[CHANNEL ADDRESS]]&#39;]);ScriptScript #2 (download).
+Script #2 (view).
+Dataset To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded here." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-02-18T12:46:23+08:00" />
-<title>3. Resampling | ERP Resources</title>
+<title>3. Setting channel locations | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.16c943a329577624a1bff707f495f758c3f066f28b743757fb8fa062db6e4b9b.js" integrity="sha256-FslDoylXdiShv/cH9JX3WMPwZvKLdDdX&#43;4&#43;gYttuS5s=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.c8ab37246ea35f06bed1ddcaaaf716b246dbbd5cee7f0807eaf9831cfb22ddca.js" integrity="sha256-yKs3JG6jXwa&#43;0d3KqvcWskbbvVzufwgH6vmDHPsi3co=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -147,7 +151,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_2/" class="">2. Import data</a>
+    <a href="/erp/docs/table-of-contents/training/part_2/" class="">2. Importing data</a>
   
 
         </li>
@@ -160,7 +164,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_3/" class="active">3. Resampling</a>
+    <a href="/erp/docs/table-of-contents/training/part_3/" class="active">3. Setting channel locations</a>
   
 
         </li>
@@ -173,7 +177,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_4/" class="">4. High-pass filtering</a>
+    <a href="/erp/docs/table-of-contents/training/part_4/" class="">4. Resampling</a>
   
 
         </li>
@@ -186,7 +190,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_5/" class="">5. Cleaning your data</a>
+    <a href="/erp/docs/table-of-contents/training/part_6/" class="">5. Cleaning your data &amp; interpolation</a>
   
 
         </li>
@@ -199,7 +203,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_6/" class="">6. Run ICA</a>
+    <a href="/erp/docs/table-of-contents/training/part_5/" class="">5. High-pass filtering</a>
   
 
         </li>
@@ -212,7 +216,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_7/" class="">7. Re-referencing</a>
+    <a href="/erp/docs/table-of-contents/training/part_7/" class="">6. Run ICA</a>
   
 
         </li>
@@ -225,7 +229,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_8/" class="">8. Low-pass filter (optional)</a>
+    <a href="/erp/docs/table-of-contents/training/part_8/" class="">7. Re-referencing</a>
   
 
         </li>
@@ -238,7 +242,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_9/" class="">9. Epoch your data</a>
+    <a href="/erp/docs/table-of-contents/training/part_9/" class="">8. Low-pass filter (optional)</a>
   
 
         </li>
@@ -251,7 +255,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_10/" class="">10. Artifact rejection</a>
+    <a href="/erp/docs/table-of-contents/training/part_10/" class="">9. Epoch your data</a>
   
 
         </li>
@@ -264,7 +268,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_11/" class="">11. Averaging</a>
+    <a href="/erp/docs/table-of-contents/training/part_11/" class="">10. Artifact rejection</a>
   
 
         </li>
@@ -277,7 +281,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_12/" class="">12. Create difference waves (optional)</a>
+    <a href="/erp/docs/table-of-contents/training/part_12/" class="">11. Averaging</a>
   
 
         </li>
@@ -290,7 +294,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_13/" class="">13. Grand average</a>
+    <a href="/erp/docs/table-of-contents/training/part_13/" class="">12. Create difference waves (optional)</a>
   
 
         </li>
@@ -303,7 +307,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_14/" class="">What next?</a>
+    <a href="/erp/docs/table-of-contents/training/part_14/" class="">13. Grand average</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_15/" class="">What next?</a>
   
 
         </li>
@@ -480,7 +497,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>3. Resampling</strong>
+  <strong>3. Setting channel locations</strong>
 
   <label for="toc-control">
     
@@ -495,47 +512,66 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><br>
-<h4 id="resampling">
-  Resampling
-  <a class="anchor" href="#resampling">#</a>
+<h4 id="channel-locations">
+  Channel locations
+  <a class="anchor" href="#channel-locations">#</a>
 </h4>
 <br>
-<u> Intro</u>
-<p>Resampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:</p>
-<ol>
-<li>How important is it for you to measure the precise onset of your effects?</li>
-</ol>
-<p>Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount. For example, by resampling my data down to 250 Hz I introduce an error of ±2 ms. This is fine for the research I do, but if you&rsquo;re interested in super precise comparisons of the onset of an effect for which 2 ms error would be problematic, you&rsquo;ll want to keep your sampling rate higher. However, this brings us to the next consideration&hellip;</p>
-<ol start="2">
-<li>How much space do you have on your computer?</li>
-</ol>
-<p>EEG datasets are typically quite big. Usually you need a reasonable number of them. If you want to run two studies that are both about an hour long, with 40 participants for each and to keep you data at a sampling rate of 1000 Hz, you&rsquo;re going to quickly use up a lot of space on your computer. Beyond this, your pre-processing is going to take longer. For simple things such as re-referencing your sampling rate won&rsquo;t make much difference, but for more complex processes such as artifact correction, the increase in time can be quite significant. If you can afford to lose a little bit of temporal resolution, it&rsquo;s usually worthwhile resampling to a lower rate.</p>
+<u>  Intro</u>
+<p>So you&rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers), and how many you have in total.</p>
 <br>
 <u> Video</u>
-<p><u> Code</u></p>
-<pre><code>    EEG = pop_resample( EEG, 250);
+<p><u> Code </u></p>
+<pre><code>    EEG=pop_chanedit(EEG, 'lookup',[pathtoeeglab '\\plugins\\[CHANNEL ADDRESS]]']);
 </code></pre>
-<p><u> Script</u></p>
+<br>
+<u> Script</u>
 <p>
   <a href="/erp/files/script_2.zip">Script #2</a> (download).</p>
 <p>
   <a href="/erp/files/script_2.m">Script #2</a> (view).</p>
-<p>Note that to run this script you should use 
-  <a href="https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link">Dataset #1</a> in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)</p>
-<p><u> Dataset</u></p>
-<p>To run this operation via the user interface, the example data set (used in the above video) can be downloaded 
-  <a href="https://drive.google.com/drive/folders/12fPqAJYsl4XoN1c-n1Sb5V52S29NwHWE">here</a>.</p>
-<p><u> Activity</u></p>
-<p><u>FAQ</u></p>
+<br>
+<u> Dataset</u> 
+<p>To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded 
+  <a href="https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link">here</a>.</p>
+<br>
+<u>Activity</u>
+<p>Visit the listed websites and work out which channel location file is appropriate for the EEG system at your institute. .</p>
+<br>
+<u>FAQs</u>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Can I resample to a different sampling rate than 250 Hz?</span>
+      <span>Why won&#39;t my dataset load?</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      For most experiments, a sampling rate of somewhere between 200 - 1000 Hz is ok. Lower sampling rates will mean that your data files are smaller, and processes steps such as ICA run faster. Higher sampling rates make your datasets larger, but give you more fine-grain detail, which can be particularly useful if you want to explore the latency of a response.
+      Ensure that you are attempting to import the correct file type. Remember that the instructions here are for .CNT file types, but the steps themselves transferable across a range of file types.
+    </div>
+  </label>
+</div>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>My dataset isn&#39;t in any of the listed formats. What should I do?</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      Most data acquisition software offers the ability to convert your file type. For example, I use software that produces a range of files that are incompatible with EEGLAB. However, I am able to save these files in a compatible format within the acquisition software. If you&rsquo;re unsure of how to do this, speak to your EEG technician, researchers around you, or (always a decent resort), Google.
+    </div>
+  </label>
+</div>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>I tried to run the script but it didn&#39;t work. Help!</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      Ensure you&rsquo;ve read the &lsquo;Scripts: Essential Information&rsquo; page, which provides further information on the file and folder structures necessary to run scripts available on this site. Always check that your path to the experiment folder and EEGLAB are correct
     </div>
   </label>
 </div>

@@ -1,63 +1,48 @@
 ---
-title: 5. Cleaning your data
+title: 5. High-pass filtering
 weight: 5
 bookToc: false
 ---
 <br>
 
-#### Data cleaning (or 'help, my data looks a mess')
+#### High-pass filtering
 
-<br>
+
 <u> Intro</u>
 
-Preamble: The most important thing to mention here is that there is no substitute for good quality data. You *must* ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise. Why? because participants are only human. Give them a break in a testing session and they will almost inevitably move more than you thought humanly possible in the space of 30 seconds.
-
-So, what should we do, and why do we need to clean our data, and how does it work?
+Filtering is a complex process, and requires some thought and consideration. It's important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
 
 <u> Video</u>
 
-XXX
+<u> Code</u>
 
-**But** there are some important implications of how you choose to clean your data that you may wish to take into consideration at this stage. Select the scenario that best describes your experiment in order to proceed:
+        EEG  = pop_basicfilter( EEG,  [1:NUMBER OF ELECTRODES] , 'Boundary', 'boundary', 'Cutoff',  0.1, 'Design', 'butter', 'Filter', 'highpass', 'Order',  2 ); 
 
-{{% expand "My study does not include a participant response, or I do not care about filtering my data based on response accuracy" %}}
+<u> Script</u>
 
-This is possibly the easiest scenario. You can go ahead and clean your dataset as you wish. Try not to remove too many trials unnecessarily (i.e., take into consideration the epoch length so that you don't accidentally cut data too close to the baseline period or end of an epoch and accidentally reject trials).
+ [Script #4](/erp/files/script_4.zip) (download).
 
-<u> Dataset</u>
+ [Script #4](/erp/files/script_4.m) (view).
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
-{{% /expand %}}
+Note that to run this script you should use [Dataset #1](https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link) in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)
 
-{{% expand "My study does include a participant response and care about accuracy. The response type is indicated by a trigger in the data" %}}
-
-This is also a good scenario. But now you need to be careful. If you remove a period of interest that contains a response trigger, you will no longer have a response for a given trial. If you decide to remove messy data that falls around a condition trigger or response trigger, be sure to remove both triggers to be on the safe side.
+https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1
 
 <u> Dataset</u>
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
-
-{{% /expand %}}
-
-{{% expand "My study does include a participant response and care about accuracy. The response type is indicated in the corresponding log file" %}}
-
-This is possibly the most complicated scenario. ow you need to be careful. If you remove a period of interest that contains a response trigger, you will no longer have a response for a given trial. If you decide to remove messy data that falls around a condition trigger or response trigger, be sure to remove both triggers to be on the safe side.
-
-<u> Dataset</u>
-
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
-
-{{% /expand %}}
-
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/1d8RjgSe1gE97YVfmTB5wQbbsxlYkYgW1)
 
 <u> Activity</u>
 
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don't unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.
+Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you've done this, be sure to read through the Template for ERP Pre-processing Reporting [here](https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/) (download), and try to fill in the gaps to report the necessary information about the high-pass filter you've applied to your data. Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 
 <u>FAQ</u>
 
-{{% expand "Q1" %}}
-A1.{{% /expand %}}
+{{% expand "I've heard the terms 'online filter' and 'offline filter'. What do these mean?" %}}
+Offline filters refer to pre-processing steps taken subsequent to data acquisition. Online filters are those applied during EEG recording (i.e., by your EEG data acquisition software.).{{% /expand %}}
 
-{{% expand "Q2" %}}
-A2.{{% /expand %}}
+{{% expand "Can I use a different half-amplitude cut-off?" %}}
+Yes, but be careful with what you're doing, and be sure to read the recommended resources in "What should I know about filtering" below. For a High-pass filter, you can use anything from 0.01 to 0.1 Hz (half-amplitude). A higher cut-off is better for datasets with more muscle artifacts, whilst if your data is pretty clean you might want to sway closer to 0.05 or 0.01 Hz.{{% /expand %}}
+
+{{% expand "What should I know about filtering?" %}}
+Filtering is a seemingly simple, but actually incredibly complex element of the pre-processing pipeline. It is important that you have a good understanding of what you're doing to your data, and how you can distort it by using the wrong setting. If you are new to filtering, I *strongly* recommend that you read Steve Luck's chapter *Filtering and Fourier Analysis* in his 2014 book [An Introduction to the Event-Related Potential Technique](https://mitpress.mit.edu/9780262525855/an-introduction-to-the-event-related-potential-technique/).{{% /expand %}}

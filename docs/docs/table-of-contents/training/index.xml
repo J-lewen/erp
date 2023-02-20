@@ -16,182 +16,208 @@ Firstly, MATLAB. MATLAB is a very powerful (see also &amp;lsquo;very expensive&a
     </item>
     
     <item>
-      <title>2. Import data</title>
+      <title>2. Importing data</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/</guid>
-      <description>Importing data (or &amp;lsquo;help, how do I get my data into ERPLAB?&amp;rsquo;)#IntroNow you&amp;rsquo;ve got ERPLAB up and running, it&amp;rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place?
+      <description>Importing data (or &amp;lsquo;help, how do I get my data into ERPLAB?&amp;rsquo;)#IntroNow you&amp;rsquo;ve got ERPLAB up and running, it&amp;rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place? Take a look at the video below for a brief guide to the process of importing your data.
 VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download).</description>
     </item>
     
     <item>
-      <title>3. Resampling</title>
+      <title>3. Setting channel locations</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</guid>
+      <description>Channel locations#IntroSo you&amp;rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers), and how many you have in total.
+VideoCode EEG=pop_chanedit(EEG, &#39;lookup&#39;,[pathtoeeglab &#39;\\plugins\\[CHANNEL ADDRESS]]&#39;]);ScriptScript #2 (download).
+Script #2 (view).
+Dataset To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded here.</description>
+    </item>
+    
+    <item>
+      <title>4. Resampling</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</guid>
       <description>Resampling#IntroResampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:
 How important is it for you to measure the precise onset of your effects? Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount.</description>
     </item>
     
     <item>
-      <title>4. High-pass filtering</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</link>
+      <title>5. Cleaning your data &amp; interpolation</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
+      <description>Data cleaning (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
+    </item>
+    
+    <item>
+      <title>5. High-pass filtering</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</guid>
       <description>High-pass filtering#Intro
 Filtering is a complex process, and requires some thought and consideration. It&amp;rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
 Video
 Code
 EEG = pop_basicfilter( EEG, [1:NUMBER OF ELECTRODES] , &#39;Boundary&#39;, &#39;boundary&#39;, &#39;Cutoff&#39;, 0.1, &#39;Design&#39;, &#39;butter&#39;, &#39;Filter&#39;, &#39;highpass&#39;, &#39;Order&#39;, 2 ); Script
-Script #3 (download).
-Script #3 (view).
+Script #4 (download).
+Script #4 (view).
 Note that to run this script you should use Dataset #1 in its original .</description>
     </item>
     
     <item>
-      <title>5. Cleaning your data</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</guid>
-      <description>Data cleaning (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
-    </item>
-    
-    <item>
       <title>6. Run ICA</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</guid>
       <description>Independent Component Analysis (ICA) (or &amp;lsquo;what do I do with all these blinks?&amp;rsquo;)#Intro
 Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don&amp;rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions.</description>
     </item>
     
     <item>
       <title>7. Re-referencing</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</guid>
-      <description>Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-Video Code
-N/AScript
-N/ADataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.</description>
-    </item>
-    
-    <item>
-      <title>8. Low-pass filter (optional)</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
       <description>Re-referencing#Intro
 Important distinction between online reference and offline reference. #You should report both in your paper#.
-Video
-Code
+Video Code
 N/AScript
-N/ADataset
+Script #5 (download).
+Script #5 (view).
+Dataset
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&amp;rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.</description>
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
-      <title>9. Epoch your data</title>
+      <title>8. Low-pass filter (optional)</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</guid>
+      <description>Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+Video
+Code
+N/AScript
+Script #6 (download).
+Script #6 (view).
+Dataset
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+Activity
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+    </item>
+    
+    <item>
+      <title>9. Epoch your data</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</guid>
       <description>Epoch (or segment, or &amp;lsquo;cut up&amp;rsquo; your data#Intro
 Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we&amp;rsquo;ve worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long &amp;lsquo;continuous&amp;rsquo; file&amp;hellip;
 See?
 Video Code
 N/AScript
-N/ADataset
+Script #7 (download).
+Script #7 (view).
+Dataset
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded here</description>
     </item>
     
     <item>
       <title>10. Artifact rejection</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</guid>
-      <description>
-TITLE#Intro
-Video Code
-N/AScript
-N/ADataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-FAQ
-Q1↕A1.Q2↕A2.</description>
-    </item>
-    
-    <item>
-      <title>11. Averaging</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</guid>
-      <description>
-TITLE#Intro
+      <description>TITLE#Intro
 Video Code
 N/AScript
-N/ADataset
+Script #8 (download).
+Script #8 (view).
+Dataset
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 FAQ
-What is the difference between averaging and grand averaging?↕A1.Q2↕A2.</description>
+Q1↕A1.Q2↕A2.</description>
     </item>
     
     <item>
-      <title>12. Create difference waves (optional)</title>
+      <title>11. Averaging</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</guid>
-      <description>
-TITLE#Intro
+      <description>TITLE#Intro
 Video Code
 N/AScript
-N/ADataset
+Script #9 (download).
+Script #9 (view).
+Dataset
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 FAQ
-Q1↕A1.Q2↕A2.</description>
+What is the difference between averaging and grand averaging?</description>
     </item>
     
     <item>
-      <title>13. Grand average</title>
+      <title>12. Create difference waves (optional)</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</guid>
-      <description>
-TITLE#Intro
+      <description>TITLE#Intro
 Video Code
 N/AScript
-N/ADataset
+Script #10 (download).
+Script #10 (view).
+Dataset
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 FAQ
-Q1↕A1.Q2↕A2.</description>
+Q1↕A1.Q2↕A2.</description>
     </item>
     
     <item>
-      <title>What next?</title>
+      <title>13. Grand average</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_14/</guid>
+      <description>TITLE#Intro
+Video Code
+N/AScript
+Script #11 (download).
+Script #11 (view).
+Dataset
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+Activity
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
+FAQ
+Q1↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>What next?</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_15/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_15/</guid>
       <description>
 TITLE#Intro
 Video Code

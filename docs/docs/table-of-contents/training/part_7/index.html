@@ -3,34 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-Video Code
-N/AScript
-N/ADataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.">
+<meta name="description" content="Independent Component Analysis (ICA) (or &lsquo;what do I do with all these blinks?&rsquo;)#Intro
+Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don&rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="7. Re-referencing" />
-<meta property="og:description" content="Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-Video Code
-N/AScript
-N/ADataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="6. Run ICA" />
+<meta property="og:description" content="Independent Component Analysis (ICA) (or &lsquo;what do I do with all these blinks?&rsquo;)#Intro
+Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don&rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-02-18T12:30:11+08:00" />
-<title>7. Re-referencing | ERP Resources</title>
+<meta property="article:modified_time" content="2023-02-18T20:30:25+08:00" />
+<title>6. Run ICA | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.16c943a329577624a1bff707f495f758c3f066f28b743757fb8fa062db6e4b9b.js" integrity="sha256-FslDoylXdiShv/cH9JX3WMPwZvKLdDdX&#43;4&#43;gYttuS5s=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.c8ab37246ea35f06bed1ddcaaaf716b246dbbd5cee7f0807eaf9831cfb22ddca.js" integrity="sha256-yKs3JG6jXwa&#43;0d3KqvcWskbbvVzufwgH6vmDHPsi3co=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -159,7 +147,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_2/" class="">2. Import data</a>
+    <a href="/erp/docs/table-of-contents/training/part_2/" class="">2. Importing data</a>
   
 
         </li>
@@ -172,7 +160,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_3/" class="">3. Resampling</a>
+    <a href="/erp/docs/table-of-contents/training/part_3/" class="">3. Setting channel locations</a>
   
 
         </li>
@@ -185,7 +173,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_4/" class="">4. High-pass filtering</a>
+    <a href="/erp/docs/table-of-contents/training/part_4/" class="">4. Resampling</a>
   
 
         </li>
@@ -198,7 +186,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_5/" class="">5. Cleaning your data</a>
+    <a href="/erp/docs/table-of-contents/training/part_6/" class="">5. Cleaning your data &amp; interpolation</a>
   
 
         </li>
@@ -211,7 +199,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_6/" class="">6. Run ICA</a>
+    <a href="/erp/docs/table-of-contents/training/part_5/" class="">5. High-pass filtering</a>
   
 
         </li>
@@ -224,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_7/" class="active">7. Re-referencing</a>
+    <a href="/erp/docs/table-of-contents/training/part_7/" class="active">6. Run ICA</a>
   
 
         </li>
@@ -237,7 +225,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_8/" class="">8. Low-pass filter (optional)</a>
+    <a href="/erp/docs/table-of-contents/training/part_8/" class="">7. Re-referencing</a>
   
 
         </li>
@@ -250,7 +238,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_9/" class="">9. Epoch your data</a>
+    <a href="/erp/docs/table-of-contents/training/part_9/" class="">8. Low-pass filter (optional)</a>
   
 
         </li>
@@ -263,7 +251,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_10/" class="">10. Artifact rejection</a>
+    <a href="/erp/docs/table-of-contents/training/part_10/" class="">9. Epoch your data</a>
   
 
         </li>
@@ -276,7 +264,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_11/" class="">11. Averaging</a>
+    <a href="/erp/docs/table-of-contents/training/part_11/" class="">10. Artifact rejection</a>
   
 
         </li>
@@ -289,7 +277,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_12/" class="">12. Create difference waves (optional)</a>
+    <a href="/erp/docs/table-of-contents/training/part_12/" class="">11. Averaging</a>
   
 
         </li>
@@ -302,7 +290,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_13/" class="">13. Grand average</a>
+    <a href="/erp/docs/table-of-contents/training/part_13/" class="">12. Create difference waves (optional)</a>
   
 
         </li>
@@ -315,7 +303,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_14/" class="">What next?</a>
+    <a href="/erp/docs/table-of-contents/training/part_14/" class="">13. Grand average</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_15/" class="">What next?</a>
   
 
         </li>
@@ -492,7 +493,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>7. Re-referencing</strong>
+  <strong>6. Run ICA</strong>
 
   <label for="toc-control">
     
@@ -507,30 +508,33 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><br>
-<h4 id="re-referencing">
-  Re-referencing
-  <a class="anchor" href="#re-referencing">#</a>
+<h4 id="independent-component-analysis-ica-or-what-do-i-do-with-all-these-blinks">
+  Independent Component Analysis (ICA) (or &lsquo;what do I do with all these blinks?&rsquo;)
+  <a class="anchor" href="#independent-component-analysis-ica-or-what-do-i-do-with-all-these-blinks">#</a>
 </h4>
 <br>
 <p><u> Intro</u></p>
-<p>Important distinction between online reference and offline reference. #You should report both in your paper#.</p>
+<p>Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a  possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don&rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions.</p>
+<p>What does ICA do? In short, ICA creates a model of&hellip;</p>
 <p><u> Video</u>
 <u> Code</u></p>
 <pre><code>    N/A
 </code></pre>
 <p><u> Script</u></p>
-<pre><code>    N/A
-</code></pre>
+<p>
+  <a href="/erp/files/script_4.zip">Script #4</a> (download).</p>
+<p>
+  <a href="/erp/files/script_4.m">Script #4</a> (view).</p>
 <p><u> Dataset</u></p>
 <p>To run this operation via the user interface, the example data set (used in the above video) can be downloaded 
   <a href="/erp/">here</a></p>
 <p><u> Activity</u></p>
-<p>Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to when the triggers fall, and ensure that you don&rsquo;t unnecessarily remove trials by removing data that falls into the baseline period, or epoch of interest.</p>
+<p>Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).</p>
 <p><u>FAQ</u></p>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>How do I choose my offline reference site(s)?</span>
+      <span>Q1</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />

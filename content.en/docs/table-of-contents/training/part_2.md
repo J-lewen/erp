@@ -1,5 +1,5 @@
 ---
-title: 2. Import data
+title: 2. Importing data
 weight: 2
 bookToc: false
 ---
@@ -10,7 +10,7 @@ bookToc: false
 <br>
 <u>  Intro</u>
 
-Now you've got ERPLAB up and running, it's time to have a look at some data! But how do you get your data into ERPLAB in the first place?
+Now you've got ERPLAB up and running, it's time to have a look at some data! But how do you get your data into ERPLAB in the first place? Take a look at the video below for a brief guide to the process of importing your data.
 
 <br>
 <u> Video</u>

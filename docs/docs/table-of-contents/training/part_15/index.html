@@ -3,17 +3,29 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Resampling#IntroResampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:
-How important is it for you to measure the precise onset of your effects? Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount.">
+<meta name="description" content="
+TITLE#Intro
+Video Code
+N/AScript
+N/ADataset
+Activity
+FAQ
+Q1↕A1.Q2↕A2.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="4. Resampling" />
-<meta property="og:description" content="Resampling#IntroResampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:
-How important is it for you to measure the precise onset of your effects? Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="What next?" />
+<meta property="og:description" content="
+TITLE#Intro
+Video Code
+N/AScript
+N/ADataset
+Activity
+FAQ
+Q1↕A1.Q2↕A2." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_15/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-02-18T20:30:25+08:00" />
-<title>4. Resampling | ERP Resources</title>
+
+<title>What next? | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
@@ -173,7 +185,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_4/" class="active">4. Resampling</a>
+    <a href="/erp/docs/table-of-contents/training/part_4/" class="">4. Resampling</a>
   
 
         </li>
@@ -316,7 +328,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_15/" class="">What next?</a>
+    <a href="/erp/docs/table-of-contents/training/part_15/" class="active">What next?</a>
   
 
         </li>
@@ -493,7 +505,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>4. Resampling</strong>
+  <strong>What next?</strong>
 
   <label for="toc-control">
     
@@ -508,48 +520,43 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><br>
-<h4 id="resampling">
-  Resampling
-  <a class="anchor" href="#resampling">#</a>
+<h4 id="title">
+  TITLE
+  <a class="anchor" href="#title">#</a>
 </h4>
 <br>
-<u> Intro</u>
-<p>Resampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:</p>
-<ol>
-<li>How important is it for you to measure the precise onset of your effects?</li>
-</ol>
-<p>Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount. For example, by resampling my data down to 250 Hz I introduce an error of ±2 ms. This is fine for the research I do, but if you&rsquo;re interested in super precise comparisons of the onset of an effect for which 2 ms error would be problematic, you&rsquo;ll want to keep your sampling rate higher. However, this brings us to the next consideration&hellip;</p>
-<ol start="2">
-<li>How much space do you have on your computer?</li>
-</ol>
-<p>EEG datasets are typically quite big. Usually you need a reasonable number of them. If you want to run two studies that are both about an hour long, with 40 participants for each and to keep you data at a sampling rate of 1000 Hz, you&rsquo;re going to quickly use up a lot of space on your computer. Beyond this, your pre-processing is going to take longer. For simple things such as re-referencing your sampling rate won&rsquo;t make much difference, but for more complex processes such as artifact correction, the increase in time can be quite significant. If you can afford to lose a little bit of temporal resolution, it&rsquo;s usually worthwhile resampling to a lower rate.</p>
-<br>
-<u> Video</u>
-<p><u> Code</u></p>
-<pre><code>    EEG = pop_resample( EEG, 250);
+<p><u> Intro</u></p>
+<p><u> Video</u>
+<u> Code</u></p>
+<pre><code>    N/A
 </code></pre>
 <p><u> Script</u></p>
-<p>
-  <a href="/erp/files/script_3.zip">Script #3</a> (download).</p>
-<p>
-  <a href="/erp/files/script_3.m">Script #3</a> (view).</p>
-<p>Note that to run this script you should use 
-  <a href="https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link">Dataset #1</a> in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)</p>
+<pre><code>    N/A
+</code></pre>
 <p><u> Dataset</u></p>
-<p>To run this operation via the user interface, the example data set (used in the above video) can be downloaded 
-  <a href="https://drive.google.com/drive/folders/12fPqAJYsl4XoN1c-n1Sb5V52S29NwHWE">here</a>.</p>
 <p><u> Activity</u></p>
-<p>Have a go at resampling the dataset provided, both via the user interface and using the available script. Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).</p>
 <p><u>FAQ</u></p>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Can I resample to a different sampling rate than 250 Hz?</span>
+      <span>Q1</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      For most experiments, a sampling rate of somewhere between 200 - 1000 Hz is ok. Lower sampling rates will mean that your data files are smaller, and processes steps such as ICA run faster. Higher sampling rates make your datasets larger, but give you more fine-grain detail, which can be particularly useful if you want to explore the latency of a response.
+      A1.
+    </div>
+  </label>
+</div>
+<div class="book-expand">
+  <label>
+    <div class="book-expand-head flex justify-between">
+      <span>Q2</span>
+      <span>↕</span>
+    </div>
+    <input type="checkbox" class="hidden" />
+    <div class="book-expand-content markdown-inner">
+      A2.
     </div>
   </label>
 </div>
