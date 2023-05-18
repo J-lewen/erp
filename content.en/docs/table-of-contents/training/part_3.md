@@ -15,7 +15,7 @@ So you've got your data open. But the problem is, EEGLAB has no idea which chann
 <br>
 <u> Video</u>
 
-
+#### Coming soon
 
 <u> Code </u>
 

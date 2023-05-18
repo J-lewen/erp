@@ -11,7 +11,7 @@ bookToc: false
 <br>
 
 
-Reporting 
+#### Reporting 
 
 [Keil, A., Debener, S., Gratton, G., Junghöfer, M., Kappenman, E. S., Luck, S. J., ... & Yee, C. M. (2014). Committee report: publication guidelines and recommendations for studies using electroencephalography and magnetoencephalography. Psychophysiology, 51(1), 1-21](https://onlinelibrary.wiley.com/doi/full/10.1111/psyp.12147)
 

@@ -21,5 +21,3 @@ Personal website with CV, publications & research interests.
   <br /> 
 
   **Google Scholar**: https://scholar.google.com/citations?user=oMuNHZoAAAAJ&hl=en&oi=ao
-
-    Journal and conference publications.

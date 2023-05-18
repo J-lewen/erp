@@ -32,7 +32,7 @@ VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; ,
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</guid>
       <description>Channel locations#IntroSo you&amp;rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers), and how many you have in total.
-VideoCode EEG=pop_chanedit(EEG, &#39;lookup&#39;,[pathtoeeglab &#39;\\plugins\\[CHANNEL ADDRESS]]&#39;]);ScriptScript #2 (download).
+VideoComing soon#Code EEG=pop_chanedit(EEG, &#39;lookup&#39;,[pathtoeeglab &#39;\\plugins\\[CHANNEL ADDRESS]]&#39;]);ScriptScript #2 (download).
 Script #2 (view).
 Dataset To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded here.</description>
     </item>
