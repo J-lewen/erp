@@ -1,6 +1,6 @@
 ---
-title: 7. Re-referencing
-weight: 7
+title: 8. Re-referencing
+weight: 8
 bookToc: false
 ---
 <br>

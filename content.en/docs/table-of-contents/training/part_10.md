@@ -1,6 +1,6 @@
 ---
-title: 9. Epoch your data
-weight: 9
+title: 10. Epoch your data
+weight: 10
 bookToc: false
 ---
 <br>
@@ -22,6 +22,9 @@ See?
 
 
 <u> Video</u>
+
+#### Coming soon
+
 <u> Code</u>
 
         N/A

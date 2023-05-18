@@ -23,6 +23,10 @@ EEG datasets are typically quite big. Usually you need a reasonable number of th
 <br>
 <u> Video</u>
 
+
+#### Coming soon
+
+
 <u> Code</u>
 
         EEG = pop_resample( EEG, 250);

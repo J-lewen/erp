@@ -1,6 +1,6 @@
 ---
-title: 8. Low-pass filter (optional)
-weight: 8
+title: 9. Low-pass filter (optional)
+weight: 9
 bookToc: false
 ---
 <br>
@@ -14,6 +14,7 @@ Important distinction between online reference and offline reference. #You shoul
 
 <u> Video</u>
 
+#### Coming soon
 
 <u> Code</u>
 

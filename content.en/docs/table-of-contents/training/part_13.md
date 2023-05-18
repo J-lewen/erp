@@ -1,6 +1,6 @@
 ---
-title: 12. Create difference waves (optional)
-weight: 12
+title: 13. Create difference waves (optional)
+weight: 13
 bookToc: false
 ---
 <br>
@@ -10,9 +10,12 @@ bookToc: false
 
 <u> Intro</u>
 
-
+#### Coming soon
 
 <u> Video</u>
+
+#### Coming soon
+
 <u> Code</u>
 
         N/A

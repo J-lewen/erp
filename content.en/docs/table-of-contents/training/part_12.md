@@ -1,6 +1,6 @@
 ---
-title: 11. Averaging
-weight: 11
+title: 12. Averaging
+weight: 12
 bookToc: false
 ---
 <br>
@@ -10,9 +10,12 @@ bookToc: false
 
 <u> Intro</u>
 
-
+#### Coming soon
 
 <u> Video</u>
+
+#### Coming soon
+
 <u> Code</u>
 
         N/A

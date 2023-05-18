@@ -1,6 +1,6 @@
 ---
-title: 6. Run ICA
-weight: 6
+title: 7. Run ICA
+weight: 7
 bookToc: false
 ---
 <br>

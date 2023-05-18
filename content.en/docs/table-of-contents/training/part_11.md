@@ -1,6 +1,6 @@
 ---
-title: 10. Artifact rejection
-weight: 10
+title: 11. Artifact rejection
+weight: 11
 bookToc: false
 ---
 <br>
@@ -10,9 +10,12 @@ bookToc: false
 
 <u> Intro</u>
 
-
+#### Coming soon
 
 <u> Video</u>
+
+#### Coming soon
+
 <u> Code</u>
 
         N/A

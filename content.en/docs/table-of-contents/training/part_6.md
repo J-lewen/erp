@@ -1,6 +1,6 @@
 ---
-title: 5. Cleaning your data & interpolation
-weight: 5
+title: 6. Cleaning your data & interpolation
+weight: 6
 bookToc: false
 ---
 <br>
@@ -16,7 +16,9 @@ So, what should we do, why do we need to clean our data, and what is interpolati
 
 <u> Video</u>
 
-XXX
+
+#### Coming soon
+
 
 Now you have a more general idea of what cleaning is and how it works, **But** there are some important implications of how you choose to clean your data that you may wish to take into consideration at this stage. Select the scenario that best describes your experiment in order to proceed:
 
@@ -61,8 +63,8 @@ Have a go at cleaning the dataset provided in ERPLAB. Pay close attention to whe
 
 <u>FAQ</u>
 
-{{% expand "Q1" %}}
-A1.{{% /expand %}}
+{{% expand "Question 1" %}}
+Answer 1.{{% /expand %}}
 
-{{% expand "Q2" %}}
-A2.{{% /expand %}}
+{{% expand "Question 2" %}}
+Answer 2.{{% /expand %}}

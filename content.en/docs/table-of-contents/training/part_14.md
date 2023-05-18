@@ -1,6 +1,6 @@
 ---
-title:  13. Grand average
-weight: 13
+title:  14. Grand average
+weight: 14
 bookToc: false
 ---
 <br>
@@ -10,9 +10,12 @@ bookToc: false
 
 <u> Intro</u>
 
-
+#### Coming soon
 
 <u> Video</u>
+
+#### Coming soon
+
 <u> Code</u>
 
         N/A

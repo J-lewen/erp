@@ -14,6 +14,10 @@ Filtering is a complex process, and requires some thought and consideration. It'
 
 <u> Video</u>
 
+
+#### Coming soon
+
+
 <u> Code</u>
 
         EEG  = pop_basicfilter( EEG,  [1:NUMBER OF ELECTRODES] , 'Boundary', 'boundary', 'Cutoff',  0.1, 'Design', 'butter', 'Filter', 'highpass', 'Order',  2 ); 
