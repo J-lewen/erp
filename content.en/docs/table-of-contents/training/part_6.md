@@ -45,7 +45,7 @@ This is possibly the most complicated scenario. ow you need to be careful. If yo
 
 <u> Dataset</u>
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1?usp=share_link)
 
 {{% /expand %}}
 

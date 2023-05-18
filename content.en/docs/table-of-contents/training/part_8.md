@@ -15,7 +15,7 @@ Important distinction between online reference and offline reference. #You shoul
 <u> Video</u>
 <u> Code</u>
 
-        N/A
+                EEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );
 
 <u> Script</u>
 

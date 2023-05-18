@@ -91,7 +91,7 @@ Preamble: This is not the only option for dealing with blinks. Artifact rejectio
       <description>Re-referencing#Intro
 Important distinction between online reference and offline reference. #You should report both in your paper#.
 Video Code
-N/AScript
+EEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );Script
 Script #5 (download).
 Script #5 (view).
 Dataset

@@ -30,11 +30,12 @@ https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1
 
 <u> Dataset</u>
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/1d8RjgSe1gE97YVfmTB5wQbbsxlYkYgW1)
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/1d8RjgSe1gE97YVfmTB5wQbbsxlYkYgW1?usp=share_link)
 
 <u> Activity</u>
 
-Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Once you've done this, be sure to read through the Template for ERP Pre-processing Reporting [here](https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/) (download), and try to fill in the gaps to report the necessary information about the high-pass filter you've applied to your data. Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
+Have a go at applying the filters both via the UI and with the provided script on Dataset_1. Play around with different filter settings and have a look at what different slops and thresholds do to the data.
+Once you've done this, be sure to read through the Template for ERP Pre-processing Reporting [here](https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resource/) (download), and try to fill in the gaps to report the necessary information about the high-pass filter you've applied to your data. Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 
 <u>FAQ</u>
 

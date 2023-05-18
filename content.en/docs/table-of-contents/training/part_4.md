@@ -37,7 +37,7 @@ EEG datasets are typically quite big. Usually you need a reasonable number of th
 
 <u> Dataset</u>
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/12fPqAJYsl4XoN1c-n1Sb5V52S29NwHWE).
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/12fPqAJYsl4XoN1c-n1Sb5V52S29NwHWE?usp=share_link).
 
 <u> Activity</u>
 
