@@ -28,13 +28,12 @@ Filtering is a complex process, and requires some thought and consideration. It'
 
  [Script #4](/erp/files/script_4.m) (view).
 
-Note that to run this script you should use [Dataset #1](https://drive.google.com/file/d/1PrkYNwCbJSERRryMGRtxWLM2BZLa4OmU/view?usp=share_link) in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)
+Note that to run this script you should use [Dataset #1](https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing) in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)
 
-https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1
 
 <u> Dataset</u>
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/1d8RjgSe1gE97YVfmTB5wQbbsxlYkYgW1?usp=share_link)
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/1xNZs1Nm2bBqcFb9iIWOAxmgH1shKU3wj?usp=sharing)
 
 <u> Activity</u>
 
