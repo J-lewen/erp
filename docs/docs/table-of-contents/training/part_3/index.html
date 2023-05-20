@@ -3,26 +3,20 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Channel locations#IntroSo you&rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers), and how many you have in total.
-VideoComing soon#Code EEG=pop_chanedit(EEG, &#39;lookup&#39;,[pathtoeeglab &#39;\\plugins\\[CHANNEL ADDRESS]]&#39;]);ScriptScript #2 (download).
-Script #2 (view).
-Dataset To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded here.">
+<meta name="description" content="Channel locations#IntroSo you&rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers) if you&rsquo;re lucky. The next step is to tell EEGLAB where these channels belong in relation to one another by using a location file. Luckily, the creators of EEGLAB have provided a channel file which features a database of 385 defined channel labels.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="3. Setting channel locations" />
-<meta property="og:description" content="Channel locations#IntroSo you&rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers), and how many you have in total.
-VideoComing soon#Code EEG=pop_chanedit(EEG, &#39;lookup&#39;,[pathtoeeglab &#39;\\plugins\\[CHANNEL ADDRESS]]&#39;]);ScriptScript #2 (download).
-Script #2 (view).
-Dataset To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded here." />
+<meta property="og:description" content="Channel locations#IntroSo you&rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers) if you&rsquo;re lucky. The next step is to tell EEGLAB where these channels belong in relation to one another by using a location file. Luckily, the creators of EEGLAB have provided a channel file which features a database of 385 defined channel labels." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-05-18T18:20:34+04:00" />
+<meta property="article:modified_time" content="2023-05-18T18:27:51+04:00" />
 <title>3. Setting channel locations | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.e3e747d8e83d58217bf769dda11217d606ae1e8b305c6d5dcae8e97d50982a8b.js" integrity="sha256-4&#43;dH2Og9WCF792ndoRIX1gauHoswXG1dyujpfVCYKos=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.5344bcd742a4d30bf4cf315db0fc6a922d0eae96aa0dbc4a9cb5a43bb49bc631.js" integrity="sha256-U0S810Kk0wv0zzFdsPxqki0OrpaqDbxKnLWkO7SbxjE=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -190,19 +184,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_6/" class="">5. Cleaning your data &amp; interpolation</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="/erp/docs/table-of-contents/training/part_5/" class="">5. High-pass filtering</a>
   
 
@@ -216,7 +197,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_7/" class="">6. Run ICA</a>
+    <a href="/erp/docs/table-of-contents/training/part_6/" class="">6. Cleaning your data &amp; interpolation</a>
   
 
         </li>
@@ -229,7 +210,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_8/" class="">7. Re-referencing</a>
+    <a href="/erp/docs/table-of-contents/training/part_7/" class="">7. Run ICA</a>
   
 
         </li>
@@ -242,7 +223,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_9/" class="">8. Low-pass filter (optional)</a>
+    <a href="/erp/docs/table-of-contents/training/part_8/" class="">8. Re-referencing</a>
   
 
         </li>
@@ -255,7 +236,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_10/" class="">9. Epoch your data</a>
+    <a href="/erp/docs/table-of-contents/training/part_9/" class="">9. Low-pass filter (optional)</a>
   
 
         </li>
@@ -268,7 +249,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_11/" class="">10. Artifact rejection</a>
+    <a href="/erp/docs/table-of-contents/training/part_10/" class="">10. Epoch your data</a>
   
 
         </li>
@@ -281,7 +262,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_12/" class="">11. Averaging</a>
+    <a href="/erp/docs/table-of-contents/training/part_11/" class="">11. Artifact rejection</a>
   
 
         </li>
@@ -294,7 +275,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_13/" class="">12. Create difference waves (optional)</a>
+    <a href="/erp/docs/table-of-contents/training/part_12/" class="">12. Averaging</a>
   
 
         </li>
@@ -307,7 +288,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_14/" class="">13. Grand average</a>
+    <a href="/erp/docs/table-of-contents/training/part_13/" class="">13. Create difference waves (optional)</a>
   
 
         </li>
@@ -320,7 +301,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_15/" class="">What next?</a>
+    <a href="/erp/docs/table-of-contents/training/part_14/" class="">14. Grand average</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_15/" class="">15. What next?</a>
   
 
         </li>
@@ -518,13 +512,12 @@ https://github.com/alex-shpak/hugo-book
 </h4>
 <br>
 <u>  Intro</u>
-<p>So you&rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers), and how many you have in total.</p>
+<p>So you&rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers) if you&rsquo;re lucky.
+The next step is to tell EEGLAB where these channels belong in relation to one another by using a location file. Luckily, the creators of EEGLAB have provided a channel file which features a database of 385 defined channel labels. As long as your data was imported into EEGLAB with these labels (which most systems do!) than taking your locations from this file should typically work well.</p>
 <br>
 <u> Video</u>
-<h4 id="coming-soon">
-  Coming soon
-  <a class="anchor" href="#coming-soon">#</a>
-</h4>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NXORaHENLDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p><u> Code </u></p>
 <pre><code>    EEG=pop_chanedit(EEG, 'lookup',[pathtoeeglab '\\plugins\\[CHANNEL ADDRESS]]']);
 </code></pre>
@@ -537,7 +530,7 @@ https://github.com/alex-shpak/hugo-book
 <br>
 <u> Dataset</u> 
 <p>To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded 
-  <a href="https://drive.google.com/drive/folders/111SKJ98cS1ZL1PBepT5iDPq3bNbxig-l?usp=share_link">here</a>.</p>
+  <a href="https://drive.google.com/drive/folders/1Ebn1h7aeWH4Z5a194HsZIIaVyHfK6Jqa?usp=sharing">here</a>.</p>
 <br>
 <u>Activity</u>
 <p>Visit the listed websites and work out which channel location file is appropriate for the EEG system at your institute. .</p>

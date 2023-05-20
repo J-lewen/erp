@@ -21,7 +21,7 @@ Firstly, MATLAB. MATLAB is a very powerful (see also &amp;lsquo;very expensive&a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/</guid>
-      <description>Importing data (or &amp;lsquo;help, how do I get my data into ERPLAB?&amp;rsquo;)#IntroNow you&amp;rsquo;ve got ERPLAB up and running, it&amp;rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place? Take a look at the video below for a brief guide to the process of importing your data.
+      <description>Importing data (or &amp;lsquo;help, how do I get started?&amp;rsquo;)#IntroNow you&amp;rsquo;ve got ERPLAB up and running, it&amp;rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place? Take a look at the video below for a brief guide to the process of importing your data.
 VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download).</description>
     </item>
     
@@ -31,10 +31,7 @@ VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; ,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</guid>
-      <description>Channel locations#IntroSo you&amp;rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers), and how many you have in total.
-VideoComing soon#Code EEG=pop_chanedit(EEG, &#39;lookup&#39;,[pathtoeeglab &#39;\\plugins\\[CHANNEL ADDRESS]]&#39;]);ScriptScript #2 (download).
-Script #2 (view).
-Dataset To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded here.</description>
+      <description>Channel locations#IntroSo you&amp;rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers) if you&amp;rsquo;re lucky. The next step is to tell EEGLAB where these channels belong in relation to one another by using a location file. Luckily, the creators of EEGLAB have provided a channel file which features a database of 385 defined channel labels.</description>
     </item>
     
     <item>
@@ -48,15 +45,6 @@ How important is it for you to measure the precise onset of your effects? Typica
     </item>
     
     <item>
-      <title>5. Cleaning your data &amp; interpolation</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
-      <description>Data cleaning (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
-    </item>
-    
-    <item>
       <title>5. High-pass filtering</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -65,15 +53,23 @@ How important is it for you to measure the precise onset of your effects? Typica
       <description>High-pass filtering#Intro
 Filtering is a complex process, and requires some thought and consideration. It&amp;rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
 Video
-Code
+Coming soon#Code
 EEG = pop_basicfilter( EEG, [1:NUMBER OF ELECTRODES] , &#39;Boundary&#39;, &#39;boundary&#39;, &#39;Cutoff&#39;, 0.1, &#39;Design&#39;, &#39;butter&#39;, &#39;Filter&#39;, &#39;highpass&#39;, &#39;Order&#39;, 2 ); Script
 Script #4 (download).
-Script #4 (view).
-Note that to run this script you should use Dataset #1 in its original .</description>
+Script #4 (view).</description>
     </item>
     
     <item>
-      <title>6. Run ICA</title>
+      <title>6. Cleaning your data &amp; interpolation</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
+      <description>Data cleaning (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
+    </item>
+    
+    <item>
+      <title>7. Run ICA</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -83,7 +79,7 @@ Preamble: This is not the only option for dealing with blinks. Artifact rejectio
     </item>
     
     <item>
-      <title>7. Re-referencing</title>
+      <title>8. Re-referencing</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -101,7 +97,7 @@ Finally, save your version of the script to your computer so as to ensure you ha
     </item>
     
     <item>
-      <title>8. Low-pass filter (optional)</title>
+      <title>9. Low-pass filter (optional)</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -109,7 +105,7 @@ Finally, save your version of the script to your computer so as to ensure you ha
       <description>Re-referencing#Intro
 Important distinction between online reference and offline reference. #You should report both in your paper#.
 Video
-Code
+Coming soon#Code
 N/AScript
 Script #6 (download).
 Script #6 (view).
@@ -120,7 +116,7 @@ Finally, save your version of the script to your computer so as to ensure you ha
     </item>
     
     <item>
-      <title>9. Epoch your data</title>
+      <title>10. Epoch your data</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -128,7 +124,8 @@ Finally, save your version of the script to your computer so as to ensure you ha
       <description>Epoch (or segment, or &amp;lsquo;cut up&amp;rsquo; your data#Intro
 Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we&amp;rsquo;ve worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long &amp;lsquo;continuous&amp;rsquo; file&amp;hellip;
 See?
-Video Code
+Video
+Coming soon#Code
 N/AScript
 Script #7 (download).
 Script #7 (view).
@@ -137,90 +134,86 @@ To run this operation via the user interface, the example data set (used in the 
     </item>
     
     <item>
-      <title>10. Artifact rejection</title>
+      <title>11. Artifact rejection</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</guid>
       <description>TITLE#Intro
-Video Code
+Coming soon#Video
+Coming soon#Code
 N/AScript
 Script #8 (download).
 Script #8 (view).
 Dataset
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
-FAQ
-Q1↕A1.Q2↕A2.</description>
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
-      <title>11. Averaging</title>
+      <title>12. Averaging</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</guid>
       <description>TITLE#Intro
-Video Code
+Coming soon#Video
+Coming soon#Code
 N/AScript
 Script #9 (download).
 Script #9 (view).
 Dataset
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
-FAQ
-What is the difference between averaging and grand averaging?</description>
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
-      <title>12. Create difference waves (optional)</title>
+      <title>13. Create difference waves (optional)</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</guid>
       <description>TITLE#Intro
-Video Code
+Coming soon#Video
+Coming soon#Code
 N/AScript
 Script #10 (download).
 Script #10 (view).
 Dataset
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
-FAQ
-Q1↕A1.Q2↕A2.</description>
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
-      <title>13. Grand average</title>
+      <title>14. Grand average</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_14/</guid>
       <description>TITLE#Intro
-Video Code
+Coming soon#Video
+Coming soon#Code
 N/AScript
 Script #11 (download).
 Script #11 (view).
 Dataset
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
-FAQ
-Q1↕A1.Q2↕A2.</description>
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
-      <title>What next?</title>
+      <title>15. What next?</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_15/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_15/</guid>
       <description>
 TITLE#Intro
-Video Code
+Coming soon#Video Code
 N/AScript
 N/ADataset
 Activity

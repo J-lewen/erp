@@ -28,7 +28,7 @@ This is possibly the easiest scenario. You can go ahead and clean your dataset a
 
 <u> Dataset</u>
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/1VRniyYQoyY5G3HfORFvCXtMWero3NG5O?usp=sharing)
 {{% /expand %}}
 
 {{% expand "My study does include a participant response and care about accuracy. The response type is indicated by a trigger in the data" %}}

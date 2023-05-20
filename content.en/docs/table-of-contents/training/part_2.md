@@ -5,7 +5,7 @@ bookToc: false
 ---
 <br>
 
-#### Importing data (or *'help, how do I get my data into ERPLAB?'*)
+#### Importing data (or *'help, how do I get started?'*)
 
 <br>
 <u>  Intro</u>
@@ -14,8 +14,8 @@ Now you've got ERPLAB up and running, it's time to have a look at some data! But
 
 <br>
 <u> Video</u>
-
-{{< youtube nsI2O7Y-fUo >}}
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nsI2O7Y-fUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <u> Code </u>
 
@@ -32,7 +32,7 @@ Now you've got ERPLAB up and running, it's time to have a look at some data! But
 <br>
 <u> Dataset</u> 
 
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/file/d/1xAR99AQaDU7RZPY_8yZLj2z6bYZg1Kc6/view?usp=share_link).
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing).
 
 <br>
 <u>Activity</u>
