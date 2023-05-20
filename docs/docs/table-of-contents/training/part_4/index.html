@@ -12,13 +12,13 @@ How important is it for you to measure the precise onset of your effects? Typica
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-05-18T18:27:42+04:00" />
+<meta property="article:modified_time" content="2023-05-20T22:08:50+04:00" />
 <title>4. Resampling | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.5344bcd742a4d30bf4cf315db0fc6a922d0eae96aa0dbc4a9cb5a43bb49bc631.js" integrity="sha256-U0S810Kk0wv0zzFdsPxqki0OrpaqDbxKnLWkO7SbxjE=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.fbbda94229e2a4d155e57344e277d56c8d19141de2bc24ff72a14ef5ba6eec4c.js" integrity="sha256-&#43;72pQinipNFV5XNE4nfVbI0ZFB3ivCT/cqFO9bpu7Ew=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -525,10 +525,8 @@ https://github.com/alex-shpak/hugo-book
 <p>EEG datasets are typically quite big. Usually you need a reasonable number of them. If you want to run two studies that are both about an hour long, with 40 participants for each and to keep you data at a sampling rate of 1000 Hz, you&rsquo;re going to quickly use up a lot of space on your computer. Beyond this, your pre-processing is going to take longer. For simple things such as re-referencing your sampling rate won&rsquo;t make much difference, but for more complex processes such as artifact correction, the increase in time can be quite significant. If you can afford to lose a little bit of temporal resolution, it&rsquo;s usually worthwhile resampling to a lower rate.</p>
 <br>
 <u> Video</u>
-<h4 id="coming-soon">
-  Coming soon
-  <a class="anchor" href="#coming-soon">#</a>
-</h4>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wsPO-mjG6yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p><u> Code</u></p>
 <pre><code>    EEG = pop_resample( EEG, 250);
 </code></pre>
