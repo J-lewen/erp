@@ -22,9 +22,9 @@ EEG datasets are typically quite big. Usually you need a reasonable number of th
 
 <br>
 <u> Video</u>
+<br>
 
-
-#### Coming soon
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wsPO-mjG6yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 <u> Code</u>
