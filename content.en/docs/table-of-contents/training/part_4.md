@@ -35,7 +35,7 @@ EEG datasets are typically quite big. Usually you need a reasonable number of th
 
  [Script #3](/erp/files/script_3.zip) (download).
 
- [Script #3](/erp/files/script_3.m) (view).
+ [Script #3](/erp/files/script_3.txt) (view).
 
  Note that to run this script you should use [Dataset #1](https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing) in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)
 

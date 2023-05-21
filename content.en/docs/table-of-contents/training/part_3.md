@@ -27,7 +27,7 @@ The next step is to tell EEGLAB where these channels belong in relation to one a
 
  [Script #2](/erp/files/script_2.zip) (download).
 
- [Script #2](/erp/files/script_2.m) (view).
+ [Script #2](/erp/files/script_2.txt) (view).
 
 <br>
 <u> Dataset</u> 

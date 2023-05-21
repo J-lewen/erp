@@ -26,7 +26,7 @@ Filtering is a complex process, and requires some thought and consideration. It'
 
  [Script #4](/erp/files/script_4.zip) (download).
 
- [Script #4](/erp/files/script_4.m) (view).
+ [Script #4](/erp/files/script_4.txt) (view).
 
 Note that to run this script you should use [Dataset #1](https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing) in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)
 
