@@ -23,11 +23,13 @@ Now you've got ERPLAB up and running, it's time to have a look at some data! But
         [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,'setname','[DATASET NAME FOR ERPLAB]','gui','off'); 
         
 <br>
-<u> Script</u>
+<u> Script</u> 
 
  [Script #1](/erp/files/script_1.zip) (download).
 
- [Script #1](/erp/files/script_1.m) (view).
+ [Script #1](/erp/files/script_1.txt) (view).
+
+Note that the use of these scripts assumed you have already read and understood the [Scripts: Essential information](https://j-lewen.github.io/erp/docs/scripts/) page.
 
 <br>
 <u> Dataset</u> 

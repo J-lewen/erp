@@ -1,7 +1,7 @@
 ---
 weight: 2
 bookFlatSection: true
-title: "Scripts: essential information"
+title: "Scripts: Essential information"
 bookToC: false
 ---
 
@@ -31,7 +31,7 @@ Then you must create *individual* folders for each participant, with the name of
 
  [Example script](/erp/files/getting_started.zip) (download).
 
-  [Example script](/erp/files/getting_started.m) (view).
+  [Example script](/erp/files/getting_started.txt) (view).
 
   Ensure that for every script you run from this site, you enter the correct information as outlined in the example scripts above. 
 

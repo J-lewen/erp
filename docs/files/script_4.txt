@@ -74,4 +74,3 @@ end;
 %%% EEG = eeg_checkset( EEG );
 %%% EEG = pop_saveset( EEG, 'filename','(FILENAME HERE).set','filepath','[ADDRESS ON YOUR COMPUTER HERE]');
 %%% [ALLEEG EEG] = eeg_store(ALLEEG, EEG, CURRENTSET);
-

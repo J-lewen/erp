@@ -22,7 +22,7 @@ Firstly, MATLAB. MATLAB is a very powerful (see also &amp;lsquo;very expensive&a
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/</guid>
       <description>Importing data (or &amp;lsquo;help, how do I get started?&amp;rsquo;)#IntroNow you&amp;rsquo;ve got ERPLAB up and running, it&amp;rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place? Take a look at the video below for a brief guide to the process of importing your data.
-VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); ScriptScript #1 (download).</description>
+VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; , &#39;dataformat&#39;, &#39;auto&#39;, &#39;memmapfile&#39;, &#39;&#39;); [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,&#39;setname&#39;,&#39;[DATASET NAME FOR ERPLAB]&#39;,&#39;gui&#39;,&#39;off&#39;); Script Script #1 (download).</description>
     </item>
     
     <item>

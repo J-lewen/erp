@@ -64,6 +64,3 @@ for n = 1:length(subjects)
 %%% [ALLEEG EEG] = eeg_store(ALLEEG, EEG, CURRENTSET);      
 
 end;
-
-
-
