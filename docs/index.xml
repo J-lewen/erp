@@ -58,7 +58,7 @@ VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; ,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</guid>
-      <description>Channel locations#IntroSo you&amp;rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers) if you&amp;rsquo;re lucky. The next step is to tell EEGLAB where these channels belong in relation to one another by using a location file. Luckily, the creators of EEGLAB have provided a channel file which features a database of 385 defined channel labels.</description>
+      <description>Channel locations#IntroSo you&amp;rsquo;ve got your data open. But the problem is, EEGLAB has no idea which channel goes where. At present, all it knows is your channel IDs (names/numbers) if you&amp;rsquo;re lucky. So your next step is to tell EEGLAB where these channels belong in relation to one another by using a location file. Luckily, the creators of EEGLAB have provided a channel file which features a database of 385 defined channel labels.</description>
     </item>
     
     <item>

@@ -10,8 +10,8 @@ bookToc: false
 <br>
 <u>  Intro</u>
 
-So you've got your data open. But the problem is, EEGLAB has no idea which channel is which. At present, all it knows is your channel IDs (names/numbers) if you're lucky.
-The next step is to tell EEGLAB where these channels belong in relation to one another by using a location file. Luckily, the creators of EEGLAB have provided a channel file which features a database of 385 defined channel labels. As long as your data was imported into EEGLAB with these labels (which most systems do!) than taking your locations from this file should typically work well.
+So you've got your data open. But the problem is, EEGLAB has no idea which channel goes where. At present, all it knows is your channel IDs (names/numbers) if you're lucky.
+So your next step is to tell EEGLAB where these channels belong in relation to one another by using a location file. Luckily, the creators of EEGLAB have provided a channel file which features a database of 385 defined channel labels. As long as your data was imported into EEGLAB with these labels (which most systems do) then sourcing your channel locations from this file should typically work well.
 
 <br>
 <u> Video</u>
@@ -37,16 +37,12 @@ To run this operation via the user interface, the example data set (used in the 
 <br>
 <u>Activity</u>
 
-Visit the listed websites and work out which channel location file is appropriate for the EEG system at your institute. .
+Have a go at setting channel locations for your dataset using both the UI and the scripts provided. 
 
 <br>
 <u>FAQs</u>
 
-{{% expand "Question 1" %}}
-Answer 1.{{% /expand %}}
+{{% expand "How do I delete a channel?" %}}
+Firstly, have a think. Why might you want to do this? Perhaps your EEG system has recorded a channel that wasn't intended (i.e., EKG), or you selected a layout during data recording for one participant that includes electrodes not present in your other datasets (making it difficult to grand average across datasets with different numbers of channels at a later stage). Most of the time it is not necessary to manually remove a channel unless there is a discrepancy between the number of channels present across datasets. However, if this is the ase, simply selecting 'delete channel' on the edit channel info menu will not remove the channel from a dataset. Instead, you should go to Edit>Select data>Channel range, and by ticking the 'remove these' checkbox can select any channels you wish to remove.
 
-{{% expand "Question 2" %}}
-Answer 2.{{% /expand %}}
-
-{{% expand "Question 3" %}}
-Answer 3.{{% /expand %}}
+[![](/erp/images/removechannel.png)](/erp/images/removechannel.png)

@@ -29,8 +29,6 @@ Now you've got ERPLAB up and running, it's time to have a look at some data! But
 
  [Script #1](/erp/files/script_1.txt) (view).
 
-Note that the use of these scripts assumed you have already read and understood the [Scripts: Essential information](https://j-lewen.github.io/erp/docs/scripts/) page.
-
 <br>
 <u> Dataset</u> 
 
@@ -51,4 +49,4 @@ Ensure that you are attempting to import the correct file type. Remember that th
 Most data acquisition software offers the ability to convert your file type. For example, I use software that produces a range of files that are incompatible with EEGLAB. However, I am able to save these files in a compatible format within the acquisition software. If you're unsure of how to do this, speak to your EEG technician, researchers around you, or (always a decent resort), Google.{{% /expand %}}
 
 {{% expand "I tried to run the script but it didn't work. Help!" %}}
-Ensure you've read the 'Scripts: Essential Information' page, which provides further information on the file and folder structures necessary to run scripts available on this site. Always check that your path to the experiment folder and EEGLAB are correct{{% /expand %}}
+Ensure you've read the [Scripts: Essential information](https://j-lewen.github.io/erp/docs/scripts/) page, which provides further information on the file and folder structures necessary to run scripts available on this site. Always check that your path to the experiment folder and EEGLAB are correct{{% /expand %}}
