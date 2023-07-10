@@ -1,18 +1,18 @@
 ---
-title: 7. Run ICA
+title: 7. Interpolation
 weight: 7
 bookToc: false
 ---
 <br>
 
-#### Independent Component Analysis (ICA) (or 'what do I do with all these blinks?')
+#### Interpolation (or 'oops the eye electrode fell off my participant's face')
 <br>
 
 <u> Intro</u>
 
-Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a  possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don't be fooled into thinking that ICA is a magic cure with no repercussions.
+Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them.
 
-What does ICA do? In short, ICA creates a model of...
+Interpolation - put simply - involves recreating one electrode from its surrounding electrodes.
 
 <u> Video</u>
 <u> Code</u>
