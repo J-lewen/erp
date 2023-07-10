@@ -20,6 +20,8 @@ Typically, I want to know roughly when my effects begin and end. By reducing the
 
 EEG datasets are typically quite big. Usually you need a reasonable number of them. If you want to run two studies that are both about an hour long, with 40 participants for each and to keep you data at a sampling rate of 1000 Hz, you're going to quickly use up a lot of space on your computer. Beyond this, your pre-processing is going to take longer. For simple things such as re-referencing your sampling rate won't make much difference, but for more complex processes such as artifact correction, the increase in time can be quite significant. If you can afford to lose a little bit of temporal resolution, it's usually worthwhile resampling to a lower rate.
 
+Once you've made the decision as to your preferred sampling rate, the process is a relatively quick and simple one, as outlined in the below video.
+
 <br>
 <u> Video</u>
 <br>

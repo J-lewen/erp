@@ -126,22 +126,29 @@ Script #4 (view).</description>
     </item>
     
     <item>
-      <title>6. Cleaning your data &amp; interpolation</title>
+      <title>6. Artifact correction (ICA)</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
-      <description>Data cleaning (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
+      <description>Dealing with artifacts - ICA (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
     </item>
     
     <item>
-      <title>7. Run ICA</title>
+      <title>7. Interpolation</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</guid>
-      <description>Independent Component Analysis (ICA) (or &amp;lsquo;what do I do with all these blinks?&amp;rsquo;)#Intro
-Preamble: This is not the only option for dealing with blinks. Artifact rejection is also a possibility, but will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. However, there are some down sides (see FAQ), so don&amp;rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions.</description>
+      <description>Interpolation (or &amp;lsquo;oops the eye electrode fell off my participant&amp;rsquo;s face&amp;rsquo;)#Intro
+Video Code
+N/AScript
+Script #4 (download).
+Script #4 (view).
+Dataset
+To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+Activity
+Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
