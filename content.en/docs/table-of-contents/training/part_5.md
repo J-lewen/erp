@@ -10,7 +10,8 @@ bookToc: false
 
 <u> Intro</u>
 
-Filtering is a complex process, and requires some thought and consideration. It's important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
+Filtering is a complex process, and requires some thought and consideration. It's important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering (particularly see [this paper](https://www.researchgate.net/publication/273405257_How_inappropriate_high-pass_filters_can_produce_artifactual_effects_and_incorrect_conclusions_in_ERP_studies_of_language_and_cognition) for a fantastic overview of the issue). 
+High-pass filtering - the type of filter that allows the **higher** amplitudes to pass through but cuts out the lower amplitudes - is a really important first step in your data processing. As with all the other pre-processing steps, you will see plenty of examples in the literature of high-pass
 
 <u> Video</u>
 
