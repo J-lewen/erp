@@ -20,3 +20,8 @@ The course is split into X parts. Each part is intended to only last a couple of
 
 
 ![topography](/erp/images/topo.png)
+
+
+You are free (in fact, welcome) to use all and any of the resources on these pages. Everything is released under a [Creative Commons Attribution 4.0 License](http://creativecommons.org/licenses/by/4.0/) which means you can do anything you want with these materials and can change/adapt them in any way you like, as long as you acknowledge that you got it from here. My primary motive for creating these pages was to pass along all the help and guidance I received whilst first learning EEG. Nonetheless, I've been told to be more career-minded and say that citations would be *immensely* useful to me if you use my scripts or tutorial for your data analysis, as I am early stage researcher still at the bottom of the academic food chain. 
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a> Cite as Lewendon, J. (2023). ERP Training Resources. https://j-lewen.github.io/erp/</a>.
