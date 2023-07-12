@@ -70,6 +70,12 @@ To clean your data and run ICA via the user interface, the example data set (use
 Have a go at cleaning the dataset provided in ERPLAB. Then, visit the [UCSD ICLabel Tutorial](https://labeling.ucsd.edu/tutorial/practice), where you can practice labelling the source of components based on studying their EEGLAB output.
 
 <hr style="height:1px; visibility:hidden;" />
+<u> Write-up </u>
+
+
+>*EEG data were recorded and digitized at the sampling rate of XXX Hz using a XXX amplifier and subsequently downsampled offline to XXX Hz.*
+
+<hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
 
 {{% expand "Question 1" %}}

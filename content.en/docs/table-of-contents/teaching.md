@@ -1,6 +1,6 @@
 ---
 title: Teaching Material
-weight: 4
+weight: 2
 bookToc: false
 ---
 under construction
