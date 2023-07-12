@@ -5,7 +5,7 @@ bookToc: false
 ---
 <br>
 
-#### Channel locations
+### Channel locations
 
 <br>
 <u>  Intro</u>
@@ -13,33 +13,34 @@ bookToc: false
 So you've got your data open. But the problem is, EEGLAB has no idea which channel goes where. At present, all it knows is your channel IDs (names/numbers) if you're lucky.
 So your next step is to tell EEGLAB where these channels belong in relation to one another by using a location file. Luckily, the creators of EEGLAB have provided a channel file which features a database of 385 defined channel labels. As long as your data was imported into EEGLAB with these labels (which most systems do) then sourcing your channel locations from this file should typically work well.
 
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NXORaHENLDw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Code </u>
 
         EEG=pop_chanedit(EEG, 'lookup',[pathtoeeglab '\\plugins\\[CHANNEL ADDRESS]]']);
         
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
 
  [Script #2](/erp/files/script_2.zip) (download).
 
  [Script #2](/erp/files/script_2.txt) (view).
 
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u> Dataset</u> 
 
 To run this operation via the user interface, the example data set (used in the above video), along with the channel location file can be downloaded [here](https://drive.google.com/drive/folders/1Ebn1h7aeWH4Z5a194HsZIIaVyHfK6Jqa?usp=sharing).
 
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u>Activity</u>
 
 Have a go at setting channel locations for your dataset using both the UI and the scripts provided. 
 
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u>FAQs</u>
 
 {{% expand "How do I delete a channel?" %}}

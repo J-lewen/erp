@@ -5,7 +5,7 @@ bookToc: false
 ---
 <br>
 
-#### Getting started (or 'help, how do I make ERPLAB work?')
+### Getting started (or 'help, how do I make ERPLAB work?')
 
 <br>
 <u> Intro</u>
@@ -24,5 +24,6 @@ Finally, you will need to download the [ERPLAB](https://github.com/lucklab/erpla
 >
 >(e.g., C:/Users/Jen/Documents/MATLAB/eeglab2022.0/plugins/)
 
+<br>
 
 N.B I am in no way affiliated with any of the above mentioned companies/products/resources. I gain no financial incentives for providing the links here or if you click on them, but have done so to make things a little easier to find.

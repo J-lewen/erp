@@ -5,7 +5,7 @@ bookToc: false
 ---
 <br>
 
-#### Dealing with artifacts - ICA (or 'help, my data looks a mess')
+### Dealing with artifacts - ICA (or 'help, my data looks a mess')
 
 <br>
 <u> Intro</u>
@@ -25,21 +25,25 @@ So you've decided to go ahead with ICA. The first thing you need to do is clean 
 {{% expand "IMPORTANT: do you care about response accuracy?" %}}
 Depending on your paradigm you may want to exclude incorrect response trials. If you're lucky, you've programmed this such that your EEG data contains response triggers. If not, you may need to import accuracy from the experimental output file. In this instance, either import this information prior to data cleaning, or be careful not to cut trails during data cleaning, as this will result in a mismatch between your experimental file and EEG data.{{% /expand %}}
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
 
 
 #### Coming soon
 
+
+<hr style="height:1px; visibility:hidden;" />
 **Step 2: Running ICA**
 
 Now that you've cleaned the data, you're ready to run ICA. The output from this can be confusing, but there are a number of resources to help you familiarise yourself with the process of identifying occular activity, such as this incredibly helpful [UCSD Tutorial](https://labeling.ucsd.edu/tutorial/labels). 
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
 
 
 #### Coming soon
 
-
+<hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
 
  [Script #3](/erp/files/script_3.zip) (download).
@@ -49,23 +53,23 @@ Now that you've cleaned the data, you're ready to run ICA. The output from this 
  It's important to note that data cleaning can only be achieved via manual selection of noisy data. The scripts here assume that you have cleaned your data prior to running. If you want to practice cleaning the data, then running the full script inluding ICA you should use [Dataset #1](https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing) in its original .CNT form. Otherwise, if you simply want to practice running ICA on pre-cleaned data via the script, you should use [Dataset #2]().
  Running these scripts simply run the ICA decomposition process, but you then need to reopen your dataset to select and remove components.
 
-
-
+<hr style="height:1px; visibility:hidden;" />
 <u> Dataset</u>
 
 To clean your data and run ICA via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1)
 
+<hr style="height:1px; visibility:hidden;" />
+<u> Write-up </u>
+
+>*Continuous data was high-pass filtered offline, using an IIR Butterworth filter (2nd order) with a half-amplitude cut-off frequency of 0.1Hz and a and 12 dB/octave roll-off.*
 
 
-
-<br>
-
-
-
+<hr style="height:1px; visibility:hidden;" />
 <u> Activity</u>
 
 Have a go at cleaning the dataset provided in ERPLAB. Then, visit the [UCSD ICLabel Tutorial](https://labeling.ucsd.edu/tutorial/practice), where you can practice labelling the source of components based on studying their EEGLAB output.
 
+<hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
 
 {{% expand "Question 1" %}}

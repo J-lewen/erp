@@ -5,7 +5,7 @@ bookToc: false
 ---
 <br>
 
-#### Resampling
+### Resampling
 
 <br>
 <u> Intro</u>
@@ -22,17 +22,18 @@ EEG datasets are typically quite big. Usually you need a reasonable number of th
 
 Once you've made the decision as to your preferred sampling rate, the process is a relatively quick and simple one, as outlined in the below video.
 
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
 <br>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wsPO-mjG6yg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-
+<hr style="height:1px; visibility:hidden;" />
 <u> Code</u>
 
         EEG = pop_resample( EEG, 250);
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
 
  [Script #3](/erp/files/script_3.zip) (download).
@@ -41,13 +42,21 @@ Once you've made the decision as to your preferred sampling rate, the process is
 
  Note that to run this script you should use [Dataset #1](https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing) in its original .CNT form, as the script runs from the original continuous files (you need a different function to import .fdt and .set EEGLAB files)
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Dataset</u>
 
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/1oPFvb4LEVHFkMAHJCvakN1rejq8tBAxH?usp=sharing).
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Activity</u>
 
 Have a go at resampling the dataset provided, both via the user interface and using the available script. Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
+
+<hr style="height:1px; visibility:hidden;" />
+<u> Write-up </u>
+
+
+>*EEG data were recorded and digitized at the sampling rate of XXX Hz using a XXX amplifier and subsequently downsampled offline to XXX Hz.*
 
 <u>FAQ</u>
 

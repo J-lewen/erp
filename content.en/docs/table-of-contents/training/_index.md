@@ -13,9 +13,9 @@ The course is split into X parts. Each part is intended to only last a couple of
 2. A video to guide you through conducting the pre-processing operation(s) via the user interface (UI);
 3. The code equivalent of the pre-processing steps conducted;
 4. A complete script, compiling all pre-processing operations conducted up to (and including) the current page;
-5. A written summary of the operation, reflecting gold-standard pre-processing reporting (1);  
-6. An example dataset (so that you can have a go);
-7. Where relevant, a brief activity or task to consolidate understanding.
+5. An example dataset (so that you can have a go);
+6. Where relevant, a brief activity or task to consolidate understanding.
+7. A written summary of the operation, reflecting gold-standard pre-processing reporting <!-- <a> element links to the section below --> <a href="#Section_further_down"> (1)</a>;  
 8. FAQs
 
 
@@ -33,4 +33,8 @@ You are free (in fact, welcome) to use all and any of the resources on these pag
 
 <br>
 
-(1) See [Resources for researchers](https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/) for the complete pre-processing paragraph that reflects the exact pipeline followed in this tutorial. You are welcome to copy and paste either this, or the text lines provided for each stage in its exact format into your work (in fact I encourage you to do so to improve ERP reporting standards), so long as you cite these resources in your paper.
+##### <u>Footnotes</u>
+
+<h5 id="Section_further_down">
+
+(1) See [Resources for researchers](https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/) for the complete pre-processing paragraph that reflects the exact pipeline followed in this tutorial. You are welcome to copy and paste either this, or the text lines provided for each stage in its exact format into your work (in fact I encourage you to do so to improve ERP reporting standards), so long as you cite these resources in your paper. </h2>
