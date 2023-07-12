@@ -5,28 +5,33 @@ bookToc: false
 ---
 <br>
 
-#### TITLE
+### TITLE
 <br>
 
 <u> Intro</u>
 
 #### Coming soon
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
+
+<hr style="height:1px; visibility:hidden;" />
 <u> Code</u>
 
         N/A
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
 
         N/A
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Dataset</u>
 
-
+<hr style="height:1px; visibility:hidden;" />
 <u> Activity</u>
 
-
+<hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
 
 {{% expand "Q1" %}}

@@ -5,35 +5,41 @@ bookToc: false
 ---
 <br>
 
-#### TITLE
+### TITLE
 <br>
 
 <u> Intro</u>
 
 #### Coming soon
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
 
 #### Coming soon
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Code</u>
 
         N/A
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
 
  [Script #8](/erp/files/script_8.zip) (download).
 
  [Script #8](/erp/files/script_8.m) (view).
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Dataset</u>
 
 To run this operation via the user interface, the example data set (used in the above video) can be downloaded [here]()
 
+<hr style="height:1px; visibility:hidden;" />
 <u> Activity</u>
 
 Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 
+<hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
 
 {{% expand "Q1" %}}
