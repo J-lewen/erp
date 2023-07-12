@@ -10,8 +10,14 @@ bookToc: false
 
 <u> Intro</u>
 
-Filtering is a complex process, and requires some thought and consideration. It's important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering (particularly see [this paper](https://www.researchgate.net/publication/273405257_How_inappropriate_high-pass_filters_can_produce_artifactual_effects_and_incorrect_conclusions_in_ERP_studies_of_language_and_cognition) for a fantastic overview of the issue). 
-High-pass filtering - the type of filter that allows the **higher** amplitudes to pass through but cuts out the lower amplitudes - is a really important first step in your data processing. As with all the other pre-processing steps, you will see plenty of examples in the literature of high-pass
+Filtering is a complex process, and requires some thought and consideration. It's important that you read around on some literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering (particularly see [this paper](https://www.researchgate.net/publication/273405257_How_inappropriate_high-pass_filters_can_produce_artifactual_effects_and_incorrect_conclusions_in_ERP_studies_of_language_and_cognition) for a fantastic overview of the issue). 
+High-pass filtering - the type of filter that allows the **higher** amplitudes to pass through but cuts out the lower amplitudes - is a really important early step in your pre-processing pipeline. But High-pass filtering can also cause substantial distortions of your data. So why do it?
+
+![drift](/erp/images/drift.png)
+
+As you record EEG from a participant, you will often notice slow drifts in voltage that occur over time. These can be quite dramatic (as in the picture above) or occur very steadily. These drifts are caused by changes in the conductivity of the skin, which are fairly unavoidable apart from ensuring your participants don't sweat excessively (see 'what if I have really sweaty participants?' below). High pass filtering predominantly serves to reduce these slow drifts, although will not eliminate them completely.
+
+As with all the other pre-processing steps, you will see plenty of examples in the literature of high-pass filtering done badly. But it is also not to be naive of the fact that **all filters will distort your data**. Because of this, it's crucial to select your filter carefully.
 
 <u> Video</u>
 

@@ -4,31 +4,21 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="High-pass filtering#Intro
-Filtering is a complex process, and requires some thought and consideration. It&rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
-Video
-Coming soon#Code
-EEG = pop_basicfilter( EEG, [1:NUMBER OF ELECTRODES] , &#39;Boundary&#39;, &#39;boundary&#39;, &#39;Cutoff&#39;, 0.1, &#39;Design&#39;, &#39;butter&#39;, &#39;Filter&#39;, &#39;highpass&#39;, &#39;Order&#39;, 2 ); Script
-Script #4 (download).
-Script #4 (view).">
+Filtering is a complex process, and requires some thought and consideration. It&rsquo;s important that you read around on some literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering (particularly see this paper for a fantastic overview of the issue). High-pass filtering - the type of filter that allows the higher amplitudes to pass through but cuts out the lower amplitudes - is a really important early step in your pre-processing pipeline.">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="5. High-pass filtering" />
 <meta property="og:description" content="High-pass filtering#Intro
-Filtering is a complex process, and requires some thought and consideration. It&rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
-Video
-Coming soon#Code
-EEG = pop_basicfilter( EEG, [1:NUMBER OF ELECTRODES] , &#39;Boundary&#39;, &#39;boundary&#39;, &#39;Cutoff&#39;, 0.1, &#39;Design&#39;, &#39;butter&#39;, &#39;Filter&#39;, &#39;highpass&#39;, &#39;Order&#39;, 2 ); Script
-Script #4 (download).
-Script #4 (view)." />
+Filtering is a complex process, and requires some thought and consideration. It&rsquo;s important that you read around on some literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering (particularly see this paper for a fantastic overview of the issue). High-pass filtering - the type of filter that allows the higher amplitudes to pass through but cuts out the lower amplitudes - is a really important early step in your pre-processing pipeline." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-05-21T08:28:31+04:00" />
+<meta property="article:modified_time" content="2023-07-11T21:40:08+01:00" />
 <title>5. High-pass filtering | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.8b0d63b9cbad49225ae2cb72cf0293db75f38af85b3e3c404179e93284d2a1e2.js" integrity="sha256-iw1jucutSSJa4styzwKT23XzivhbPjxAQXnpMoTSoeI=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.88b3c94459085151fa3fefeb82e04fcc022f03f5c944b29fd82da88344689f25.js" integrity="sha256-iLPJRFkIUVH6P&#43;/rguBPzAIvA/XJRLKf2C2og0RonyU=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -523,7 +513,13 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#high-pass-filtering">#</a>
 </h4>
 <p><u> Intro</u></p>
-<p>Filtering is a complex process, and requires some thought and consideration. It&rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.</p>
+<p>Filtering is a complex process, and requires some thought and consideration. It&rsquo;s important that you read around on some literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering (particularly see 
+  <a href="https://www.researchgate.net/publication/273405257_How_inappropriate_high-pass_filters_can_produce_artifactual_effects_and_incorrect_conclusions_in_ERP_studies_of_language_and_cognition">this paper</a> for a fantastic overview of the issue).
+High-pass filtering - the type of filter that allows the <strong>higher</strong> amplitudes to pass through but cuts out the lower amplitudes - is a really important early step in your pre-processing pipeline. But High-pass filtering can also cause substantial distortions of your data. So why do it?</p>
+<p>
+  <img src="/erp/images/drift.png" alt="drift" /></p>
+<p>As you record EEG from a participant, you will often notice slow drifts in voltage that occur over time. These can be quite dramatic (as in the picture above) or occur very steadily. These drifts are caused by changes in the conductivity of the skin, which are fairly unavoidable apart from ensuring your participants don&rsquo;t sweat excessively (see &lsquo;what if I have really sweaty participants?&rsquo; below). High pass filtering predominantly serves to reduce these slow drifts, although will not eliminate them completely.</p>
+<p>As with all the other pre-processing steps, you will see plenty of examples in the literature of high-pass filtering done badly. But it is also not to be naive of the fact that <strong>all filters will distort your data</strong>. Because of this, it&rsquo;s crucial to select your filter carefully.</p>
 <p><u> Video</u></p>
 <h4 id="coming-soon">
   Coming soon

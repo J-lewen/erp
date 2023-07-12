@@ -51,12 +51,7 @@ How important is it for you to measure the precise onset of your effects? Typica
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_5/</guid>
       <description>High-pass filtering#Intro
-Filtering is a complex process, and requires some thought and consideration. It&amp;rsquo;s important that you read the literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering.
-Video
-Coming soon#Code
-EEG = pop_basicfilter( EEG, [1:NUMBER OF ELECTRODES] , &#39;Boundary&#39;, &#39;boundary&#39;, &#39;Cutoff&#39;, 0.1, &#39;Design&#39;, &#39;butter&#39;, &#39;Filter&#39;, &#39;highpass&#39;, &#39;Order&#39;, 2 ); Script
-Script #4 (download).
-Script #4 (view).</description>
+Filtering is a complex process, and requires some thought and consideration. It&amp;rsquo;s important that you read around on some literature on filtering to understand what you are doing to your data, and the consequences of inappropriate filtering (particularly see this paper for a fantastic overview of the issue). High-pass filtering - the type of filter that allows the higher amplitudes to pass through but cuts out the lower amplitudes - is a really important early step in your pre-processing pipeline.</description>
     </item>
     
     <item>
@@ -75,14 +70,11 @@ Script #4 (view).</description>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</guid>
       <description>Interpolation (or &amp;lsquo;oops the eye electrode fell off my participant&amp;rsquo;s face&amp;rsquo;)#Intro
+Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them.
+Interpolation - put simply - involves recreating one electrode from its surrounding electrodes.
 Video Code
 N/AScript
-Script #4 (download).
-Script #4 (view).
-Dataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+Script #4 (download).</description>
     </item>
     
     <item>
