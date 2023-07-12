@@ -102,29 +102,29 @@ Filtering is a complex process, and requires some thought and consideration. It&
     
     <item>
       <title>6. Artifact correction (ICA)</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
-      <description>Dealing with artifacts - ICA (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
-    </item>
-    
-    <item>
-      <title>7. Interpolation</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</guid>
+      <description>Dealing with artifacts - ICA (or &amp;lsquo;help, my data looks a mess&amp;rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.</description>
+    </item>
+    
+    <item>
+      <title>8. Interpolation</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
       <description>Interpolation (or &amp;lsquo;oops the eye electrode fell off my participant&amp;rsquo;s face&amp;rsquo;)#Intro
 Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them. Interpolation - put simply - involves recreating one electrode from its surrounding electrodes. As a function in EEGLAB, interpolation is fairly simple to carry out.</description>
     </item>
     
     <item>
       <title>8. Re-referencing</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</link>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
       <description>Re-referencing#Intro
 Important distinction between online reference and offline reference. #You should report both in your paper#.
 VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).

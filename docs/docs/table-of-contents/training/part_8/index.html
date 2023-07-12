@@ -3,30 +3,22 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
-Script #5 (view).
-DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!">
+<meta name="description" content="Interpolation (or &lsquo;oops the eye electrode fell off my participant&rsquo;s face&rsquo;)#Intro
+Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them. Interpolation - put simply - involves recreating one electrode from its surrounding electrodes. As a function in EEGLAB, interpolation is fairly simple to carry out.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="8. Re-referencing" />
-<meta property="og:description" content="Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
-Script #5 (view).
-DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="8. Interpolation" />
+<meta property="og:description" content="Interpolation (or &lsquo;oops the eye electrode fell off my participant&rsquo;s face&rsquo;)#Intro
+Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them. Interpolation - put simply - involves recreating one electrode from its surrounding electrodes. As a function in EEGLAB, interpolation is fairly simple to carry out." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-07-12T13:31:57+01:00" />
-<title>8. Re-referencing | ERP Resources</title>
+<title>8. Interpolation | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.d95af6845deaaa6efd8b4bd31fa4e761608d6fb700b47971108e38f1e404c64c.js" integrity="sha256-2Vr2hF3qqm79i0vTH6TnYWCNb7cAtHlxEI448eQExkw=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.49b6a8c80ef7a555c0c4e804cd4462011d8e542ad0b2bc32e5855693e8dd8c7e.js" integrity="sha256-SbaoyA73pVXAxOgEzURiAR2OVCrQsrwy5YVWk&#43;jdjH4=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -207,7 +199,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_6/" class="">6. Artifact correction (ICA)</a>
+    <a href="/erp/docs/table-of-contents/training/part_7/" class="">6. Artifact correction (ICA)</a>
   
 
         </li>
@@ -220,7 +212,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_7/" class="">7. Interpolation</a>
+    <a href="/erp/docs/table-of-contents/training/part_8/" class="active">8. Interpolation</a>
   
 
         </li>
@@ -233,7 +225,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_8/" class="active">8. Re-referencing</a>
+    <a href="/erp/docs/table-of-contents/training/part_6/" class="">8. Re-referencing</a>
   
 
         </li>
@@ -501,7 +493,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>8. Re-referencing</strong>
+  <strong>8. Interpolation</strong>
 
   <label for="toc-control">
     
@@ -516,55 +508,67 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><br>
-<h3 id="re-referencing">
-  Re-referencing
-  <a class="anchor" href="#re-referencing">#</a>
+<h3 id="interpolation-or-oops-the-eye-electrode-fell-off-my-participants-face">
+  Interpolation (or &lsquo;oops the eye electrode fell off my participant&rsquo;s face&rsquo;)
+  <a class="anchor" href="#interpolation-or-oops-the-eye-electrode-fell-off-my-participants-face">#</a>
 </h3>
 <br>
 <p><u> Intro</u></p>
-<p>Important distinction between online reference and offline reference. #You should report both in your paper#.</p>
+<p>Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them. Interpolation - put simply - involves recreating one electrode from its surrounding electrodes. As a function in EEGLAB, interpolation is fairly simple to carry out.</p>
+<p>
+  <img src="/erp/images/interpolate.png" alt="drift" /></p>
+<p>It&rsquo;s easy to see why interpolation is useful. However, let&rsquo;s exemplify the pitfalls of interpolation through an example:</p>
+<p>Imagine you are a researcher interested in measuring the N400 response to a target. You collect data from a participant, and note that whilst the data overall is of very good quality, a number of electrodes have broken or lost connection during the testing session. These electrodes are Cz, C2, CP1, CPz, and CP2.</p>
+<p>In theory you could interpolate these electrodes. But you need to think critically about the dataset this would leave you with. There are two problems here. 1. The electrodes that require interpolation are clustered together in a group. This means that rather than rebuilding the signal from immediately surrounding electrodes, any signal that forms part of the reconstructed electrode will need to come from outside of this bad electrode cluster. The more bad electrodes you have in close proximity, the less accurately interpolation can rebuild something close to the true signal that would have been recorded at the electrode site. Problem 2 pertains to your experiment design. If my intention is to measure the N400, the electrodes in my bad cluster are critical. The N400 - as a typically centroparietal component, is typically recorded from central, centroparietal and (sometimes) frontal or parietal sites. If the vast majority of these electrodes bad (i.e., requiring interpolation), you need to consider whether it&rsquo;s reasonable to retain a dataset in your grand average for which 5 integral electrodes have been interpolated. The long and short of it is, use interpolation to your advantage, but make sure the way you use it is reasonable.</p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
+<p>COMING SOON</p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Code</u>
-<pre><code>            EEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );
+<pre><code>   EEG = pop_interp(EEG, [SPECIFY ELECTRODE NUMBER HERE], 'spherical');
 </code></pre>
 <hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
 <p>
-  <a href="/erp/files/script_5.zip">Script #5</a> (download).</p>
+  <a href="/erp/files/script_7.zip">Script #5</a> (download).</p>
 <p>
-  <a href="/erp/files/script_5.m">Script #5</a> (view).</p>
+  <a href="/erp/files/script_7.txt">Script #5</a> (view).</p>
+<p>Note that to run this script you should use 
+  <a href="https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing">Dataset #7</a>. From this step onwards we will use Dataset #7 which has been pre-cleaned (ready for ICA), as opposed to Dataset #1.</p>
 <hr style="height:1px; visibility:hidden;" />
-<u> Dataset</u>
-<p>To run this operation via the user interface, the example data set (used in the above video) can be downloaded 
-  <a href="/erp/">here</a></p>
+<u> Datasets</u>
+<p>To run this operation via the user interface, the example dataset (used in the above video) can be downloaded 
+  <a href="/erp/">here</a>, along with an additional dataset for scripting practice.</p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Activity</u>
-<p>Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).</p>
+<p>Have a go at interpolating electrodes manually via the UI, and via the attached scripts. Note that the scripts provided here enables you to run through interpolation for all participants whilst specifying &lsquo;bad&rsquo; electrodes at the beginning of the code. This is because most participants will need different electrodes interpolating, so specifying a given electrode won&rsquo;t work if you want to use the script to pre-process en-mass.
+To practise with the script, enter the electrode that you want to interpolate for a given participant in the curly brackets that follows that participant&rsquo;s ID, e.g.:</p>
+<pre><code>   badchans.participant_01 = {'Cz'}; 
+</code></pre>
+<p>Then note how this creates a &lsquo;badchans&rsquo; list for each participant. See if you can get the script running for the two provided datasets, interpolating whichever electrodes you like.</p>
 <hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>How do I choose my offline reference site(s)?</span>
+      <span>What if I am that N400 researcher?</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      A1.
+      So you&rsquo;ve got a dataset with a number of bad electrodes that are critical to your analysis. First off, silly you. No but seriously - try to fix these things during data acquisition because a 1-2h testing session end up completely wasted if you decide you&rsquo;re done with fixing impedance problems prematurely. But let&rsquo;s assume this is the situation you&rsquo;re in (because we&rsquo;ve all been silly at some point). The above scenario is fairly extreme, and in reality your options are fairly limited for retaining the dataset. But if we assume that you&rsquo;ve not got 5 crucial electrodes to interpolate, but instead perhaps 3, I would suggest considering a few factors to help inform your decisions. Firstly, how many surrounding electrodes remain, and how close are they in proximity to the original electrode? This will depend on how many electrodes you originally recorded from. For example, trying to interpolate 3 electrodes when you have a 12 electrode cap, vs a 128 is a very different scenario. Secondly, did any of the electrodes lose connection for a brief period, and then regain connection again? If so (see FAQ2) it might be worthwhile leaving the electrode alone.
     </div>
   </label>
 </div>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Q2</span>
+      <span>What if an electrode only goes bad for a short period?</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      A2.
+      There&rsquo;s no clear-cut answer to this one. Do you want to lose an experimental block because an electrode has gone awry, or do you want to lose the true signal from that electrode for the entire dataset. Two questions can factor into this though, firstly - how integral the electrode is to the component you&rsquo;re analysing, and secondly - how many trials per condition you can afford to lose? Generally, if the answer two the first question is &lsquo;very&rsquo;, I personally would be inclined not to interpolate the electrode in the first instance, and see whether I&rsquo;m left with a reasonable number of trials if I do so. If, however, the trial count drops below that which would enable you to retain the dataset in your analysis, then interpolation is probably the right route.
     </div>
   </label>
 </div>

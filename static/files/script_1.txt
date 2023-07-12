@@ -1,3 +1,11 @@
+%Pre-content
+
+%%% The content below - everything preceeding Section 1, should be run first.
+%%% This is the case irrespective of whether you're planning to run Section
+%%% 1 or Section 2. To run any concent in this script, you can either
+%%% choose 'Run Section' in the menu on the far right, or you can hold down
+%%% control and press enter.
+
 %%% Cleans up the workspace - useful to run in case you have any leftovers
 %%% from previous MATLAB activity.
 clear all
@@ -16,8 +24,8 @@ addpath(pathtoeeglab);
 
 %%% List your participants. Each participant should have a new line, with
 %%% the structure badchans.[dataset name] = { };
-%%% e.g., badchans.[Dataset_1] = { };
-badchans.[ENTER YOUR DATASET NAME HERE];
+%%% e.g., badchans.[Dataset_filtering] = { };
+badchans.Dataset_1 = {};
 
 %%% tells MATLAB what the subject (dataset) names are
 subjects = fieldnames(badchans)';
@@ -29,6 +37,8 @@ if ismember(1, arrayfun( @(x)(strcmp('\',x)), pathtodata))
 else
     path_delimiter = '/';
 end;
+
+%% Section 1
 
 %%% the below line tells EEGLAB to conduct the following steps for all
 %%% datasets, from 1 to whatever length 'subjects' (our dataset list) is.

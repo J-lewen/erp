@@ -3,20 +3,30 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Dealing with artifacts - ICA (or &lsquo;help, my data looks a mess&rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.">
+<meta name="description" content="Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
+Script #5 (view).
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="6. Artifact correction (ICA)" />
-<meta property="og:description" content="Dealing with artifacts - ICA (or &lsquo;help, my data looks a mess&rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise." />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="8. Re-referencing" />
+<meta property="og:description" content="Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
+Script #5 (view).
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/" /><meta property="article:section" content="docs" />
 
 <meta property="article:modified_time" content="2023-07-12T14:38:57+01:00" />
-<title>6. Artifact correction (ICA) | ERP Resources</title>
+<title>8. Re-referencing | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.d95af6845deaaa6efd8b4bd31fa4e761608d6fb700b47971108e38f1e404c64c.js" integrity="sha256-2Vr2hF3qqm79i0vTH6TnYWCNb7cAtHlxEI448eQExkw=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.49b6a8c80ef7a555c0c4e804cd4462011d8e542ad0b2bc32e5855693e8dd8c7e.js" integrity="sha256-SbaoyA73pVXAxOgEzURiAR2OVCrQsrwy5YVWk&#43;jdjH4=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -197,7 +207,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_6/" class="active">6. Artifact correction (ICA)</a>
+    <a href="/erp/docs/table-of-contents/training/part_7/" class="">6. Artifact correction (ICA)</a>
   
 
         </li>
@@ -210,7 +220,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_7/" class="">7. Interpolation</a>
+    <a href="/erp/docs/table-of-contents/training/part_8/" class="">8. Interpolation</a>
   
 
         </li>
@@ -223,7 +233,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_8/" class="">8. Re-referencing</a>
+    <a href="/erp/docs/table-of-contents/training/part_6/" class="active">8. Re-referencing</a>
   
 
         </li>
@@ -491,7 +501,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>6. Artifact correction (ICA)</strong>
+  <strong>8. Re-referencing</strong>
 
   <label for="toc-control">
     
@@ -506,98 +516,55 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><br>
-<h3 id="dealing-with-artifacts---ica-or-help-my-data-looks-a-mess">
-  Dealing with artifacts - ICA (or &lsquo;help, my data looks a mess&rsquo;)
-  <a class="anchor" href="#dealing-with-artifacts---ica-or-help-my-data-looks-a-mess">#</a>
+<h3 id="re-referencing">
+  Re-referencing
+  <a class="anchor" href="#re-referencing">#</a>
 </h3>
 <br>
-<u> Intro</u>
-<p>Preamble: The most important thing to mention here is that there is no substitute for good quality data. You <em>must</em> ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise. Why? because participants are only human. Give them a break in a testing session and they will almost inevitably move more than you thought humanly possible in the space of 30 seconds.</p>
-<p>Most of this noise is impossible to deal with. Muscle movements, eye movements coughs and yawns are simply magnitudes larger than the brainwaves we&rsquo;re interested in measuring. Most of this data will therefore have to be rejected (see 
-  <a href="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/">11. Artifact rejection</a> for more info). But this will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes.</p>
-<p>Enter independent component analysis (ICA), a means &lsquo;remove&rsquo; the blinks from your data. However, there are some down sides (see FAQ), so don&rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions. Nonetheless, done properly, ICA can offer you a means through which blinks can be deal with without losing all of your precious data.</p>
-<p>What does ICA do? In overly simplified terms, ICA involves creating a model of vertical (blinks) and horizontal (sideways glances) eye movements for a given participant. The model(s) of these eye movement(s) can then be subtracted out of the data, leaving beautifully clean blink-free EEG. However, it is important to have a solid understanding of the pitfalls of ICA before you subject your data to this technique, so I thoroughly recommend reading around before you charge on in.</p>
-<p><strong>Stage 1: Data cleaning</strong></p>
-<p>So you&rsquo;ve decided to go ahead with ICA. The first thing you need to do is clean you data. This is because (assuming you&rsquo;re using your whole dataset for ICA training) you need to help the algorithm to successfully identify blinks as opposed to other sources of noise. Importantly, the number of independent components is (by necessity) always equal to the number of channels in your dataset. Because of this, you don&rsquo;t want a 20 second coughing fit that your participant had half way through the session to &rsquo;take up&rsquo; 15-odd components.</p>
-<div class="book-expand">
-  <label>
-    <div class="book-expand-head flex justify-between">
-      <span>IMPORTANT: do you care about response accuracy?</span>
-      <span>↕</span>
-    </div>
-    <input type="checkbox" class="hidden" />
-    <div class="book-expand-content markdown-inner">
-      Depending on your paradigm you may want to exclude incorrect response trials. If you&rsquo;re lucky, you&rsquo;ve programmed this such that your EEG data contains response triggers. If not, you may need to import accuracy from the experimental output file. In this instance, either import this information prior to data cleaning, or be careful not to cut trails during data cleaning, as this will result in a mismatch between your experimental file and EEG data.
-    </div>
-  </label>
-</div>
+<p><u> Intro</u></p>
+<p>Important distinction between online reference and offline reference. #You should report both in your paper#.</p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
-<h4 id="coming-soon">
-  Coming soon
-  <a class="anchor" href="#coming-soon">#</a>
-</h4>
 <hr style="height:1px; visibility:hidden;" />
-**Step 2: Running ICA**
-<p>Now that you&rsquo;ve cleaned the data, you&rsquo;re ready to run ICA. The output from this can be confusing, but there are a number of resources to help you familiarise yourself with the process of identifying occular activity, such as this incredibly helpful 
-  <a href="https://labeling.ucsd.edu/tutorial/labels">UCSD Tutorial</a>.</p>
-<hr style="height:1px; visibility:hidden;" />
-<u> Video</u>
-<h4 id="coming-soon-1">
-  Coming soon
-  <a class="anchor" href="#coming-soon-1">#</a>
-</h4>
+<u> Code</u>
+<pre><code>            EEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );
+</code></pre>
 <hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
 <p>
-  <a href="/erp/files/script_3.zip">Script #3</a> (download).</p>
+  <a href="/erp/files/script_5.zip">Script #5</a> (download).</p>
 <p>
-  <a href="/erp/files/script_3.txt">Script #3</a> (view).</p>
-<p>It&rsquo;s important to note that data cleaning can only be achieved via manual selection of noisy data. The scripts here assume that you have cleaned your data prior to running. If you want to practice cleaning the data, then running the full script inluding ICA you should use 
-  <a href="https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing">Dataset #1</a> in its original .CNT form. Otherwise, if you simply want to practice running ICA on pre-cleaned data via the script, you should use 
-  <a href="/erp/">Dataset #2</a>.
-Running these scripts simply run the ICA decomposition process, but you then need to reopen your dataset to select and remove components.</p>
+  <a href="/erp/files/script_5.m">Script #5</a> (view).</p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Dataset</u>
-<p>To clean your data and run ICA via the user interface, the example data set (used in the above video) can be downloaded 
-  <a href="https://drive.google.com/drive/folders/18zOk6T1sNsnfefvYRWWgp-o9ReFzQvU1">here</a></p>
-<hr style="height:1px; visibility:hidden;" />
-<u> Write-up </u>
-<blockquote>
-<p><em>Continuous data was high-pass filtered offline, using an IIR Butterworth filter (2nd order) with a half-amplitude cut-off frequency of 0.1Hz and a and 12 dB/octave roll-off.</em></p>
-</blockquote>
+<p>To run this operation via the user interface, the example data set (used in the above video) can be downloaded 
+  <a href="/erp/">here</a></p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Activity</u>
-<p>Have a go at cleaning the dataset provided in ERPLAB. Then, visit the 
-  <a href="https://labeling.ucsd.edu/tutorial/practice">UCSD ICLabel Tutorial</a>, where you can practice labelling the source of components based on studying their EEGLAB output.</p>
-<hr style="height:1px; visibility:hidden;" />
-<u> Write-up </u>
-<blockquote>
-<p><em>EEG data were recorded and digitized at the sampling rate of XXX Hz using a XXX amplifier and subsequently downsampled offline to XXX Hz.</em></p>
-</blockquote>
+<p>Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).</p>
 <hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Question 1</span>
+      <span>How do I choose my offline reference site(s)?</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      Answer 1.
+      A1.
     </div>
   </label>
 </div>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Question 2</span>
+      <span>Q2</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      Answer 2.
+      A2.
     </div>
   </label>
 </div>
