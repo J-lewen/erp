@@ -56,7 +56,7 @@ Have a go at resampling the dataset provided, both via the user interface and us
 <u> Write-up </u>
 
 
->*EEG data were recorded and digitized at the sampling rate of XXX Hz using a XXX amplifier and subsequently downsampled offline to XXX Hz.*
+>*EEG data were recorded and digitized at the sampling rate of {ENTER SAMPLING RATE OF ORIGINAL DATASET HERE}Hz using a [ENTER MAKE AND MODEL HERE] amplifier and subsequently downsampled offline to 250Hz.*
 
 <u>FAQ</u>
 

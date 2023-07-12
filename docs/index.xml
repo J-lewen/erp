@@ -40,16 +40,7 @@ VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; ,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/external/acquisition/</guid>
-      <description>Coming soon! Acquiring your data#</description>
-    </item>
-    
-    <item>
-      <title>Scripts: Essential information</title>
-      <link>https://j-lewen.github.io/erp/docs/scripts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/scripts/</guid>
-      <description>How to use the scripts provided within these pages#Every script looks a little different to the &amp;lsquo;code&amp;rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.</description>
+      <description> Acquiring your data#EEG protocol for research Farrens, J. L., Simmons, A. M., Luck, S. J., &amp;amp; Kappenman, E. S. (2021). Electroencephalogram (EEG) recording protocol for cognitive and affective human neuroscience research. </description>
     </item>
     
     <item>
@@ -78,17 +69,6 @@ VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; ,
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</guid>
       <description>Resampling#IntroResampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:
 How important is it for you to measure the precise onset of your effects? Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount.</description>
-    </item>
-    
-    <item>
-      <title>Resources for researchers</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/</guid>
-      <description>under construction
-Pre-processing reporting template
-A generic template for reporting ERP pre-processing steps. Note that this template will not suit everyone, and adaptation/amendments/deletions may be required Template for reporting</description>
     </item>
     
     <item>
@@ -138,9 +118,7 @@ Filtering is a complex process, and requires some thought and consideration. It&
       <description>Interpolation (or &amp;lsquo;oops the eye electrode fell off my participant&amp;rsquo;s face&amp;rsquo;)#Intro
 Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them.
 Interpolation - put simply - involves recreating one electrode from its surrounding electrodes.
-Video Code
-N/AScript
-Script #4 (download).</description>
+VideoCodeN/AScriptScript #4 (download).</description>
     </item>
     
     <item>
@@ -151,14 +129,10 @@ Script #4 (download).</description>
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
       <description>Re-referencing#Intro
 Important distinction between online reference and offline reference. #You should report both in your paper#.
-Video Code
-EEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );Script
-Script #5 (download).
+VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
 Script #5 (view).
-Dataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
@@ -169,15 +143,10 @@ Finally, save your version of the script to your computer so as to ensure you ha
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</guid>
       <description>Re-referencing#Intro
 Important distinction between online reference and offline reference. #You should report both in your paper#.
-Video
-Coming soon#Code
-N/AScript
-Script #6 (download).
+VideoComing soon#CodeN/AScriptScript #6 (download).
 Script #6 (view).
-Dataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
@@ -197,16 +166,12 @@ Personal website with CV, publications &amp;amp; research interests. Google Scho
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_10/</guid>
-      <description>Epoch (or segment, or &amp;lsquo;cut up&amp;rsquo; your data#Intro
+      <description>Epoch (or &amp;lsquo;segment&amp;rsquo;, or &amp;lsquo;cut up&amp;rsquo; your data)#Intro
 Epoching effectively cuts up your data into segments based on a given trigger, or set of triggers. So far, we&amp;rsquo;ve worked exclusively with continuous data. What does this mean? This means that your whole EEG recording is in one long &amp;lsquo;continuous&amp;rsquo; file&amp;hellip;
 See?
-Video
-Coming soon#Code
-N/AScript
-Script #7 (download).
+VideoComing soon#CodeN/AScriptScript #7 (download).
 Script #7 (view).
-Dataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here</description>
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here</description>
     </item>
     
     <item>
@@ -216,15 +181,10 @@ To run this operation via the user interface, the example data set (used in the 
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</guid>
       <description>TITLE#Intro
-Coming soon#Video
-Coming soon#Code
-N/AScript
-Script #8 (download).
+Coming soon#VideoComing soon#CodeN/AScriptScript #8 (download).
 Script #8 (view).
-Dataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
@@ -234,15 +194,10 @@ Finally, save your version of the script to your computer so as to ensure you ha
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</guid>
       <description>TITLE#Intro
-Coming soon#Video
-Coming soon#Code
-N/AScript
-Script #9 (download).
+Coming soon#VideoComing soon#CodeN/AScriptScript #9 (download).
 Script #9 (view).
-Dataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
@@ -252,15 +207,10 @@ Finally, save your version of the script to your computer so as to ensure you ha
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</guid>
       <description>TITLE#Intro
-Coming soon#Video
-Coming soon#Code
-N/AScript
-Script #10 (download).
+Coming soon#VideoComing soon#CodeN/AScriptScript #10 (download).
 Script #10 (view).
-Dataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
@@ -270,15 +220,10 @@ Finally, save your version of the script to your computer so as to ensure you ha
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_14/</guid>
       <description>TITLE#Intro
-Coming soon#Video
-Coming soon#Code
-N/AScript
-Script #11 (download).
+Coming soon#VideoComing soon#CodeN/AScriptScript #11 (download).
 Script #11 (view).
-Dataset
-To run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-Activity
-Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
@@ -289,12 +234,26 @@ Finally, save your version of the script to your computer so as to ensure you ha
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_15/</guid>
       <description>
 TITLE#Intro
-Coming soon#Video Code
-N/AScript
-N/ADataset
-Activity
-FAQ
-Q1↕A1.Q2↕A2.</description>
+Coming soon#VideoCodeN/AScriptN/ADatasetActivityFAQQ1↕A1.Q2↕A2.</description>
+    </item>
+    
+    <item>
+      <title>Appendix A</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_16/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_16/</guid>
+      <description>Pre-processing reporting template
+A generic template for reporting ERP pre-processing steps. Note that this template will not suit everyone, and adaptation/amendments/deletions may be required</description>
+    </item>
+    
+    <item>
+      <title>Scripts: Essential information</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/scripts/</guid>
+      <description>How to use the scripts provided within these pages#Every script looks a little different to the &amp;lsquo;code&amp;rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.</description>
     </item>
     
   </channel>

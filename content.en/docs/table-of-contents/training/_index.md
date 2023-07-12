@@ -37,4 +37,4 @@ You are free (in fact, welcome) to use all and any of the resources on these pag
 
 <h5 id="Section_further_down">
 
-(1) See [Resources for researchers](https://j-lewen.github.io/erp/docs/table-of-contents/researcher_resources/) for the complete pre-processing paragraph that reflects the exact pipeline followed in this tutorial. You are welcome to copy and paste either this, or the text lines provided for each stage in its exact format into your work (in fact I encourage you to do so to improve ERP reporting standards), so long as you cite these resources in your paper. </h2>
+(1) See [Appendix A](https://j-lewen.github.io/erp/docs/table-of-contents/training/part_16/) for the complete pre-processing paragraph that reflects the exact pipeline followed in this tutorial. You are welcome to copy and paste either this, or the text lines provided for each stage in its exact format into your work (in fact I encourage you to do so to improve ERP reporting standards), so long as you cite these resources in your paper. </h2>

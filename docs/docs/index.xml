@@ -6,15 +6,6 @@
     <description>Recent content in Docs on ERP Resources</description>
     <generator>Hugo -- gohugo.io</generator><atom:link href="https://j-lewen.github.io/erp/docs/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Scripts: Essential information</title>
-      <link>https://j-lewen.github.io/erp/docs/scripts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/scripts/</guid>
-      <description>How to use the scripts provided within these pages#Every script looks a little different to the &amp;lsquo;code&amp;rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.</description>
-    </item>
-    
-    <item>
       <title>Contact</title>
       <link>https://j-lewen.github.io/erp/docs/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

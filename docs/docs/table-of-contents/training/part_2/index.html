@@ -12,13 +12,13 @@ VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; ,
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_2/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-05-21T09:18:43+04:00" />
+<meta property="article:modified_time" content="2023-07-12T13:31:57+01:00" />
 <title>2. Importing data | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.88b3c94459085151fa3fefeb82e04fcc022f03f5c944b29fd82da88344689f25.js" integrity="sha256-iLPJRFkIUVH6P&#43;/rguBPzAIvA/XJRLKf2C2og0RonyU=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.537aaf2350b0b037ac308cab5299b604387e4822ded1343a5132b14eeabc6ba9.js" integrity="sha256-U3qvI1CwsDesMIyrUpm2BDh&#43;SCLe0TQ6UTKxTuq8a6k=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -322,6 +322,32 @@ https://github.com/alex-shpak/hugo-book
         </li>
       
     
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_16/" class="">Appendix A</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/scripts/" class="">Scripts: Essential information</a>
+  
+
+        </li>
+      
+    
   </ul>
 
         </li>
@@ -407,19 +433,6 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/researcher_resources/" class="">Resources for researchers</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
     <a href="/erp/docs/table-of-contents/teaching/" class="">Teaching Material</a>
   
 
@@ -427,19 +440,6 @@ https://github.com/alex-shpak/hugo-book
       
     
   </ul>
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/erp/docs/scripts/" class="">Scripts: Essential information</a>
-  
 
         </li>
       
@@ -508,35 +508,36 @@ https://github.com/alex-shpak/hugo-book
       
       
   <article class="markdown"><br>
-<h4 id="importing-data-or-help-how-do-i-get-started">
+<h3 id="importing-data-or-help-how-do-i-get-started">
   Importing data (or <em>&lsquo;help, how do I get started?&rsquo;</em>)
   <a class="anchor" href="#importing-data-or-help-how-do-i-get-started">#</a>
-</h4>
+</h3>
 <br>
 <u>  Intro</u>
 <p>Now you&rsquo;ve got ERPLAB up and running, it&rsquo;s time to have a look at some data! But how do you get your data into ERPLAB in the first place? Take a look at the video below for a brief guide to the process of importing your data.</p>
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
 <br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nsI2O7Y-fUo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p><u> Code </u></p>
+<hr style="height:1px; visibility:hidden;" />
+<u> Code </u>
 <pre><code>    EEG = pop_loadcnt('C:\[DATASET ADDRESS]\[DATASET NAME].cnt' , 'dataformat', 'auto', 'memmapfile', '');      
     [ALLEEG EEG CURRENTSET] = pop_newset(ALLEEG, EEG, 0,'setname','[DATASET NAME FOR ERPLAB]','gui','off'); 
 </code></pre>
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u> Script</u> 
 <p>
   <a href="/erp/files/script_1.zip">Script #1</a> (download).</p>
 <p>
   <a href="/erp/files/script_1.txt">Script #1</a> (view).</p>
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u> Dataset</u> 
 <p>To run this operation via the user interface, the example data set (used in the above video) can be downloaded 
   <a href="https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing">here</a>.</p>
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u>Activity</u>
 <p>Have a go at importing Dataset #1 into EEGLAB using both the user interface and script methods. For the script method, try saving Dataset_1 (e.g., Dataset_1, Data_set2) with a different name, and see if you can import multiple datasets using the Script 1. Finally, save your version of the script (with all the amended folder paths) to your computer so as to ensure you have a working script for subsequent tutorial sections (and your own data analysis!).</p>
-<br>
+<hr style="height:1px; visibility:hidden;" />
 <u>FAQs</u>
 <div class="book-expand">
   <label>

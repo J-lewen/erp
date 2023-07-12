@@ -1,5 +1,5 @@
 ---
-weight: 2
+weight: 16
 bookFlatSection: true
 title: "Scripts: Essential information"
 bookToC: false

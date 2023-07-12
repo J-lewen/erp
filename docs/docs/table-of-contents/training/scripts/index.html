@@ -3,23 +3,15 @@
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="TITLE#Intro
-Coming soon#VideoComing soon#CodeN/AScriptScript #9 (download).
-Script #9 (view).
-DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!">
+<meta name="description" content="How to use the scripts provided within these pages#Every script looks a little different to the &lsquo;code&rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="12. Averaging" />
-<meta property="og:description" content="TITLE#Intro
-Coming soon#VideoComing soon#CodeN/AScriptScript #9 (download).
-Script #9 (view).
-DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="Scripts: Essential information" />
+<meta property="og:description" content="How to use the scripts provided within these pages#Every script looks a little different to the &lsquo;code&rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/" /><meta property="article:section" content="docs" />
+<meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/scripts/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-07-12T13:31:38+01:00" />
-<title>12. Averaging | ERP Resources</title>
+
+<title>Scripts: Essential information | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
@@ -283,7 +275,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_12/" class="active">12. Averaging</a>
+    <a href="/erp/docs/table-of-contents/training/part_12/" class="">12. Averaging</a>
   
 
         </li>
@@ -348,7 +340,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/scripts/" class="">Scripts: Essential information</a>
+    <a href="/erp/docs/table-of-contents/training/scripts/" class="active">Scripts: Essential information</a>
   
 
         </li>
@@ -499,7 +491,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>12. Averaging</strong>
+  <strong>Scripts: Essential information</strong>
 
   <label for="toc-control">
     
@@ -513,66 +505,36 @@ https://github.com/alex-shpak/hugo-book
 
       
       
-  <article class="markdown"><br>
-<h3 id="title">
-  TITLE
-  <a class="anchor" href="#title">#</a>
-</h3>
-<br>
-<p><u> Intro</u></p>
-<h4 id="coming-soon">
-  Coming soon
-  <a class="anchor" href="#coming-soon">#</a>
+  <article class="markdown"><h2 id="how-to-use-the-scripts-provided-within-these-pages">
+  How to use the scripts provided within these pages
+  <a class="anchor" href="#how-to-use-the-scripts-provided-within-these-pages">#</a>
+</h2>
+  <br>
+<p>Every script looks a little different to the &lsquo;code&rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are
+intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once. This requires a little more info (i.e., where EEGLAB is stored on your computer, etc.), and therefore means that a couple of steps are necessary before you can use the scripts for your own data.</p>
+<h4 id="prepare-your-data-files">
+  Prepare your data files
+  <a class="anchor" href="#prepare-your-data-files">#</a>
 </h4>
-<hr style="height:1px; visibility:hidden;" />
-<u> Video</u>
-<h4 id="coming-soon-1">
-  Coming soon
-  <a class="anchor" href="#coming-soon-1">#</a>
-</h4>
-<hr style="height:1px; visibility:hidden;" />
-<u> Code</u>
-<pre><code>    N/A
-</code></pre>
-<hr style="height:1px; visibility:hidden;" />
-<u> Script</u>
+<p>All the scripts features on this website require that your data is stored as follows.</p>
+<p>First, you must create a folder specifically for your experiment.</p>
 <p>
-  <a href="/erp/files/script_9.zip">Script #9</a> (download).</p>
+  <img src="/erp/images/expfolder.png" alt="Folder" /></p>
+<p>Then you must create <em>individual</em> folders for each participant, with the name of the datasets matching the name of the folder <strong>exactly</strong>.</p>
 <p>
-  <a href="/erp/files/script_9.m">Script #9</a> (view).</p>
-<hr style="height:1px; visibility:hidden;" />
-<u> Dataset</u>
-<p>To run this operation via the user interface, the example data set (used in the above video) can be downloaded 
-  <a href="/erp/">here</a></p>
-<hr style="height:1px; visibility:hidden;" />
-<u> Activity</u>
-<p>Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).</p>
-<hr style="height:1px; visibility:hidden;" />
-<u>FAQ</u>
-<div class="book-expand">
-  <label>
-    <div class="book-expand-head flex justify-between">
-      <span>What is the difference between averaging and grand averaging?</span>
-      <span>↕</span>
-    </div>
-    <input type="checkbox" class="hidden" />
-    <div class="book-expand-content markdown-inner">
-      A1.
-    </div>
-  </label>
-</div>
-<div class="book-expand">
-  <label>
-    <div class="book-expand-head flex justify-between">
-      <span>Q2</span>
-      <span>↕</span>
-    </div>
-    <input type="checkbox" class="hidden" />
-    <div class="book-expand-content markdown-inner">
-      A2.
-    </div>
-  </label>
-</div>
+  <img src="/erp/images/dataset.png" alt="Folder" /></p>
+<p>
+  <img src="/erp/images/datasetfolder.png" alt="Folder" /></p>
+<p>Finally, you must ensure that all data from that participant is stored within this folder. This includes .CNT files, .fdt and .set files, and behavioural data.</p>
+<p>Next, you can start to tell you script where the necessary folders are on your computer in order to run. At the beginning of each script, the following will almost always be necessary:</p>
+<p>
+  <a href="/erp/files/getting_started.zip">Example script</a> (download).</p>
+<p>
+  <a href="/erp/files/getting_started.txt">Example script</a> (view).</p>
+<p>Ensure that for every script you run from this site, you enter the correct information as outlined in the example scripts above.</p>
+  <br>
+<p>N.B. The scripts on this website could not have been produced without the valuable guidance and help that I received from Dr. Politzer-Ahles (Kansas University)
+throughout my first postdoc.</p>
 </article>
  
       
