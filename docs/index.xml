@@ -44,6 +44,15 @@ VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; ,
     </item>
     
     <item>
+      <title>Teaching Material</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/teaching/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/teaching/</guid>
+      <description>under construction</description>
+    </item>
+    
+    <item>
       <title>3. Setting channel locations</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -69,15 +78,6 @@ VideoCode EEG = pop_loadcnt(&#39;C:\[DATASET ADDRESS]\[DATASET NAME].cnt&#39; ,
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_4/</guid>
       <description>Resampling#IntroResampling is a (relatively) simple process that can basically be thought of as deciding how much detail you want to retain in your dataset. Usually, this decision comes down to two things:
 How important is it for you to measure the precise onset of your effects? Typically, I want to know roughly when my effects begin and end. By reducing the sampling rate I lose a little bit of this information, but not a huge amount.</description>
-    </item>
-    
-    <item>
-      <title>Teaching Material</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/teaching/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/teaching/</guid>
-      <description>under construction</description>
     </item>
     
     <item>
@@ -116,9 +116,7 @@ Filtering is a complex process, and requires some thought and consideration. It&
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</guid>
       <description>Interpolation (or &amp;lsquo;oops the eye electrode fell off my participant&amp;rsquo;s face&amp;rsquo;)#Intro
-Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them.
-Interpolation - put simply - involves recreating one electrode from its surrounding electrodes.
-VideoCodeN/AScriptScript #4 (download).</description>
+Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them. Interpolation - put simply - involves recreating one electrode from its surrounding electrodes. As a function in EEGLAB, interpolation is fairly simple to carry out.</description>
     </item>
     
     <item>
@@ -238,6 +236,15 @@ Coming soon#VideoCodeN/AScriptN/ADatasetActivityFAQQ1↕A1.Q2↕A
     </item>
     
     <item>
+      <title>Scripts: Essential information</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/scripts/</guid>
+      <description>How to use the scripts provided within these pages#Every script looks a little different to the &amp;lsquo;code&amp;rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.</description>
+    </item>
+    
+    <item>
       <title>Appendix A</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_16/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -245,15 +252,6 @@ Coming soon#VideoCodeN/AScriptN/ADatasetActivityFAQQ1↕A1.Q2↕A
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_16/</guid>
       <description>Pre-processing reporting template
 A generic template for reporting ERP pre-processing steps. Note that this template will not suit everyone, and adaptation/amendments/deletions may be required</description>
-    </item>
-    
-    <item>
-      <title>Scripts: Essential information</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/scripts/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/scripts/</guid>
-      <description>How to use the scripts provided within these pages#Every script looks a little different to the &amp;lsquo;code&amp;rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.</description>
     </item>
     
   </channel>
