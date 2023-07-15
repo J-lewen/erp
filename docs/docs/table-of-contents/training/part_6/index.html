@@ -4,19 +4,13 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
-Script #5 (view).
-DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!">
+Re-referencing is one of the simplest pre-processing operations to carry out. The complexities surrounding referencing have far less to do with the operation itself, but instead with your choice of reference itself.
+For those new to ERPs, the concept that the the waveform we study actually reflect the difference in electrical potentials between one or multiple electrode site(s) and the reference site can be difficult to comprehend (1).">
 <meta name="theme-color" content="#FFFFFF">
 <meta name="color-scheme" content="light dark"><meta property="og:title" content="6. Re-referencing" />
 <meta property="og:description" content="Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
-Script #5 (view).
-DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!" />
+Re-referencing is one of the simplest pre-processing operations to carry out. The complexities surrounding referencing have far less to do with the operation itself, but instead with your choice of reference itself.
+For those new to ERPs, the concept that the the waveform we study actually reflect the difference in electrical potentials between one or multiple electrode site(s) and the reference site can be difficult to comprehend (1)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/" /><meta property="article:section" content="docs" />
 
@@ -26,7 +20,7 @@ ActivityFinally, save your version of the script to your computer so as to ensu
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.4e9c835d588941dade0d826450d333312d45c30b834d56ec69a0b22b1ffbb9f9.css" integrity="sha256-TpyDXViJQdreDYJkUNMzMS1FwwuDTVbsaaCyKx/7ufk=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.e7a27a2299222b9e76f279738d00290d7274548712265fab1d91ba3bac410e0f.js" integrity="sha256-56J6IpkiK5528nlzjQApDXJ0VIcSJl&#43;rHZG6O6xBDg8=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.ffb388e982e7ff8f83986bbe218c9d2405c71698e3697cd6a7ee4f7c55b3b750.js" integrity="sha256-/7OI6YLn/4&#43;DmGu&#43;IYydJAXHFpjjaXzWp&#43;5PfFWzt1A=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -522,12 +516,20 @@ https://github.com/alex-shpak/hugo-book
 </h3>
 <br>
 <p><u> Intro</u></p>
-<p>Important distinction between online reference and offline reference. #You should report both in your paper#.</p>
+<p>Re-referencing is one of the simplest pre-processing operations to carry out. The complexities surrounding referencing have far less to do with the operation itself, but instead with your choice of reference itself.</p>
+<p>For those new to ERPs, the concept that the the waveform we study actually reflect the <em>difference</em> in electrical potentials between one or multiple electrode site(s) and the reference site can be difficult to comprehend <!-- <a> element links to the section below --> <a href="#Section_further_down"> (1)</a>. The electrodes we use to record the neural activity that we&rsquo;re interested in are typically termed the &lsquo;active electrodes&rsquo;. The electrical potential is recorded from active electrodes relative to a theoretically discrete site - the reference, which in an ideal world would be an electrically neutral point. However, in reality, and electrically neutral site is hard to come by, as is explained in quite a bit more detail in 
+  <a href="http://kutaslab.ucsd.edu/people/kutas/279/pdfs/LuckChapter3.pdf">Luck, 2005</a> than I can possibly strive to achieve here. In short, the electrode must be on the body of the person we want to record from, and there is no site on the body that is neutral.</p>
+<p>In the absence of an electrically neutral site, researchers have resorted to all manner of electrode locations. However, it is important here to make the distinction between online and offline references.
+When you record EEG data within your lab, you will most likely do so using whichever reference site the lab tends to use. This might be the left mastoid (the bony protrusion behind the ear), Cz, the tip of the nose, an electrode simply labelled &lsquo;CMS&rsquo; (common Mode Sense). It is unlikely that you will make any changes to a pre-established lab set-up, and thus will use whatever <strong>online</strong> reference is at your disposal during data acquisition.</p>
+<p>However, you&rsquo;re not stuck with this reference. Having collected the data you can now amend your reference site(s) to any or all of the channels you&rsquo;ve recorded from. Across ERP literature, an enormous amount of variation exists in chosen reference sites, resulting in 
+  <a href="https://www.researchgate.net/publication/338018989_Which_Reference_Should_We_Use_for_EEG_and_ERP_practice">reproducibility and comparability issues</a>. Because of this, it&rsquo;s important to carefully consider the reference site that best serves your research (see FAQ: How do I choose my offline reference?).</p>
+<p>Perhaps the two most commonly adopted schemes are the mastoid reference, and average reference.</p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
+<p><strong>Coming soon</strong></p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Code</u>
-<pre><code>            EEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );
+<pre><code>  EEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );
 </code></pre>
 <hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
@@ -547,35 +549,45 @@ https://github.com/alex-shpak/hugo-book
 <hr style="height:1px; visibility:hidden;" />
 <div class="write-up">
 <blockquote>
-<p>COMING SOON</p>
+<p>Data were recording with the left mastoid as the online reference, and subsequently rereferenced offline for analysis to the average of the left and right mastoid electrodes.<!-- <a> element links to the section below --> <a href="#Section_further_down"> (2)</a></p>
 </blockquote>
 </div>
 <hr style="height:1px; visibility:hidden;" />
-<u>FAQ</u>
+<u>FAQ</u> 
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>How do I choose my offline reference site(s)?</span>
+      <span>How do I choose my offline reference?</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      A1.
+      Choosing your reference is not always a clearcut decision. Unlike certain pre-processing operations, for which there is often a clear answer (e.g., &lsquo;don&rsquo;t choose a high-pass filter cut-off above 0.1Hz unless you have a very good reason to&rsquo;), choosing the right reference for you often depends on the study you&rsquo;re running. A couple of key factors to take into consideration are: <strong>(1)</strong> What has the field done before? You typically want to ensure your findings are comparable to similar papers/previous literature, so you might be inclined to choose the same reference as the vast majority of papers you cite; <strong>(2)</strong> Where is the effect of interest? If you are interested in an effect that occurs predominantly over central electrodes, you probably don&rsquo;t want a central-only reference site (as this will most likely subtract a lot of the signal you&rsquo;re interested in from the data); and <strong>(3)</strong> How many electrodes have you got to play with? Typically, using the global average as your reference works better if you have greater coverage of the scalp (e.g., a 128 electrode cap, as opposed to an 8 electrode cap).
     </div>
   </label>
 </div>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
-      <span>Q2</span>
+      <span>Does it matter if I choose to change my reference later?</span>
       <span>↕</span>
     </div>
     <input type="checkbox" class="hidden" />
     <div class="book-expand-content markdown-inner">
-      A2.
+      No. Referencing is a linear operation (see 
+  <a href="https://erpinfo.org/order-of-steps">this page</a> for a very helpful overview of linear and non-linear pre-processing steps). What this effectively means for your is that it is fairly unproblematic to re-reference at any stage, and as many times as you like.
     </div>
   </label>
 </div>
+<br>
+<h5 id="ufootnotesu">
+  <u>Footnotes</u>
+  <a class="anchor" href="#ufootnotesu">#</a>
+</h5>
+<h5 id="Section_further_down">
+<p>(1) See 
+  <a href="https://neuraldatascience.io/7-eeg/erp_rereferencing.html">this summary</a> for a superb introduction to the concept if the paragraph above has you purplexed.</p>
+<p>(2) If an average reference is used, it is important to make it clear to the reader which electrodes were included in any such average.</p>
 </article>
  
       

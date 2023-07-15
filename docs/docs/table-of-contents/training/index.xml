@@ -61,11 +61,8 @@ Filtering is a complex process, and requires some thought and consideration. It&
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
       <description>Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
-Script #5 (view).
-DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+Re-referencing is one of the simplest pre-processing operations to carry out. The complexities surrounding referencing have far less to do with the operation itself, but instead with your choice of reference itself.
+For those new to ERPs, the concept that the the waveform we study actually reflect the difference in electrical potentials between one or multiple electrode site(s) and the reference site can be difficult to comprehend (1).</description>
     </item>
     
     <item>
