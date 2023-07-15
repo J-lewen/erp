@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Dealing with artifacts - ICA (or &lsquo;help, my data looks a mess&rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise.">
 <meta name="theme-color" content="#FFFFFF">
-<meta name="color-scheme" content="light dark"><meta property="og:title" content="6. Artifact correction (ICA)" />
+<meta name="color-scheme" content="light dark"><meta property="og:title" content="7. Artifact correction (ICA)" />
 <meta property="og:description" content="Dealing with artifacts - ICA (or &lsquo;help, my data looks a mess&rsquo;)#IntroPreamble: The most important thing to mention here is that there is no substitute for good quality data. You must ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-07-12T17:06:55+01:00" />
-<title>6. Artifact correction (ICA) | ERP Resources</title>
+<meta property="article:modified_time" content="2023-07-12T19:44:47+01:00" />
+<title>7. Artifact correction (ICA) | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
-<link rel="stylesheet" href="/erp/book.min.7e6ee186dfaf88b58790ff9d760615b641a01d6a6649cabaa2e53a46ef420fb6.css" integrity="sha256-fm7hht&#43;viLWHkP&#43;ddgYVtkGgHWpmScq6ouU6Ru9CD7Y=" crossorigin="anonymous">
+<link rel="stylesheet" href="/erp/book.min.c87ea2bc926d68c5435530ac8e8e4d8ea915a77acced7d7129d5c03a7f677661.css" integrity="sha256-yH6ivJJtaMVDVTCsjo5NjqkVp3rM7X1xKdXAOn9ndmE=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.49b6a8c80ef7a555c0c4e804cd4462011d8e542ad0b2bc32e5855693e8dd8c7e.js" integrity="sha256-SbaoyA73pVXAxOgEzURiAR2OVCrQsrwy5YVWk&#43;jdjH4=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.1097ccd047720a7d327c34034719ccac88d7e7d03f5f5495d0ae0c7738741153.js" integrity="sha256-EJfM0EdyCn0yfDQDRxnMrIjX59A/X1SV0K4Mdzh0EVM=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -197,7 +197,20 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_7/" class="active">6. Artifact correction (ICA)</a>
+    <a href="/erp/docs/table-of-contents/training/part_6/" class="">6. Re-referencing</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/erp/docs/table-of-contents/training/part_7/" class="active">7. Artifact correction (ICA)</a>
   
 
         </li>
@@ -211,19 +224,6 @@ https://github.com/alex-shpak/hugo-book
 
   
     <a href="/erp/docs/table-of-contents/training/part_8/" class="">8. Interpolation</a>
-  
-
-        </li>
-      
-    
-      
-        <li>
-          
-  
-  
-
-  
-    <a href="/erp/docs/table-of-contents/training/part_6/" class="">8. Re-referencing</a>
   
 
         </li>
@@ -491,7 +491,7 @@ https://github.com/alex-shpak/hugo-book
     <img src="/erp/svg/menu.svg" class="book-icon" alt="Menu" />
   </label>
 
-  <strong>6. Artifact correction (ICA)</strong>
+  <strong>7. Artifact correction (ICA)</strong>
 
   <label for="toc-control">
     
@@ -550,9 +550,9 @@ https://github.com/alex-shpak/hugo-book
 <hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
 <p>
-  <a href="/erp/files/script_5.zip">Script #5</a> (download).</p>
+  <a href="/erp/files/script_6.zip">Script #5</a> (download).</p>
 <p>
-  <a href="/erp/files/script_5.txt">Script #5</a> (view).</p>
+  <a href="/erp/files/script_6.txt">Script #5</a> (view).</p>
 <p>It&rsquo;s important to note that data cleaning can only be achieved via manual selection of noisy data. This means that from this stage onwards we cannot continue using 
   <a href="https://drive.google.com/drive/folders/14ZlXqNKQVOCI1ZDHlCSHqVuea1CQlNMu?usp=sharing">Dataset #1</a> as in previous scripts.</p>
 <hr style="height:1px; visibility:hidden;" />
@@ -561,10 +561,13 @@ https://github.com/alex-shpak/hugo-book
   <a href="https://drive.google.com/drive/folders/1E9bz4FVpZT1i1-JCFP6kNf5EkvltvCP9?usp=sharing">here</a></p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Write-up </u>
+<hr style="height:1px; visibility:hidden;" />
+<div class="write-up">
 <blockquote>
-<p><em>Ocular correction was conducted using Independent Component Analysis (ICA)4
-following visual inspection and cleaning of the data. ICA used the RUNICA algorithm with EOG electrodes excluded, and resulted in an average of [ENTER AVERAGE NO. OF COMPONENTS REJECTED] components removed per participant [ENTER RANGE]</em></p>
+<p><em>Ocular correction was conducted using Independent Component Analysis (ICA)
+following visual inspection and cleaning of the data. ICA used the RUNICA algorithm with EOG electrodes excluded, and resulted in an average of [ENTER AVERAGE] components removed per participant [ENTER RANGE]</em></p>
 </blockquote>
+</div>
 <hr style="height:1px; visibility:hidden;" />
 <u> Activity</u>
 <p>Have a go at cleaning the dataset provided in ERPLAB. Then, visit the 

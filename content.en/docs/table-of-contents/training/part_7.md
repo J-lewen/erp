@@ -57,13 +57,17 @@ Now that you've cleaned the data, you're ready to run ICA. The output from this 
 
 To clean your data and run ICA via the user interface, the example data set (used in the above video) can be downloaded [here](https://drive.google.com/drive/folders/1E9bz4FVpZT1i1-JCFP6kNf5EkvltvCP9?usp=sharing)
 
+
 <hr style="height:1px; visibility:hidden;" />
 <u> Write-up </u>
 
->*Ocular correction was conducted using Independent Component Analysis (ICA)4
-following visual inspection and cleaning of the data. ICA used the RUNICA algorithm with EOG electrodes excluded, and resulted in an average of [ENTER AVERAGE NO. OF COMPONENTS REJECTED] components removed per participant [ENTER RANGE]*
+<hr style="height:1px; visibility:hidden;" />
+<div class="write-up">
 
+>*Ocular correction was conducted using Independent Component Analysis (ICA)
+following visual inspection and cleaning of the data. ICA used the RUNICA algorithm with EOG electrodes excluded, and resulted in an average of [ENTER AVERAGE] components removed per participant [ENTER RANGE]*
 
+</div>
 <hr style="height:1px; visibility:hidden;" />
 <u> Activity</u>
 

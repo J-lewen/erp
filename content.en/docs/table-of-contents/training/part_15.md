@@ -32,6 +32,18 @@ bookToc: false
 <u> Activity</u>
 
 <hr style="height:1px; visibility:hidden;" />
+<u> Write-up </u>
+
+<hr style="height:1px; visibility:hidden;" />
+<div class="write-up">
+
+>COMING SOON
+
+</div>
+
+<hr style="height:1px; visibility:hidden;" />
+
+<hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
 
 {{% expand "Q1" %}}

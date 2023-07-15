@@ -55,8 +55,11 @@ Have a go at resampling the dataset provided, both via the user interface and us
 <hr style="height:1px; visibility:hidden;" />
 <u> Write-up </u>
 
+<hr style="height:1px; visibility:hidden;" />
+<div class="write-up">
 
->*EEG data were recorded and digitized at the sampling rate of {ENTER SAMPLING RATE OF ORIGINAL DATASET HERE}Hz using a [ENTER MAKE AND MODEL HERE] amplifier and subsequently downsampled offline to 250Hz.*
+>EEG data were recorded and digitized at the sampling rate of [ENTER SAMPLING RATE OF ORIGINAL DATASET HERE] Hz using a [ENTER MAKE AND MODEL HERE] amplifier and subsequently downsampled offline to 250Hz.
+</div>
 
 <u>FAQ</u>
 

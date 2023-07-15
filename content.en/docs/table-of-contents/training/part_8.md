@@ -56,6 +56,16 @@ To practise with the script, enter the electrode that you want to interpolate fo
 Then note how this creates a 'badchans' list for each participant. See if you can get the script running for the two provided datasets, interpolating whichever electrodes you like.
 
 <hr style="height:1px; visibility:hidden;" />
+<u> Write-up </u>
+
+<hr style="height:1px; visibility:hidden;" />
+<div class="write-up">
+
+>COMING SOON
+
+</div>
+
+<hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
 
 {{% expand "What if I am that N400 researcher?" %}}

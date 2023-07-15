@@ -55,7 +55,21 @@ Filtering is a complex process, and requires some thought and consideration. It&
     </item>
     
     <item>
-      <title>6. Artifact correction (ICA)</title>
+      <title>6. Re-referencing</title>
+      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
+      <description>Re-referencing#Intro
+Important distinction between online reference and offline reference. #You should report both in your paper#.
+VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
+Script #5 (view).
+DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
+    </item>
+    
+    <item>
+      <title>7. Artifact correction (ICA)</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -71,20 +85,6 @@ Filtering is a complex process, and requires some thought and consideration. It&
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_8/</guid>
       <description>Interpolation (or &amp;lsquo;oops the eye electrode fell off my participant&amp;rsquo;s face&amp;rsquo;)#Intro
 Whilst taking a look at your data, you may notice that certain electrodes that seem particularly noisy (i.e., fuzzy or making unpredictable leaps and falls). If this is the case, you may wish to interpolate them. Interpolation - put simply - involves recreating one electrode from its surrounding electrodes. As a function in EEGLAB, interpolation is fairly simple to carry out.</description>
-    </item>
-    
-    <item>
-      <title>8. Re-referencing</title>
-      <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_6/</guid>
-      <description>Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-VideoCodeEEG = pop_reref( EEG, [REFERENCE CHANNEL/CHANNELS] );ScriptScript #5 (download).
-Script #5 (view).
-DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
-ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
     <item>
@@ -125,6 +125,7 @@ DatasetTo run this operation via the user interface, the example data set (used
 Coming soon#VideoComing soon#CodeN/AScriptScript #8 (download).
 Script #8 (view).
 DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
+Write-up COMING SOON
 ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
     
@@ -175,7 +176,8 @@ ActivityFinally, save your version of the script to your computer so as to ensu
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_15/</guid>
       <description>
 TITLE#Intro
-Coming soon#VideoCodeN/AScriptN/ADatasetActivityFAQQ1↕A1.Q2↕A2.</description>
+Coming soon#VideoCodeN/AScriptN/ADatasetActivityWrite-up COMING SOON
+FAQQ1↕A1.Q2↕A2.</description>
     </item>
     
     <item>

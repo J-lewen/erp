@@ -40,6 +40,18 @@ To run this operation via the user interface, the example data set (used in the 
 Finally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!).
 
 <hr style="height:1px; visibility:hidden;" />
+<u> Write-up </u>
+
+<hr style="height:1px; visibility:hidden;" />
+<div class="write-up">
+
+>COMING SOON
+
+</div>
+
+<hr style="height:1px; visibility:hidden;" />
+
+<hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
 
 {{% expand "What is the difference between averaging and grand averaging?" %}}

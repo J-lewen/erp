@@ -58,7 +58,11 @@ Have a go at applying the filters both via the UI and with the provided script o
 <hr style="height:1px; visibility:hidden;" />
 <u> Write-up </u>
 
->*Continuous data was high-pass filtered offline, using an IIR Butterworth filter (2nd order) with a half-amplitude cut-off frequency of 0.1Hz and a and 12 dB/octave roll-off.*
+<hr style="height:1px; visibility:hidden;" />
+<div class="write-up">
+
+>Continuous data was high-pass filtered offline, using an IIR Butterworth filter (2nd order) with a half-amplitude cut-off frequency of 0.1Hz and a and 12 dB/octave roll-off.
+</div>
 
 <hr style="height:1px; visibility:hidden;" />
 <u>FAQ</u>
