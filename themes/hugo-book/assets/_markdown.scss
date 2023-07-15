@@ -45,6 +45,11 @@
   h6 {
     font-size: 0.75em;
   }
+  
+  h3 {
+    color: #18796a;
+    font-weight: bolder;
+  }
 
   b,
   optgroup,
@@ -196,10 +201,10 @@
 }
 
  .write-up {
-  padding:2px;
+  padding:1px;
   background: #d1ce253d;
   border-radius:3%;
-  font-size: 0.875em;
+  font-size: 0.95em;
   font-style:italic;
   user-select:all;
 }

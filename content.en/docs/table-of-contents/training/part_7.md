@@ -64,8 +64,8 @@ To clean your data and run ICA via the user interface, the example data set (use
 <hr style="height:1px; visibility:hidden;" />
 <div class="write-up">
 
->*Ocular correction was conducted using Independent Component Analysis (ICA)
-following visual inspection and cleaning of the data. ICA used the RUNICA algorithm with EOG electrodes excluded, and resulted in an average of [ENTER AVERAGE] components removed per participant [ENTER RANGE]*
+>Ocular correction was conducted using Independent Component Analysis (ICA)
+following visual inspection and cleaning of the data. ICA used the RUNICA algorithm with EOG electrodes excluded, and resulted in an average of [ENTER AVERAGE] components removed per participant [ENTER RANGE].
 
 </div>
 <hr style="height:1px; visibility:hidden;" />
