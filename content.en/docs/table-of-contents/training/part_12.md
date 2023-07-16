@@ -5,7 +5,7 @@ bookToc: false
 ---
 <br>
 
-### TITLE
+### Averaging
 <br>
 
 <u> Intro</u>

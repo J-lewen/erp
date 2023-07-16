@@ -16,7 +16,7 @@
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.4e9c835d588941dade0d826450d333312d45c30b834d56ec69a0b22b1ffbb9f9.css" integrity="sha256-TpyDXViJQdreDYJkUNMzMS1FwwuDTVbsaaCyKx/7ufk=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.ffb388e982e7ff8f83986bbe218c9d2405c71698e3697cd6a7ee4f7c55b3b750.js" integrity="sha256-/7OI6YLn/4&#43;DmGu&#43;IYydJAXHFpjjaXzWp&#43;5PfFWzt1A=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.ac7358c3c4e790feaf937ae763816c3a02170df63d9fde59acd2f8b283a92f96.js" integrity="sha256-rHNYw8TnkP6vk3rnY4FsOgIXDfY9n95ZrNL4soOpL5Y=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -301,7 +301,7 @@ https://github.com/alex-shpak/hugo-book
   
 
   
-    <a href="/erp/docs/table-of-contents/training/part_14/" class="">14. Grand average</a>
+    <a href="/erp/docs/table-of-contents/training/part_14/" class="">14. Grand averaging</a>
   
 
         </li>
@@ -515,8 +515,9 @@ https://github.com/alex-shpak/hugo-book
 <p>Preamble: The most important thing to mention here is that there is no substitute for good quality data. You <em>must</em> ensure that the data you collect is the best it possible can be, because there is nothing you can do during pre-processing that can compensate for bad data. That said, even the best data will almost always have periods of noise. Why? because participants are only human. Give them a break in a testing session and they will almost inevitably move more than you thought humanly possible in the space of 30 seconds.</p>
 <p>Most of this noise is impossible to deal with. Muscle movements, eye movements coughs and yawns are simply magnitudes larger than the brainwaves we&rsquo;re interested in measuring. Most of this data will therefore have to be rejected (see 
   <a href="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/">11. Artifact rejection</a> for more info). But this will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes.</p>
-<p>Enter independent component analysis (ICA), a means &lsquo;remove&rsquo; the blinks from your data. However, there are some down sides (see FAQ), so don&rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions. Nonetheless, done properly, ICA can offer you a means through which blinks can be deal with without losing all of your precious data.</p>
-<p>What does ICA do? In overly simplified terms, ICA involves creating a model of vertical (blinks) and horizontal (sideways glances) eye movements for a given participant. The model(s) of these eye movement(s) can then be subtracted out of the data, leaving beautifully clean blink-free EEG. However, it is important to have a solid understanding of the pitfalls of ICA before you subject your data to this technique, so I thoroughly recommend reading around before you charge on in.</p>
+<p>Enter Independent Component Analysis (ICA), a means &lsquo;remove&rsquo; the blinks from your data. However, there are some down sides (see FAQ), so don&rsquo;t be fooled into thinking that ICA is a magic cure with no repercussions. Nonetheless, done properly, ICA can offer you a means through which blinks can be deal with without losing swathes of your precious data.</p>
+<p>What does ICA do? In overly simplified terms, ICA involves separating out the different sources (e.g., muscle movements, eye blinks, other eye movements, brain activity) that contribute towards your EEG data. Separating the signal into these functionally distinct sources enables us to subtract unwanted sources out (e.g., blinks), leaving beautifully clean EEG data. However, it is important to have a solid understanding of the pitfalls of ICA before you subject your data to this technique, so I thoroughly recommend 
+  <a href="https://eeglab.org/tutorials/06_RejectArtifacts/RunICA.html">reading around</a> before you charge on in.</p>
 <p><strong>Stage 1: Data cleaning</strong></p>
 <p>So you&rsquo;ve decided to go ahead with ICA. The first thing you need to do is clean you data. This is because (assuming you&rsquo;re using your whole dataset for ICA training) you need to help the algorithm to successfully identify blinks as opposed to other sources of noise. Importantly, the number of independent components is (by necessity) always equal to the number of channels in your dataset. Because of this, you don&rsquo;t want a 20 second coughing fit that your participant had half way through the session to &rsquo;take up&rsquo; 15-odd components.</p>
 <div class="book-expand">
@@ -538,8 +539,8 @@ https://github.com/alex-shpak/hugo-book
   <a class="anchor" href="#coming-soon">#</a>
 </h4>
 <hr style="height:1px; visibility:hidden;" />
-**Step 2: Running ICA**
-<p>Now that you&rsquo;ve cleaned the data, you&rsquo;re ready to run ICA. The output from this can be confusing, but there are a number of resources to help you familiarise yourself with the process of identifying occular activity, such as this incredibly helpful 
+<p><strong>Step 2: Running ICA</strong></p>
+<p>Now that you&rsquo;ve cleaned the data, you&rsquo;re ready to run ICA. The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful 
   <a href="https://labeling.ucsd.edu/tutorial/labels">UCSD Tutorial</a>.</p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>

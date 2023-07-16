@@ -14,9 +14,9 @@ Preamble: The most important thing to mention here is that there is no substitut
 
 Most of this noise is impossible to deal with. Muscle movements, eye movements coughs and yawns are simply magnitudes larger than the brainwaves we're interested in measuring. Most of this data will therefore have to be rejected (see [11. Artifact rejection](https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/) for more info). But this will (by definition) reduce the number of trials you have per condition, and trials = power, and with great power comes great papers, or so the old saying goes. 
 
-Enter independent component analysis (ICA), a means 'remove' the blinks from your data. However, there are some down sides (see FAQ), so don't be fooled into thinking that ICA is a magic cure with no repercussions. Nonetheless, done properly, ICA can offer you a means through which blinks can be deal with without losing all of your precious data.
+Enter Independent Component Analysis (ICA), a means 'remove' the blinks from your data. However, there are some down sides (see FAQ), so don't be fooled into thinking that ICA is a magic cure with no repercussions. Nonetheless, done properly, ICA can offer you a means through which blinks can be deal with without losing swathes of your precious data.
 
-What does ICA do? In overly simplified terms, ICA involves creating a model of vertical (blinks) and horizontal (sideways glances) eye movements for a given participant. The model(s) of these eye movement(s) can then be subtracted out of the data, leaving beautifully clean blink-free EEG. However, it is important to have a solid understanding of the pitfalls of ICA before you subject your data to this technique, so I thoroughly recommend reading around before you charge on in.
+What does ICA do? In overly simplified terms, ICA involves separating out the different sources (e.g., muscle movements, eye blinks, other eye movements, brain activity) that contribute towards your EEG data. Separating the signal into these functionally distinct sources enables us to subtract unwanted sources out (e.g., blinks), leaving beautifully clean EEG data. However, it is important to have a solid understanding of the pitfalls of ICA before you subject your data to this technique, so I thoroughly recommend [reading around](https://eeglab.org/tutorials/06_RejectArtifacts/RunICA.html) before you charge on in.
 
 **Stage 1: Data cleaning**
 
@@ -33,9 +33,10 @@ Depending on your paradigm you may want to exclude incorrect response trials. If
 
 
 <hr style="height:1px; visibility:hidden;" />
+
 **Step 2: Running ICA**
 
-Now that you've cleaned the data, you're ready to run ICA. The output from this can be confusing, but there are a number of resources to help you familiarise yourself with the process of identifying occular activity, such as this incredibly helpful [UCSD Tutorial](https://labeling.ucsd.edu/tutorial/labels). 
+Now that you've cleaned the data, you're ready to run ICA. The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful [UCSD Tutorial](https://labeling.ucsd.edu/tutorial/labels). 
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>

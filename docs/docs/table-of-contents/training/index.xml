@@ -90,10 +90,9 @@ Whilst taking a look at your data, you may notice that certain electrodes that s
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_9/</guid>
-      <description>Re-referencing#Intro
-Important distinction between online reference and offline reference. #You should report both in your paper#.
-VideoComing soon#CodeN/AScriptScript #6 (download).
-Script #6 (view).
+      <description>Low-pass filter (optional)#Intro
+Coming soon#VideoComing soon#CodeN/AScriptScript #X (download).
+Script #X (view).
 DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 ActivityFinally, save your version of the script to your computer so as to ensure you have an up-to-date script for subsequent tutorial sections (and your own data analysis!</description>
     </item>
@@ -118,8 +117,8 @@ DatasetTo run this operation via the user interface, the example data set (used
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_11/</guid>
-      <description>TITLE#Intro
-Coming soon#VideoComing soon#CodeN/AScriptScript #8 (download).
+      <description>Artifact rejection#Intro
+Coming soon#VideoComing soon#CodeComing soonScriptScript #8 (download).
 Script #8 (view).
 DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
 Write-up COMING SOON
@@ -132,7 +131,7 @@ ActivityFinally, save your version of the script to your computer so as to ensu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_12/</guid>
-      <description>TITLE#Intro
+      <description>Averaging#Intro
 Coming soon#VideoComing soon#CodeN/AScriptScript #9 (download).
 Script #9 (view).
 DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
@@ -145,7 +144,7 @@ ActivityFinally, save your version of the script to your computer so as to ensu
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_13/</guid>
-      <description>TITLE#Intro
+      <description>Create difference waves (optional)#Intro
 Coming soon#VideoComing soon#CodeN/AScriptScript #10 (download).
 Script #10 (view).
 DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
@@ -153,12 +152,12 @@ ActivityFinally, save your version of the script to your computer so as to ensu
     </item>
     
     <item>
-      <title>14. Grand average</title>
+      <title>14. Grand averaging</title>
       <link>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_14/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_14/</guid>
-      <description>TITLE#Intro
+      <description>Grand averaging#Intro
 Coming soon#VideoComing soon#CodeN/AScriptScript #11 (download).
 Script #11 (view).
 DatasetTo run this operation via the user interface, the example data set (used in the above video) can be downloaded here
@@ -172,7 +171,7 @@ ActivityFinally, save your version of the script to your computer so as to ensu
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/part_15/</guid>
       <description>
-TITLE#Intro
+What next?#Intro
 Coming soon#VideoCodeN/AScriptN/ADatasetActivityWrite-up COMING SOON
 FAQQ1↕A1.Q2↕A2.</description>
     </item>

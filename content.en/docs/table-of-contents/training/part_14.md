@@ -1,11 +1,11 @@
 ---
-title:  14. Grand average
+title:  14. Grand averaging
 weight: 14
 bookToc: false
 ---
 <br>
 
-### TITLE
+### Grand averaging
 <br>
 
 <u> Intro</u>

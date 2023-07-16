@@ -5,7 +5,7 @@ bookToc: false
 ---
 <br>
 
-### TITLE
+### Artifact rejection
 <br>
 
 <u> Intro</u>
@@ -20,7 +20,7 @@ bookToc: false
 <hr style="height:1px; visibility:hidden;" />
 <u> Code</u>
 
-        N/A
+        Coming soon
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Script</u>

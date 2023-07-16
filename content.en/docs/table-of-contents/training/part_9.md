@@ -5,12 +5,12 @@ bookToc: false
 ---
 <br>
 
-### Re-referencing
+### Low-pass filter (optional)
 <br>
 
 <u> Intro</u>
 
-Important distinction between online reference and offline reference. #You should report both in your paper#.
+#### Coming soon
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
@@ -25,9 +25,9 @@ Important distinction between online reference and offline reference. #You shoul
 <hr style="height:1px; visibility:hidden;" />
 <u> Script</u>
 
- [Script #6](/erp/files/script_6.zip) (download).
+ [Script #X](/erp/files/script_6.zip) (download).
 
- [Script #6](/erp/files/script_6.m) (view).
+ [Script #X](/erp/files/script_6.m) (view).
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Dataset</u>
