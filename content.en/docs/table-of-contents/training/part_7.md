@@ -35,24 +35,24 @@ Depending on your paradigm you may want to exclude incorrect response trials. If
 
 **Step 2: Running ICA**
 
-Now that you've cleaned the data, you're ready to run ICA. The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful [UCSD Tutorial](https://labeling.ucsd.edu/tutorial/labels). 
+Now that you've cleaned the data, you're ready to run ICA. The video below will guide you through how to decompose your data by ICA in EEGLAB.
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
-
-#### Coming soon
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8kOHHyBnKoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <hr style="height:1px; visibility:hidden;" />
 
 **Step 3: Selecting ICA components**
 
-The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful [UCSD Tutorial](https://labeling.ucsd.edu/tutorial/labels). 
+The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful [UCSD Tutorial](https://labeling.ucsd.edu/tutorial/labels). Follow through the video below for a guide on how to identify and select occular components.
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
 
-
-#### Coming soon
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8kOHHyBnKoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 <hr style="height:1px; visibility:hidden;" />
