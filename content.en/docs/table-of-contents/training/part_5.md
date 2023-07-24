@@ -27,9 +27,8 @@ As with all the other pre-processing steps, you will see plenty of examples in t
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
-
-
-#### Coming soon
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1cG_myhH13Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Code</u>

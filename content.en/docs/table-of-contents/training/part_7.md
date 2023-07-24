@@ -16,9 +16,9 @@ Most of this noise is impossible to deal with. Muscle movements, eye movements c
 
 Enter Independent Component Analysis (ICA), a means 'remove' the blinks from your data. However, there are some down sides (see FAQ), so don't be fooled into thinking that ICA is a magic cure with no repercussions. Nonetheless, done properly, ICA can offer you a means through which blinks can be deal with without losing swathes of your precious data.
 
-What does ICA do? In overly simplified terms, ICA involves separating out the different sources (e.g., muscle movements, eye blinks, other eye movements, brain activity) that contribute towards your EEG data. Separating the signal into these functionally distinct sources enables us to subtract unwanted sources out (e.g., blinks), leaving beautifully clean EEG data. However, it is important to have a solid understanding of the pitfalls of ICA before you subject your data to this technique, so I thoroughly recommend [reading around](https://eeglab.org/tutorials/06_RejectArtifacts/RunICA.html) before you charge on in.
+What does ICA do? In overly simplified terms, ICA involves separating out the different sources (e.g., muscle movements, eye blinks, other eye movements, brain activity) that contribute towards your EEG data. Separating the signal into these functionally distinct sources enables us to subtract unwanted sources out (e.g., blinks), leaving beautifully clean EEG data. However, ICA was never originally intended for EEG data, and EEG data violates assumptions of ICA (most researchers know this but use it anyway as an imperfect fix), so it is important to have a solid understanding of the pitfalls of ICA before you subject your data to this technique, so I thoroughly recommend [reading around](https://eeglab.org/tutorials/06_RejectArtifacts/RunICA.html) before you charge on in. Because ICA changes our data in ways that aren't always easy to determine, you should always use it for blinks with a degree of caution, sideways eye movements with even more caution, and not much else (unless you're very confident in what you're doing).
 
-**Stage 1: Data cleaning**
+**Stage 1: Preparing your data for ICA artifact correction**
 
 So you've decided to go ahead with ICA. The first thing you need to do is clean you data. This is because (assuming you're using your whole dataset for ICA training) you need to help the algorithm to successfully identify blinks as opposed to other sources of noise. Importantly, the number of independent components is (by necessity) always equal to the number of channels in your dataset. Because of this, you don't want a 20 second coughing fit that your participant had half way through the session to 'take up' 15-odd components.
 
@@ -27,9 +27,8 @@ Depending on your paradigm you may want to exclude incorrect response trials. If
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
-
-
-#### Coming soon
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U8FCzk8MoFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 <hr style="height:1px; visibility:hidden;" />
@@ -41,8 +40,35 @@ Now that you've cleaned the data, you're ready to run ICA. The video below will 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
 
+#### Coming soon
+
+<hr style="height:1px; visibility:hidden;" />
+
+**Step 3: Selecting ICA components**
+
+The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful [UCSD Tutorial](https://labeling.ucsd.edu/tutorial/labels). 
+
+<hr style="height:1px; visibility:hidden;" />
+<u> Video</u>
+
 
 #### Coming soon
+
+
+<hr style="height:1px; visibility:hidden;" />
+
+**Step 4: When the ICA doesn't work**
+
+Sometimes your ICA decomposition produces something unpleasant to the eyes
+
+
+<hr style="height:1px; visibility:hidden;" />
+<u> Video</u>
+
+
+#### Coming soon
+
+<hr style="height:1px; visibility:hidden;" />
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Script</u>

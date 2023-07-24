@@ -23,8 +23,8 @@ Perhaps the two most commonly adopted schemes are the mastoid reference, and ave
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
-
-**Coming soon**
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SBEixEdoAMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Code</u>
