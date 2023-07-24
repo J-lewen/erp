@@ -20,7 +20,7 @@ What does ICA do? In overly simplified terms, ICA involves separating out the di
 
 **Stage 1: Preparing your data for ICA artifact correction**
 
-So you've decided to go ahead with ICA. The first thing you need to do is clean you data. This is because (assuming you're using your whole dataset for ICA training) you need to help the algorithm to successfully identify blinks as opposed to other sources of noise. Importantly, the number of independent components is (by necessity) always equal to the number of channels in your dataset. Because of this, you don't want a 20 second coughing fit that your participant had half way through the session to 'take up' 15-odd components.
+So you've decided to go ahead with ICA. The first thing you need to do is clean you data. This is because (assuming you're using your whole dataset for ICA training) you need to help the algorithm to successfully identify blinks as opposed to other sources of noise. Importantly, the number of independent components is (by necessity) always equal to the number of channels in your dataset. Because of this, you don't want a 20 second coughing fit that your participant had half way through the session to 'take up' 15-odd components. There are two main approaches to preparing your data for ICA. One is to create a full new dataset on which to run ICA and then transfer the ICA weights into your original dataset. The second is to prepare your existing dataset for ICA, and simply run it on that. The latter is outlined in the video below, whilst I show you how to do the former in the last video in this series.
 
 {{% expand "IMPORTANT: do you care about response accuracy?" %}}
 Depending on your paradigm you may want to exclude incorrect response trials. If you're lucky, you've programmed this such that your EEG data contains response triggers. If not, you may need to import accuracy from the experimental output file. In this instance, either import this information prior to data cleaning, or be careful not to cut trails during data cleaning, as this will result in a mismatch between your experimental file and EEG data.{{% /expand %}}
@@ -35,7 +35,7 @@ Depending on your paradigm you may want to exclude incorrect response trials. If
 
 **Step 2: Running ICA**
 
-Now that you've cleaned the data, you're ready to run ICA. The video below will guide you through how to decompose your data by ICA in EEGLAB.
+Now that you've cleaned the data, you're ready to run ICA. The video below will guide you through this to decompose your data by ICA in EEGLAB. 
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
@@ -46,7 +46,7 @@ Now that you've cleaned the data, you're ready to run ICA. The video below will 
 
 **Step 3: Selecting ICA components**
 
-The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful [UCSD Tutorial](https://labeling.ucsd.edu/tutorial/labels). Follow through the video below for a guide on how to identify and select occular components.
+Working out what's a blink. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful [UCSD Tutorial](https://labeling.ucsd.edu/tutorial/labels). The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. Always air on the side of caution, and if you're not sure you should remove a component, don't.
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
@@ -59,7 +59,8 @@ The video below will guide you through how to select and remove eye-movement com
 
 **Step 4: When the ICA doesn't work**
 
-Sometimes your ICA decomposition produces something unpleasant to the eyes
+Sometimes your ICA decomposition produces something unpleasant to the eyes. In this case, you might wonder what you can possibly do to improve it. 
+Creating a separate dataset on which to run ICA can sometimes be the solution (or perhaps this is the approach you've decided to run with from the offset). Doing this means that you can treat the ICA dataset in a manner that you wouldn't the original dataset, because the consequent distortions that occur *won't* be carried across to the original dataset when you import the ICA weights. This can often mean that you end up with better ICA components and faster decomposition. Follow the video below to learn how to import ICA values from this separate dataset.
 
 
 <hr style="height:1px; visibility:hidden;" />
@@ -103,14 +104,12 @@ Have a go at cleaning the dataset provided in ERPLAB. Then, visit the [UCSD ICLa
 <hr style="height:1px; visibility:hidden;" />
 <u> Write-up </u>
 
+<hr style="height:1px; visibility:hidden;" />
+<div class="write-up">
 
->*EEG data were recorded and digitized at the sampling rate of XXX Hz using a XXX amplifier and subsequently downsampled offline to XXX Hz.*
+ Independent Component Analysis (ICA) for artifact correction was conducted using the runica algorithm in EEGLAB. All channels were included in the ICA except for EOG electrodes, and electrodes that were subsequently interpolated (see Supplementary File X for the full list of excluded electrodes for each participant). Occular components were selected via visual inspection of both their characteristics (topographical map; time/trial graph and power/frequency graph), and the impact of their removal on the data. On average, X number of components were removed per subject (sd = X).
+
+</div>
 
 <hr style="height:1px; visibility:hidden;" />
-<u>FAQ</u>
 
-{{% expand "Question 1" %}}
-Answer 1.{{% /expand %}}
-
-{{% expand "Question 2" %}}
-Answer 2.{{% /expand %}}

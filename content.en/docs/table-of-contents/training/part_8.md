@@ -22,9 +22,8 @@ In theory you could interpolate these electrodes. But you need to think critical
 
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
-
-COMING SOON
-
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RFpIix38wZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <hr style="height:1px; visibility:hidden;" />
 <u> Code</u>
 

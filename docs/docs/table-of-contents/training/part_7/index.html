@@ -10,13 +10,13 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://j-lewen.github.io/erp/docs/table-of-contents/training/part_7/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-07-16T20:44:03+01:00" />
+<meta property="article:modified_time" content="2023-07-24T16:51:28+01:00" />
 <title>7. Artifact correction (ICA) | ERP Resources</title>
 <link rel="manifest" href="/erp/manifest.json">
 <link rel="icon" href="/erp/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/erp/book.min.4e9c835d588941dade0d826450d333312d45c30b834d56ec69a0b22b1ffbb9f9.css" integrity="sha256-TpyDXViJQdreDYJkUNMzMS1FwwuDTVbsaaCyKx/7ufk=" crossorigin="anonymous">
   <script defer src="/erp/flexsearch.min.js"></script>
-  <script defer src="/erp/en.search.min.c41f7f11db491040deff170b9e4c3c368fc3687febb26e00e23f5a3ba8569442.js" integrity="sha256-xB9/EdtJEEDe/xcLnkw8No/DaH/rsm4A4j9aO6hWlEI=" crossorigin="anonymous"></script>
+  <script defer src="/erp/en.search.min.88db8ac179622d8b7abce3a4f2352a776af4f351cf0dee4b1cd8b408ccce0d0d.js" integrity="sha256-iNuKwXliLYt6vOOk8jUqd2r081HPDe5LHNi0CMzODQ0=" crossorigin="anonymous"></script>
 
   <script defer src="/erp/sw.min.e29036b255ace43cfdfab781867fcd6e0525713bc11a5f56608d1782e7200e77.js" integrity="sha256-4pA2slWs5Dz9&#43;reBhn/NbgUlcTvBGl9WYI0XgucgDnc=" crossorigin="anonymous"></script>
 <!--
@@ -519,7 +519,7 @@ https://github.com/alex-shpak/hugo-book
 <p>What does ICA do? In overly simplified terms, ICA involves separating out the different sources (e.g., muscle movements, eye blinks, other eye movements, brain activity) that contribute towards your EEG data. Separating the signal into these functionally distinct sources enables us to subtract unwanted sources out (e.g., blinks), leaving beautifully clean EEG data. However, ICA was never originally intended for EEG data, and EEG data violates assumptions of ICA (most researchers know this but use it anyway as an imperfect fix), so it is important to have a solid understanding of the pitfalls of ICA before you subject your data to this technique, so I thoroughly recommend 
   <a href="https://eeglab.org/tutorials/06_RejectArtifacts/RunICA.html">reading around</a> before you charge on in. Because ICA changes our data in ways that aren&rsquo;t always easy to determine, you should always use it for blinks with a degree of caution, sideways eye movements with even more caution, and not much else (unless you&rsquo;re very confident in what you&rsquo;re doing).</p>
 <p><strong>Stage 1: Preparing your data for ICA artifact correction</strong></p>
-<p>So you&rsquo;ve decided to go ahead with ICA. The first thing you need to do is clean you data. This is because (assuming you&rsquo;re using your whole dataset for ICA training) you need to help the algorithm to successfully identify blinks as opposed to other sources of noise. Importantly, the number of independent components is (by necessity) always equal to the number of channels in your dataset. Because of this, you don&rsquo;t want a 20 second coughing fit that your participant had half way through the session to &rsquo;take up&rsquo; 15-odd components.</p>
+<p>So you&rsquo;ve decided to go ahead with ICA. The first thing you need to do is clean you data. This is because (assuming you&rsquo;re using your whole dataset for ICA training) you need to help the algorithm to successfully identify blinks as opposed to other sources of noise. Importantly, the number of independent components is (by necessity) always equal to the number of channels in your dataset. Because of this, you don&rsquo;t want a 20 second coughing fit that your participant had half way through the session to &rsquo;take up&rsquo; 15-odd components. There are two main approaches to preparing your data for ICA. One is to create a full new dataset on which to run ICA and then transfer the ICA weights into your original dataset. The second is to prepare your existing dataset for ICA, and simply run it on that. The latter is outlined in the video below, whilst I show you how to do the former in the last video in this series.</p>
 <div class="book-expand">
   <label>
     <div class="book-expand-head flex justify-between">
@@ -538,32 +538,28 @@ https://github.com/alex-shpak/hugo-book
 <iframe width="560" height="315" src="https://www.youtube.com/embed/U8FCzk8MoFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <hr style="height:1px; visibility:hidden;" />
 <p><strong>Step 2: Running ICA</strong></p>
-<p>Now that you&rsquo;ve cleaned the data, you&rsquo;re ready to run ICA. The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful 
-  <a href="https://labeling.ucsd.edu/tutorial/labels">UCSD Tutorial</a>.</p>
+<p>Now that you&rsquo;ve cleaned the data, you&rsquo;re ready to run ICA. The video below will guide you through this to decompose your data by ICA in EEGLAB.</p>
+<hr style="height:1px; visibility:hidden;" />
+<u> Video</u>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8kOHHyBnKoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<hr style="height:1px; visibility:hidden;" />
+<p><strong>Step 3: Selecting ICA components</strong></p>
+<p>Working out what&rsquo;s a blink. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful 
+  <a href="https://labeling.ucsd.edu/tutorial/labels">UCSD Tutorial</a>. The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. Always air on the side of caution, and if you&rsquo;re not sure you should remove a component, don&rsquo;t.</p>
+<hr style="height:1px; visibility:hidden;" />
+<u> Video</u>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8kOHHyBnKoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<hr style="height:1px; visibility:hidden;" />
+<p><strong>Step 4: When the ICA doesn&rsquo;t work</strong></p>
+<p>Sometimes your ICA decomposition produces something unpleasant to the eyes. In this case, you might wonder what you can possibly do to improve it.
+Creating a separate dataset on which to run ICA can sometimes be the solution (or perhaps this is the approach you&rsquo;ve decided to run with from the offset). Doing this means that you can treat the ICA dataset in a manner that you wouldn&rsquo;t the original dataset, because the consequent distortions that occur <em>won&rsquo;t</em> be carried across to the original dataset when you import the ICA weights. This can often mean that you end up with better ICA components and faster decomposition. Follow the video below to learn how to import ICA values from this separate dataset.</p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Video</u>
 <h4 id="coming-soon">
   Coming soon
   <a class="anchor" href="#coming-soon">#</a>
-</h4>
-<hr style="height:1px; visibility:hidden;" />
-<p><strong>Step 3: Selecting ICA components</strong></p>
-<p>The video below will guide you through how to select and remove eye-movement components, but depending on your actual dataset the output from this can be confusing. This is probably one of the ERP pre-processing stages that demands the most experience, but there are a number of resources to help you become familiarised with the process of identifying occular activity, such as this incredibly helpful 
-  <a href="https://labeling.ucsd.edu/tutorial/labels">UCSD Tutorial</a>.</p>
-<hr style="height:1px; visibility:hidden;" />
-<u> Video</u>
-<h4 id="coming-soon-1">
-  Coming soon
-  <a class="anchor" href="#coming-soon-1">#</a>
-</h4>
-<hr style="height:1px; visibility:hidden;" />
-<p><strong>Step 4: When the ICA doesn&rsquo;t work</strong></p>
-<p>Sometimes your ICA decomposition produces something unpleasant to the eyes</p>
-<hr style="height:1px; visibility:hidden;" />
-<u> Video</u>
-<h4 id="coming-soon-2">
-  Coming soon
-  <a class="anchor" href="#coming-soon-2">#</a>
 </h4>
 <hr style="height:1px; visibility:hidden;" />
 <hr style="height:1px; visibility:hidden;" />
@@ -593,35 +589,11 @@ following visual inspection and cleaning of the data. ICA used the RUNICA algori
   <a href="https://labeling.ucsd.edu/tutorial/practice">UCSD ICLabel Tutorial</a>, where you can practice labelling the source of components based on studying their EEGLAB output.</p>
 <hr style="height:1px; visibility:hidden;" />
 <u> Write-up </u>
-<blockquote>
-<p><em>EEG data were recorded and digitized at the sampling rate of XXX Hz using a XXX amplifier and subsequently downsampled offline to XXX Hz.</em></p>
-</blockquote>
 <hr style="height:1px; visibility:hidden;" />
-<u>FAQ</u>
-<div class="book-expand">
-  <label>
-    <div class="book-expand-head flex justify-between">
-      <span>Question 1</span>
-      <span>↕</span>
-    </div>
-    <input type="checkbox" class="hidden" />
-    <div class="book-expand-content markdown-inner">
-      Answer 1.
-    </div>
-  </label>
+<div class="write-up">
+<p>Independent Component Analysis (ICA) for artifact correction was conducted using the runica algorithm in EEGLAB. All channels were included in the ICA except for EOG electrodes, and electrodes that were subsequently interpolated (see Supplementary File X for the full list of excluded electrodes for each participant). Occular components were selected via visual inspection of both their characteristics (topographical map; time/trial graph and power/frequency graph), and the impact of their removal on the data. On average, X number of components were removed per subject (sd = X).</p>
 </div>
-<div class="book-expand">
-  <label>
-    <div class="book-expand-head flex justify-between">
-      <span>Question 2</span>
-      <span>↕</span>
-    </div>
-    <input type="checkbox" class="hidden" />
-    <div class="book-expand-content markdown-inner">
-      Answer 2.
-    </div>
-  </label>
-</div>
+<hr style="height:1px; visibility:hidden;" />
 </article>
  
       
