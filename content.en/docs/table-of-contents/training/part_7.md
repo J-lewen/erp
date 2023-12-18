@@ -52,7 +52,7 @@ Working out what's a blink. This is probably one of the ERP pre-processing stage
 <u> Video</u>
 
 <br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8kOHHyBnKoY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=AllttlGI0Fw&t=10s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 <hr style="height:1px; visibility:hidden;" />

@@ -182,7 +182,7 @@ FAQQ1↕A1.Q2↕A2.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://j-lewen.github.io/erp/docs/table-of-contents/training/scripts/</guid>
-      <description>How to use the scripts provided within these pages#Every script looks a little different to the &amp;lsquo;code&amp;rsquo; line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.</description>
+      <description>How to use the scripts provided within these pages#Every script looks a little different to the &amp;lsquo;code&amp;rsquo; line on the website. The reason for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once.</description>
     </item>
     
     <item>

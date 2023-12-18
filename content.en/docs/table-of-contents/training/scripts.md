@@ -8,7 +8,7 @@ bookToC: false
 ## How to use the scripts provided within these pages
   <br>
 
-Every script looks a little different to the 'code' line on the website. The reson for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are
+Every script looks a little different to the 'code' line on the website. The reason for this is that the code is intended to enable you to identify what the pre-processing operation looks like in code form and to create your own scripts, whilst the scripts provided are
 intended to make your pre-processing more efficient, allowing you to run each pre-processing operation on all your datasets at once. This requires a little more info (i.e., where EEGLAB is stored on your computer, etc.), and therefore means that a couple of steps are necessary before you can use the scripts for your own data.
 
 #### Prepare your data files
