@@ -1,5 +1,5 @@
 ---
-title: ERP Training Resources
+title: ERP TRAINING RESOURCES 
 weight: 1
 bookCollapseSection: true
 ---
