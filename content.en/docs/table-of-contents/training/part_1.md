@@ -1,5 +1,5 @@
 ---
-title: 1. Getting started with ERPLAB
+title: 1. Getting started with ERPLAB.... eeeek
 weight: 1
 bookToc: false
 ---
